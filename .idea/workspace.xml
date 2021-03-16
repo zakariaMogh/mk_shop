@@ -10,160 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="first commit / database/ models / routes / auth / controllers">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Admin/ProductDetail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/QueryFilters/Filter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/QueryFilters/OrderSearch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/QueryFilters/ProductSearch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/QueryFilters/Sort.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/QueryFilters/State.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/css/admin-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/css/datepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/avatar/img-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/avatar/img-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/avatar/img-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/avatar/img-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/avatar/img-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/avatar/img-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-11.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-7.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-8.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/category/icon-9.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/fav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/featured-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/offers/img-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/offers/img-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/offers/img-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/big-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/big-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/big-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/big-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/product/img-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/images/shop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/js/chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/js/datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/js/i18n/datepicker.en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/chart/accessibility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/chart/export-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/chart/exporting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/chart/highcharts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-brands-400d41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-regular-400d41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/fontawesome-free/webfonts/fa-solid-900d41d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/froala_editor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/froala_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/char_counter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/code_view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/colors.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/emoticons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/file.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/fullscreen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/image_manager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/line_breaker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/css/plugins/video.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/froala_editor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/align.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/char_counter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/code_beautifier.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/code_view.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/colors.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/draggable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/emoticons.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/entities.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/file.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/font_family.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/font_size.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/fullscreen.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/image.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/image_manager.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/inline_style.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/line_breaker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/link.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/lists.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/paragraph_format.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/paragraph_style.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/quote.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/save.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/table.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/url.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/froala_editor_3.1.1/js/plugins/video.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/tail.select/css/bootstrap4/tail.select-default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin-assets/vendor/tail.select/js/tail.select-full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/banners/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/banners/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/banners/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/banners/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/partials/sub_categories.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/messages.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/navBar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/sideBar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/products/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/settings/deliveries.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/admin/product-detail.blade.php" afterDir="false" />
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="admin panel set up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_11_103523_create_reviews_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_11_103523_create_reviews_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +180,7 @@
       <workItem from="1615452543951" duration="6947000" />
       <workItem from="1615462574638" duration="185000" />
       <workItem from="1615537773250" duration="80000" />
-      <workItem from="1615886155439" duration="1925000" />
+      <workItem from="1615886155439" duration="2632000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -340,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615462701162</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="admin panel set up">
+      <created>1615888189611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615888189611</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +216,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit / database/ models / routes / auth / controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit / database/ models / routes / auth / controllers" />
+    <MESSAGE value="admin panel set up" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin panel set up" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615886870276">
@@ -371,9 +228,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615886221668" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615462717218">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615888203487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615462717218" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615888203487" />
   </component>
 </project>

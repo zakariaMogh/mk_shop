@@ -16,3 +16,27 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('artisan', function (){
+    \Illuminate\Support\Facades\Artisan::call("migrate:fresh --seed");
+    return "done";
+});
+//
+//Route::get('migrate', function (){
+//    \Illuminate\Support\Facades\Artisan::call("migrate");
+//    return "done";
+//});
+//
+//Route::get('install_password', function (){
+//    \Illuminate\Support\Facades\Artisan::call("passport:install");
+//    \Illuminate\Support\Facades\Artisan::call("passport:keys");
+//    \Illuminate\Support\Facades\Artisan::call("config:clear");
+//
+//    return "done";
+//});
+
+Route::get('storage', function (){
+    \Illuminate\Support\Facades\Artisan::call("storage:link");
+    return "done";
+});
