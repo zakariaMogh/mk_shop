@@ -10,9 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="admin panel set up">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="artisan  routes">
+      <change afterPath="$PROJECT_DIR$/database/seeders/AdminsTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeders" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -157,6 +156,7 @@
       <recent name="C:\wamp64\www\mk_shop\app" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\database\seeders" />
       <recent name="C:\wamp64\www\mk_shop\app\Http" />
       <recent name="C:\wamp64\www\mk_shop\resources\views" />
       <recent name="C:\wamp64\www\mk_shop\public" />
@@ -180,7 +180,7 @@
       <workItem from="1615452543951" duration="6947000" />
       <workItem from="1615462574638" duration="185000" />
       <workItem from="1615537773250" duration="80000" />
-      <workItem from="1615886155439" duration="2632000" />
+      <workItem from="1615886155439" duration="2774000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615888189611</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="artisan  routes">
+      <created>1615888805313</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615888805313</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +224,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit / database/ models / routes / auth / controllers" />
     <MESSAGE value="admin panel set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin panel set up" />
+    <MESSAGE value="artisan  routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="artisan  routes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615886870276">
@@ -228,9 +236,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615886221668" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615888203487">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615888812098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615888203487" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615888812098" />
   </component>
 </project>
