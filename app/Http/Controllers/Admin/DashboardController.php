@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
@@ -14,7 +16,23 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        //
+        $pending = DB::table('orders')
+            ->where('state','=','pending')
+            ->count();
+
+        $processing = DB::table('orders')
+            ->where('state','=','processing ')
+            ->count();
+
+        $canceled = DB::table('orders')
+            ->where('state','=','canceled')
+            ->count();
+
+        $users = DB::table('users')
+            ->count();
+
+        $orders = Order::orderBy('created_at','desc')->limit(5)->get();
+        return view('admin.dashboard',compact('pending','canceled','processing','users','orders'));
     }
 
     /**
