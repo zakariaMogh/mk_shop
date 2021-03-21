@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/tests/Unit" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests/Feature" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/biscolab/laravel-recaptcha" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/defuse/php-encryption" />
@@ -36,7 +37,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/passport" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/sail" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/tinker" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/clock" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/event" />
