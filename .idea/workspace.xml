@@ -10,8 +10,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="artisan  routes">
-      <change afterPath="$PROJECT_DIR$/database/seeders/AdminsTableSeeder.php" afterDir="false" />
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="seeder">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mk_shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mk_shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +149,20 @@
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pbX0mZpy37whfJ4pTPX1LpfFdD" />
@@ -147,20 +173,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mozam" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\mk_shop\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\app\Http\Controllers\Client\Api" />
+      <recent name="C:\wamp64\www\mk_shop\app\Http\Controllers" />
       <recent name="C:\wamp64\www\mk_shop\database\seeders" />
       <recent name="C:\wamp64\www\mk_shop\app\Http" />
       <recent name="C:\wamp64\www\mk_shop\resources\views" />
-      <recent name="C:\wamp64\www\mk_shop\public" />
-      <recent name="C:\wamp64\www\mk_shop\routes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,7 +206,10 @@
       <workItem from="1615452543951" duration="6947000" />
       <workItem from="1615462574638" duration="185000" />
       <workItem from="1615537773250" duration="80000" />
-      <workItem from="1615886155439" duration="2774000" />
+      <workItem from="1615886155439" duration="4807000" />
+      <workItem from="1616068397166" duration="1275000" />
+      <workItem from="1616089184832" duration="148000" />
+      <workItem from="1616235917470" duration="1873000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -203,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615888805313</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="seeder">
+      <created>1615888975019</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615888975019</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,20 +261,21 @@
     <MESSAGE value="first commit / database/ models / routes / auth / controllers" />
     <MESSAGE value="admin panel set up" />
     <MESSAGE value="artisan  routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="artisan  routes" />
+    <MESSAGE value="seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="seeder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615886870276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615886870276" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1615886221668">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616236044839">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615886221668" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615888812098">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616236044839" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615888980377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615888812098" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615888980377" />
   </component>
 </project>

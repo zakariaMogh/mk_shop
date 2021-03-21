@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Client\Api\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('login',[AuthController::class, 'login'])->name('login');
+Route::post('register',[AuthController::class, 'register'])->name('register');
+
+Route::middleware('auth:api')->group(static function(){
+    Route::put('user','UserController@update')->name('user.update');
+    Route::get('user','UserController@show')->name('user.show');
+
+    Route::resource('products','ProductController')->except(['store', 'edit', 'create', 'delete', 'update']);
+    Route::resource('categories','CategoryController')->except(['store', 'edit', 'create', 'delete', 'update']);
+    Route::resource('sub/categories','CategoryController')->except(['store', 'edit', 'create', 'delete', 'update']);
+});
+
+
+
+
+Route::fallback(function () {
+    $response = ['error' => 'Route not found'];
+    return response($response, 404);
 });
