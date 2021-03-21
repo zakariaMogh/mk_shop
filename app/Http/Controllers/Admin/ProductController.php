@@ -152,6 +152,7 @@ class ProductController extends Controller
         foreach ($request->size as $key => $value) {
             $product->product_details()->create([
                 'size' => $request->size[$key],
+                'color' => $request->color[$key],
                 'quantity' => $request->quantity[$key]
             ]);
         }

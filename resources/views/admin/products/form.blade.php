@@ -43,20 +43,6 @@
 </div>
 
 <div class="form-group">
-    <label class="form-label">Couleur*</label>
-    <input type="text"
-           name="color"
-           class="form-control @error('color') is-invalid @enderror"
-           value="{{$product->color ?? old('color')}}"
-           placeholder="Couleur du produit">
-    @error('color')
-    <div class="invalid-feedback">
-        {{$message}}
-    </div>
-    @enderror
-</div>
-
-<div class="form-group">
     <label class="form-label">Marque</label>
     <input type="text"
            name="brand"
