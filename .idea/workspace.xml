@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="Bug fix">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="passport install routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -200,7 +200,7 @@
       <workItem from="1616089184832" duration="148000" />
       <workItem from="1616235917470" duration="1873000" />
       <workItem from="1616318218012" duration="3239000" />
-      <workItem from="1616349672399" duration="1603000" />
+      <workItem from="1616349672399" duration="2474000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -244,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616350711466</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="passport install routes">
+      <created>1616351680109</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616351680109</updated>
+    </task>
+    <task id="LOCAL-00008" summary="passport install routes">
+      <created>1616351875110</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616351875110</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +283,8 @@
     <MESSAGE value="seeder" />
     <MESSAGE value="Api" />
     <MESSAGE value="Bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix" />
+    <MESSAGE value="passport install routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="passport install routes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615886870276">
@@ -280,9 +295,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616236044839" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1616350717126">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1616351880333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616350717126" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616351880333" />
   </component>
 </project>
