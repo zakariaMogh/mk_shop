@@ -63,4 +63,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Product::class, 'reviews')->using(Review::class)->withPivot(['rate'])->withTimestamps();
     }
+
+    public function comments(): BelongsToMany
+    {
+        return $this->belongsToMany(Product::class, 'comments')->using(Comment::class)->withPivot(['content'])->withTimestamps();
+    }
 }

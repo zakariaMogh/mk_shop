@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class Review extends Pivot
+class Comment extends Pivot
 {
     use HasFactory;
 
 
     protected $fillable = [
-        'rate'
+        'content'
     ];
 
     protected $with = ['user','product'];

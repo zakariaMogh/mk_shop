@@ -10,9 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="Store route">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" afterDir="false" />
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="bug fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +164,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../print_pic" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -200,7 +202,8 @@
       <workItem from="1616089184832" duration="148000" />
       <workItem from="1616235917470" duration="1873000" />
       <workItem from="1616318218012" duration="3239000" />
-      <workItem from="1616349672399" duration="3095000" />
+      <workItem from="1616349672399" duration="3716000" />
+      <workItem from="1616437415970" duration="1804000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -265,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616352817968</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="bug fix">
+      <created>1616353435610</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616353435610</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,20 +302,21 @@
     <MESSAGE value="Bug fix" />
     <MESSAGE value="passport install routes" />
     <MESSAGE value="Store route" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store route" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615886870276">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616437672591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615886870276" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616236044839">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616437672591" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616437633668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616236044839" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1616352823136">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616437633668" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1616353441498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616352823136" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616353441498" />
   </component>
 </project>

@@ -18,13 +18,15 @@ use Illuminate\Support\Facades\Route;
 Route::post('login',[AuthController::class, 'login'])->name('login');
 Route::post('register',[AuthController::class, 'register'])->name('register');
 
+
+Route::resource('products','ProductController')->except(['store', 'edit', 'create', 'delete', 'update']);
+Route::resource('categories','CategoryController')->except(['store', 'edit', 'create', 'delete', 'update']);
+Route::resource('sub/categories','CategoryController')->except(['store', 'edit', 'create', 'delete', 'update']);
+
 Route::middleware('auth:api')->group(static function(){
     Route::put('user','UserController@update')->name('user.update');
     Route::get('user','UserController@show')->name('user.show');
 
-    Route::resource('products','ProductController')->except(['store', 'edit', 'create', 'delete', 'update']);
-    Route::resource('categories','CategoryController')->except(['store', 'edit', 'create', 'delete', 'update']);
-    Route::resource('sub/categories','CategoryController')->except(['store', 'edit', 'create', 'delete', 'update']);
 });
 
 
