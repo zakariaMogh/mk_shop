@@ -40,7 +40,13 @@ class CategoryController extends Controller
     {
 
         try {
-            $category = Category::findOrFail($id)->load(['children', 'parent']);
+            if (\request()->is('api/sub/categories'))
+            {
+                $category = Category::subCategories()->findOrFail($id)->load('parent');
+            } else
+            {
+                $category = Category::mainCategories()->findOrFail($id)->load('children');
+            }
         } catch (ModelNotFoundException $ex) {
             $response = ['error' => 'Category not found'];
             return response($response, 404);
