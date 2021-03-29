@@ -36,8 +36,8 @@ class Product extends Model
     public function getImageUrlAttribute(): string
     {
         return isset($this->images[0]) ?
-            asset('/storage/'.$this->images[0]->image) :
-            asset('admin-assets/images/category/icon-1.svg');
+            '/storage/'.$this->images[0]->image :
+            'admin-assets/images/category/icon-1.svg';
     }
 
     protected $appends = ['image_url'];

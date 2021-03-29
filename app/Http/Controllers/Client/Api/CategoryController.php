@@ -40,7 +40,7 @@ class CategoryController extends Controller
     {
 
         try {
-            $category = Category::findOrFail($id);
+            $category = Category::findOrFail($id)->load(['children', 'parent']);
         } catch (ModelNotFoundException $ex) {
             $response = ['error' => 'Category not found'];
             return response($response, 404);

@@ -19,8 +19,8 @@ class Image extends Model
     public function getImageUrlAttribute(): string
     {
         return isset($this->image) ?
-            asset('/storage/'.$this->image) :
-            asset('admin-assets/images/category/icon-1.svg');
+            '/storage/'.$this->image :
+            'admin-assets/images/category/icon-1.svg';
     }
 
     public function product(): BelongsTo

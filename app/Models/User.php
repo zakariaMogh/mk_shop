@@ -50,7 +50,7 @@ class User extends Authenticatable
 
     public function getPicUrlAttribute()
     {
-        return isset($this->pic) ? asset('storage/'.$this->pic) : asset('admin-assets/images/avatar/img-5.jpg');
+        return isset($this->pic) ? 'storage/'.$this->pic : 'admin-assets/images/avatar/img-5.jpg';
     }
 
 

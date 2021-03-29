@@ -21,7 +21,7 @@ class Banner extends Model
 
     public function getImageUrlAttribute()
     {
-        return isset($this->image) ? asset('/storage/'.$this->image) : asset('admin-assets/images/category/icon-1.svg');
+        return isset($this->image) ? '/storage/'.$this->image : 'admin-assets/images/category/icon-1.svg';
     }
 
 
