@@ -22,7 +22,7 @@ class CategoryController extends Controller
             $data = Category::subCategories()->orderBy('created_at','desc')->with('parent');
         } else
         {
-            $data = Category::mainCategories()->orderBy('created_at','desc');
+            $data = Category::mainCategories()->orderBy('created_at','desc')->with('children');
         }
         $categories = $data->get();
         $response = ['categories' => $categories];
