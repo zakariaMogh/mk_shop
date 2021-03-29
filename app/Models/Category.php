@@ -18,6 +18,8 @@ class Category extends Model
         'name','slug','parent_id','image'
     ];
 
+    protected $appends = ['image_url'];
+
     public function deleteCategoryFile($categories): ?bool
     {
         foreach ($categories as $cat)
@@ -44,7 +46,7 @@ class Category extends Model
 
     public function getImageUrlAttribute()
     {
-        return isset($this->image) ? '/storage/'.$this->image : asset('admin-assets/images/category/icon-1.svg');
+        return isset($this->image) ? asset('/storage/'.$this->image) : asset('admin-assets/images/category/icon-1.svg');
     }
 
 

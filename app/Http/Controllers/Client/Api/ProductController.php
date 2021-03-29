@@ -16,7 +16,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $query = Product::with(['images', 'categories']);
+        $query = Product::with(['categories']);
 
         if (\request()->has('q') && !empty(\request()->get('q')))
         {

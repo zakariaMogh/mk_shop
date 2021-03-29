@@ -14,11 +14,12 @@ class Image extends Model
         'image',
         'product_id'
     ];
+    protected $appends = ['image_url'];
 
     public function getImageUrlAttribute(): string
     {
         return isset($this->image) ?
-            '/storage/'.$this->image :
+            asset('/storage/'.$this->image) :
             asset('admin-assets/images/category/icon-1.svg');
     }
 

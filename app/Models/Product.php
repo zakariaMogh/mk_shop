@@ -33,6 +33,15 @@ class Product extends Model
         return $this->product_details_sum_quantity > 0 ? 'active' : 'inactive';
     }
 
+    public function getImageUrlAttribute(): string
+    {
+        return isset($this->images[0]) ?
+            asset('/storage/'.$this->images[0]->image) :
+            asset('admin-assets/images/category/icon-1.svg');
+    }
+
+    protected $appends = ['image_url'];
+
 
     public function categories(): BelongsToMany
     {
