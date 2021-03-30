@@ -20,9 +20,9 @@ class Order extends Model
         'state',
         'province',
         'sub_total',
-        'sub_total',
         'total',
-        'shipping'
+        'shipping',
+        'shipping_type',
     ];
 
     protected $with = ['user','products'];
@@ -31,6 +31,12 @@ class Order extends Model
     {
         return $this->belongsToMany(Product::class)->withTimestamps()->withPivot('qte');
     }
+
+    public function colors(): BelongsToMany
+    {
+        return $this->belongsToMany(Color::class)->withPivot('qte');
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

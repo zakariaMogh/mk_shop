@@ -27,6 +27,7 @@ Route::middleware('auth:api')->group(static function(){
     Route::put('user','UserController@update')->name('user.update');
     Route::get('user','UserController@show')->name('user.show');
 
+    Route::resource('orders','OrderController')->except(['edit', 'create', 'delete', 'update']);
 });
 
 

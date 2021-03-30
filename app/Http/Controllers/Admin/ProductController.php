@@ -69,7 +69,7 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         $data = $request->except(['_token','images[]','categories']);
-
+        dd($data);
         if ($request->hasFile('images'))
         {
             $p = Product::create($data);
