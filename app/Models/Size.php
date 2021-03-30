@@ -16,6 +16,10 @@ class Size extends Model
         'size',
     ];
 
+    protected $with = [
+        'colors'
+    ];
+
     public function product(): BelongsTo
     {
         return $this->belongsTo(Product::class);
