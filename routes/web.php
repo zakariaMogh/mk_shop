@@ -20,11 +20,11 @@ Route::get('artisan', function (){
     \Illuminate\Support\Facades\Artisan::call("migrate:fresh --seed");
     return "done";
 });
-//
-//Route::get('migrate', function (){
-//    \Illuminate\Support\Facades\Artisan::call("migrate");
-//    return "done";
-//});
+
+Route::get('migrate', function (){
+    \Illuminate\Support\Facades\Artisan::call("migrate");
+    return "done";
+});
 //
 //Route::get('install_passport', function (){
 //    \Illuminate\Support\Facades\Artisan::call("migrate");
