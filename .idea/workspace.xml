@@ -10,9 +10,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="color / size">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="product with size / color">
+      <change beforePath="$PROJECT_DIR$/.idea/mk_shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mk_shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SizeColors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SizeColors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Color.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Color.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/product-sizes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/product-sizes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-colors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-colors.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +162,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
       <path value="$PROJECT_DIR$/vendor/biscolab/laravel-recaptcha" />
+      <path value="$PROJECT_DIR$/vendor/laravel-validation-rules/colour" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pbX0mZpy37whfJ4pTPX1LpfFdD" />
@@ -162,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../e-mall" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -208,7 +219,7 @@
       <workItem from="1617011822109" duration="3508000" />
       <workItem from="1617043608188" duration="1415000" />
       <workItem from="1617046095149" duration="1178000" />
-      <workItem from="1617103144255" duration="2349000" />
+      <workItem from="1617103144255" duration="9555000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -322,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617106746393</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="product with size / color">
+      <created>1617107128056</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617107128056</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,20 +374,21 @@
     <MESSAGE value="removed full image link" />
     <MESSAGE value="categories show" />
     <MESSAGE value="color / size" />
-    <option name="LAST_COMMIT_MESSAGE" value="color / size" />
+    <MESSAGE value="product with size / color" />
+    <option name="LAST_COMMIT_MESSAGE" value="product with size / color" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617103318991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617103318991" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616974619399">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617108224211">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616974619399" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617106750866">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617108224211" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617107130910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617106750866" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617107130910" />
   </component>
 </project>

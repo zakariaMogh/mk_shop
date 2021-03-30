@@ -13,7 +13,7 @@ class Color extends Model
 
     protected $fillable = [
         'color',
-        'qte'
+        'quantity'
     ];
 
 

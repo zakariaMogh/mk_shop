@@ -7,35 +7,37 @@ use Livewire\Component;
 class SizeColors extends Component
 {
     public $quantity, $color;
-    public $inputs;
-    public $i = 1;
+    public $color_inputs;
+    public $j = 1;
+    public $sizeId;
+    public $size;
 
-    public function add($i)
+    public function add_color($j)
     {
-        $i = $i + 1;
-        $this->i = $i;
-        array_push($this->inputs ,$i);
+        $j = $j + 1;
+        $this->j = $j;
+        array_push($this->color_inputs ,$j);
     }
-    public function remove($i)
+    public function remove($j)
     {
-        unset($this->inputs[$i]);
+        unset($this->color_inputs[$j]);
     }
 
     public function mount()
     {
-//        if (isset($this->product->product_details)){
-//            $this->inputs = [];
-//            $this->color = [];
-//            $this->quantity = [];
-//            foreach ($this->product->product_details as $key => $product_detail){
-//                array_push($this->quantity ,$product_detail->quantity);
-//                array_push($this->color ,$product_detail->color);
-//                array_push($this->inputs ,$key);
-//            }
-//        }else{
-//            $this->inputs = [1];
-//        }
-        $this->inputs = [1];
+        if (isset($this->size) && !empty($this->size->colors->toArray())){
+            $this->color_inputs = [];
+            $this->color = [];
+            $this->quantity = [];
+            foreach ($this->size->colors as $color_key => $color){
+                array_push($this->quantity ,$color->quantity);
+                array_push($this->color ,$color->color);
+                array_push($this->color_inputs ,$color_key);
+            }
+        }else{
+            $this->color_inputs = [1];
+        }
+
     }
     public function render()
     {

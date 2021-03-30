@@ -123,6 +123,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
       <path value="$PROJECT_DIR$/vendor/biscolab/laravel-recaptcha" />
+      <path value="$PROJECT_DIR$/vendor/laravel-validation-rules/colour" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

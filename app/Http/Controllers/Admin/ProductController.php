@@ -80,12 +80,16 @@ class ProductController extends Controller
                 $p->images()->create(['image' => $path]);
             }
 
-            foreach ($request->size as $key => $value) {
-                $p->product_details()->create([
-                    'size' => $request->size[$key],
-                    'color' => $request->color[$key],
-                    'quantity' => $request->quantity[$key]
+            foreach($request->sizes as $key => $value){
+                $size = $p->sizes()->create([
+                    'size' => $request->sizes[$key],
                 ]);
+                foreach ($request->colors[$key] as $color_key => $color_value){
+                    $size->colors()->create([
+                        'color' => $request->colors[$key][$color_key],
+                        'quantity' => $request->quantities[$key][$color_key]
+                    ]);
+                }
             }
         }else{
             session()->flash('error','Something wen wrong');
@@ -117,7 +121,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product): View
     {
-        $product->load(['categories', 'product_details' => function($query){
+        $product->load(['categories', 'sizes' => function($query){
             $query->orderBy('size');
         }]);
         $parentCategories = Category::where('parent_id',null)->get();
@@ -136,7 +140,6 @@ class ProductController extends Controller
     public function update(ProductRequest $request, Product $product)
     {
         $data = $request->except(['_method','_token','image','admin','categories']);
-
         if ($request->hasFile('images'))
         {
             foreach($product->images as $img){
@@ -148,14 +151,23 @@ class ProductController extends Controller
                 $product->images()->create(['image' => $path]);
             }
         }
-        $product->product_details()->delete();
-        foreach ($request->size as $key => $value) {
-            $product->product_details()->create([
-                'size' => $request->size[$key],
-                'color' => $request->color[$key],
-                'quantity' => $request->quantity[$key]
-            ]);
+        foreach ($product->sizes as $size){
+            $size->colors()->delete();
         }
+        $product->sizes()->delete();
+
+        foreach($request->sizes as $key => $value){
+            $size = $product->sizes()->create([
+                'size' => $request->sizes[$key],
+            ]);
+            foreach ($request->colors[$key] as $color_key => $color_value){
+                $size->colors()->create([
+                    'color' => $request->colors[$key][$color_key],
+                    'quantity' => $request->quantities[$key][$color_key]
+                ]);
+            }
+        }
+
         $product->update($data);
         $product->categories()->sync($request->get('categories'));
         session()->flash('success','Product has been updated successfully');

@@ -20,6 +20,16 @@
                 </div>
                 @include('admin.layouts.partials.messages')
 
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <div class="card-body-table">
                     <form action="{{route('admin.products.store')}}" method="post" enctype="multipart/form-data">
                         @csrf
