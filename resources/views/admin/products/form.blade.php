@@ -70,12 +70,12 @@
     @enderror
 </div>
 
-@if($product->product_details()->count() > 0)
-    <livewire:admin.product-detail :product="$product"/>
-@else
-    <livewire:admin.product-detail/>
-@endif
-
+{{--@if($product->product_details()->count() > 0)--}}
+{{--    <livewire:admin.product-detail :product="$product"/>--}}
+{{--@else--}}
+{{--    <livewire:admin.product-detail/>--}}
+{{--@endif--}}
+<livewire:product-sizes :product="$product"/>
 <div class="form-group">
     <label class="form-label" for="edit">Description*</label>
     @error('description')
