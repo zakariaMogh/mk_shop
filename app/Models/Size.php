@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use phpseclib3\Math\PrimeField\Integer;
 
 class Size extends Model
 {
@@ -18,6 +19,19 @@ class Size extends Model
 
     protected $with = [
         'colors'
+    ];
+
+    public function getSizeQuantityAttribute()
+    {
+        $quantity = 0;
+        foreach ($this->colors as $color){
+            $quantity += $color->quantity;
+        }
+        return $quantity;
+    }
+
+    protected $appends = [
+        'size_quantity'
     ];
 
     public function product(): BelongsTo

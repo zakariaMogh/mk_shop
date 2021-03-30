@@ -18,23 +18,23 @@ class ProductController extends Controller
      *
      * @return Response
      */
-
-//$quantity = 0;
-//App\Purchase::where('store_id', 2)->each(function($p, $k) use (&$quantity) {
-//    $quantity += $p->items()->sum('quantity');
-//});
+///->withSum('sizes', 'size_quantity');
     public function index(): View
     {
-        $query = Product::with(['categories', 'images'])->withSum('product_details', 'quantity');
+        $query = Product::with(['categories', 'images', 'sizes']);
         if (\request()->has('state') && in_array(request('state'),['active','inactive','qte'])){
 
             $state = \request()->get('state');
             switch ($state){
-                case $state === 'active': $query->whereHas( 'product_details', function($q){
-                    $q->where('quantity', '>', '0');
+                case $state === 'active': $query->whereHas( 'sizes', function($q){
+                    $q->whereHas('colors', function ($q){
+                        $q->where('quantity', '>', '0');
+                    });
                 }); break;
-                case $state === 'inactive': $query->whereHas( 'product_details', function($q){
-                    $q->where('quantity', '<=', '0');
+                case $state === 'inactive': $query->whereHas( 'sizes', function($q){
+                    $q->whereHas('colors', function ($q){
+                        $q->where('quantity', '<=', '0');
+                    });
                 }); break;
 //                case $state === 'qte': $query->orderBy('qte','asc');break;
             }

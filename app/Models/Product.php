@@ -30,7 +30,11 @@ class Product extends Model
 
     public function getStateAttribute(): string
     {
-        return $this->product_details_sum_quantity > 0 ? 'active' : 'inactive';
+        $quantity = 0;
+        foreach ($this->sizes as $size){
+            $quantity += $size->size_quantity;
+        }
+        return $quantity > 0 ? 'active' : 'inactive';
     }
 
     public function getImageUrlAttribute(): string
@@ -57,11 +61,6 @@ class Product extends Model
     public function sizes(): HasMany
     {
         return $this->hasMany(Size::class);
-    }
-
-    public function product_details(): HasMany
-    {
-        return $this->hasMany(ProductDetail::class);
     }
 
 
