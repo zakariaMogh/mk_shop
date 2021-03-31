@@ -20,8 +20,11 @@ Route::post('register',[AuthController::class, 'register'])->name('register');
 
 
 Route::resource('products','ProductController')->except(['store', 'edit', 'create', 'delete', 'update']);
+
 Route::resource('categories','CategoryController')->except(['store', 'edit', 'create', 'delete', 'update']);
 Route::resource('sub/categories','CategoryController')->except(['store', 'edit', 'create', 'delete', 'update']);
+
+Route::resource('deliveries','DeliveryController')->except(['store', 'edit', 'create', 'delete', 'update']);
 
 Route::middleware('auth:api')->group(static function(){
     Route::put('user','UserController@update')->name('user.update');
