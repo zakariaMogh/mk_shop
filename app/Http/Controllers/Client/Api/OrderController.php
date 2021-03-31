@@ -47,6 +47,8 @@ class OrderController extends Controller
             $data['shipping'] = $shipping->bureau;
         }
 
+        $data['shipping_location'] = $shipping->location;
+
         $sub_total = 0;
         $cashback_sum = 0;
 

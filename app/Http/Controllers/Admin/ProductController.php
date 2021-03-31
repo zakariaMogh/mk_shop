@@ -69,7 +69,6 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         $data = $request->except(['_token','images[]','categories']);
-        dd($data);
         if ($request->hasFile('images'))
         {
             $p = Product::create($data);
@@ -86,7 +85,7 @@ class ProductController extends Controller
                 ]);
                 foreach ($request->colors[$key] as $color_key => $color_value){
                     $size->colors()->create([
-                        'color' => $request->colors[$key][$color_key],
+                        'color' => ltrim($request->colors[$key][$color_key], '#'),
                         'quantity' => $request->quantities[$key][$color_key]
                     ]);
                 }
@@ -162,7 +161,7 @@ class ProductController extends Controller
             ]);
             foreach ($request->colors[$key] as $color_key => $color_value){
                 $size->colors()->create([
-                    'color' => $request->colors[$key][$color_key],
+                    'color' => ltrim($request->colors[$key][$color_key], '#'),
                     'quantity' => $request->quantities[$key][$color_key]
                 ]);
             }

@@ -39,6 +39,8 @@
                                 {{$order->province}},<br>
                                 {{$order->wilaya}}<br>
                                 {{$order->phone}}<br>
+                                <b>Livraison : </b>{{$order->shipping_location}}, {{$order->shipping_type}}<br>
+
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -59,15 +61,15 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            @foreach($order->products as $p)
+                                            @foreach($order->colors as $color)
                                                 <tr>
                                                     <td>1</td>
                                                     <td>
-                                                        <a href="{{$p->path()}}" target="_blank">{{$p->name}}</a>
+                                                        <a href="{{$color->size->product->path()}}" target="_blank">{{$color->size->product->name}}</a>
                                                     </td>
-                                                    <td class="text-center">{{$p->price}} DZD</td>
-                                                    <td class="text-center">{{$p->pivot->qte}}</td>
-                                                    <td class="text-center">{{$p->price * $p->pivot->qte}} DZD</td>
+                                                    <td class="text-center">{{$color->size->product->price}} DZD</td>
+                                                    <td class="text-center">{{$color->pivot->qte}}</td>
+                                                    <td class="text-center">{{$color->size->product->price * $color->pivot->qte}} DZD</td>
                                                 </tr>
                                             @endforeach
                                             </tbody>
@@ -94,16 +96,6 @@
                                     {{$order->shipping}} DZD
                                 </div>
                             </div>
-                            @if($order->paymentmethod === 'card')
-                                <div class="order-total-dt">
-                                    <div class="order-total-left-text">
-                                        Remise
-                                    </div>
-                                    <div class="order-total-right-text">
-                                        {{$order->points}} DZD
-                                    </div>
-                                </div>
-                            @endif
                             <div class="order-total-dt">
                                 <div class="order-total-left-text fsz-18">
                                     Montant total

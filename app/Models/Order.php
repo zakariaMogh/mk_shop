@@ -23,6 +23,7 @@ class Order extends Model
         'total',
         'shipping',
         'shipping_type',
+        'shipping_location',
     ];
 
     protected $with = ['user','products'];

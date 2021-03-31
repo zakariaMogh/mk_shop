@@ -68,11 +68,6 @@ class OrderController extends Controller
                     }
                     $p->save();
                 });
-
-                if ($order->paymentmethod === 'card')
-                {
-                    $order->user->cash -= $order->points;
-                }
             }
             $order->user->save();
         }
@@ -92,11 +87,7 @@ class OrderController extends Controller
                 $p->save();
             });
 
-            // if user use points for discount , add the points to cash of user
-            if ($order->paymentmethod === 'card')
-            {
-                $order->user->cash += $order->points;
-            }
+
             $order->user->save();
         }
 
