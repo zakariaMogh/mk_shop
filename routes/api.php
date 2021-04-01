@@ -18,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::post('login',[AuthController::class, 'login'])->name('login');
 Route::post('register',[AuthController::class, 'register'])->name('register');
 
+Route::post('forgot-password', 'ForgotPasswordController@store');
+Route::post('code-confirmation', 'ForgotPasswordController@codeConfirmation');
+Route::post('reset-password', 'ForgotPasswordController@resetPassword');
+
 
 Route::resource('products','ProductController')->except(['store', 'edit', 'create', 'delete', 'update']);
 

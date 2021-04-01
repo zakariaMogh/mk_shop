@@ -10,16 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="migration route">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="Delivery controller + route">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/ForgotPasswordController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,20 +165,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Client/Api" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\mk_shop\app\Http\Controllers\Client\Api" />
       <recent name="C:\wamp64\www\mk_shop\app\Http\Controllers" />
       <recent name="C:\wamp64\www\mk_shop\database\seeders" />
       <recent name="C:\wamp64\www\mk_shop\app\Http" />
       <recent name="C:\wamp64\www\mk_shop\resources\views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\mk_shop\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -218,7 +213,8 @@
       <workItem from="1617046095149" duration="1178000" />
       <workItem from="1617103144255" duration="12569000" />
       <workItem from="1617129140287" duration="8376000" />
-      <workItem from="1617181576225" duration="165000" />
+      <workItem from="1617181576225" duration="5878000" />
+      <workItem from="1617286057463" duration="8648000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -367,7 +363,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617136705976</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Removed # from colors / Fixed orders / Migration : shipping location">
+      <created>1617181835962</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1617181835962</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Delivery controller + route">
+      <created>1617190379930</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1617190379930</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,20 +416,22 @@
     <MESSAGE value="fixed product : colors and sizes #2" />
     <MESSAGE value="Updated order table &#10;Created order_color table&#10;store order function" />
     <MESSAGE value="migration route" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration route" />
+    <MESSAGE value="Removed # from colors / Fixed orders / Migration : shipping location" />
+    <MESSAGE value="Delivery controller + route" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delivery controller + route" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617133330018">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617304225801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617133330018" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617304225801" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617129450822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617129450822" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617136712310">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617190405164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617136712310" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617190405164" />
   </component>
 </project>
