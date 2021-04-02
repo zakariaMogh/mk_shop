@@ -24,6 +24,8 @@ class Product extends Model
     ];
 
 
+
+
     public function path(){
         return url('/product/'.$this->id.'-'.Str::slug($this->name));
     }
@@ -39,9 +41,9 @@ class Product extends Model
 
     public function getImageUrlAttribute(): string
     {
-        return isset($this->images[0]) ?
-            '/storage/'.$this->images[0]->image :
-            'admin-assets/images/category/icon-1.svg';
+        $image = isset($this->images[0]) ? '/storage/'.$this->images[0]->image : 'admin-assets/images/category/icon-1.svg';
+        $this->makeHiddenIf(!\request()->is('api/products*'),'images');
+        return $image;
     }
 
     public function getNoteAttribute()
@@ -51,11 +53,13 @@ class Product extends Model
             $note += $review->pivot->rate;
         }
 
+        $this->makeHiddenIf(!\request()->is('api/products*'),'reviews');
+
         return $note/($this->reviews->count() > 0 ? $this->reviews->count() : 1);
     }
 
 
-    protected $appends = ['image_url'];
+    protected $appends = ['image_url', 'note'];
 
 
     public function categories(): BelongsToMany

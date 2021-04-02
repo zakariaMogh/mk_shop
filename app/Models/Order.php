@@ -28,6 +28,8 @@ class Order extends Model
 
     protected $with = ['user'];
 
+
+
     public function products(): BelongsToMany
     {
         return $this->belongsToMany(Product::class)->withTimestamps()->withPivot('qte');
