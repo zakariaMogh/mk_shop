@@ -16,7 +16,25 @@ class ProductController extends Controller
      */
     public function index()
     {
+
+        if (\request()->has('trending') && \request()->get('trending') == 'true')
+        {
+            $query = Product::withCount('orders');
+            $products = $query->orderBy('orders_count', 'desc')->take(10)->get();
+            $response = ['products' => $products];
+            return response($response, 200);
+        }
         $query = Product::with(['categories']);
+
+        if (\request()->has('promotion') && \request()->get('promotion') == 'true')
+        {
+            $query->where('cashback', '>', 0 );
+            $products = $query->orderBy('created_at', 'desc')->paginate(20);
+            $response = ['products' => $products];
+            return response($response, 200);
+        }
+
+
 
         if (\request()->has('q') && !empty(\request()->get('q')))
         {

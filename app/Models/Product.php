@@ -73,4 +73,9 @@ class Product extends Model
     {
         return $this->belongsToMany(User::class, 'comments')->using(Comment::class)->withPivot(['content'])->withTimestamps();
     }
+
+    public function orders(): BelongsToMany
+    {
+        return $this->belongsToMany(Order::class)->withTimestamps()->withPivot('qte');
+    }
 }

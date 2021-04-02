@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Notifications\ResetPasswordNotification;
+use http\Exception;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -60,7 +61,9 @@ class User extends Authenticatable
             'code' => $code,
             'created_at' => now()
         ]);
+
         $this->notify(new ResetPasswordNotification($code));
+
     }
 
 

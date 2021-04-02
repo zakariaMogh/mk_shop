@@ -28,9 +28,15 @@ class ForgotPasswordController extends Controller
             return response(['errors'=>$validator->errors()->all()], 422);
         }
 
-        $status = Password::sendResetLink(
-            $request->only('email')
-        );
+        try {
+            $status = Password::sendResetLink(
+                $request->only('email')
+            );
+        } catch (\Exception $exception) {
+            $response = ['error' => 'Something went wrong'];
+            return response($response, 500);
+        }
+
 
 
         return $status === Password::RESET_LINK_SENT
