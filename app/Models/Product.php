@@ -44,6 +44,17 @@ class Product extends Model
             'admin-assets/images/category/icon-1.svg';
     }
 
+    public function getNoteAttribute()
+    {
+        $note = 0;
+        foreach ($this->reviews as $review){
+            $note += $review->pivot->rate;
+        }
+
+        return $note/$this->reviews->count();
+    }
+
+
     protected $appends = ['image_url'];
 
 
@@ -68,6 +79,8 @@ class Product extends Model
     {
         return $this->belongsToMany(User::class, 'reviews')->using(Review::class)->withPivot(['rate', 'comment'])->withTimestamps();
     }
+
+
 
 //    public function comments(): BelongsToMany
 //    {
