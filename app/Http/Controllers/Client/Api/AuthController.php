@@ -15,7 +15,7 @@ class AuthController extends Controller
             'phone_1'           => ['required', 'regex:/^([0-9\s\-\+\(\)]*)$/','min:10'],
             'username'          => ['required', 'string', 'max:255','unique:users,username'],
             'email'             => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password'          => ['required', 'string', 'min:8', 'confirmed'],
+            'password'          => ['required', 'string', 'min:8', 'confirmed', 'max:100'],
         ]);
         if ($validator->fails())
         {

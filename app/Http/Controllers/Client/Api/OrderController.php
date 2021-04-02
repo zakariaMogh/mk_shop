@@ -11,6 +11,22 @@ use Illuminate\Support\Facades\Validator;
 
 class OrderController extends Controller
 {
+
+    /**
+     * @return \Illuminate\Http\Response
+     */
+    public function index(){
+        $user = \request()->user();
+
+        $query = $user->orders()->with('colors.size.product');
+
+        $orders = $query->orderBy('created_at', 'desc')->paginate(10);
+
+        $response = ['orders' => $orders];
+        return response($response, 200);
+    }
+
+
     /**
      * @param Request $request
      * @return \Illuminate\Http\Response

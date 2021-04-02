@@ -79,7 +79,7 @@ class ForgotPasswordController extends Controller
         $validator = Validator::make($request->all(), [
             'token' => 'required|string|max:255',
             'email' => 'required|email',
-            'password' => 'required|string|min:8|confirmed',
+            'password' => 'required|string|min:8|confirmed|max:100',
         ]);
         if ($validator->fails())
         {

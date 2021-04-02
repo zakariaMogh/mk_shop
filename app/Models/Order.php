@@ -26,7 +26,7 @@ class Order extends Model
         'shipping_location',
     ];
 
-    protected $with = ['user','products'];
+    protected $with = ['user'];
 
     public function products(): BelongsToMany
     {

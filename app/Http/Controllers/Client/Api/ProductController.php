@@ -59,7 +59,7 @@ class ProductController extends Controller
     public function show($id)
     {
         try {
-            $product = Product::findOrFail($id)->load(['categories', 'images', 'sizes'])->load(['reviews' => function($reviews){
+            $product = Product::findOrFail($id)->load(['categories', 'images', 'sizes.colors'])->load(['reviews' => function($reviews){
                 $reviews->inRandomOrder()->take(5);
             }]);
         } catch (ModelNotFoundException $ex) {

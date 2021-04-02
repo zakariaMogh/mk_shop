@@ -17,22 +17,22 @@ class Size extends Model
         'size',
     ];
 
-    protected $with = [
-        'colors'
-    ];
+//    protected $with = [
+//        'colors'
+//    ];
 
-    public function getSizeQuantityAttribute()
-    {
-        $quantity = 0;
-        foreach ($this->colors as $color){
-            $quantity += $color->quantity;
-        }
-        return $quantity;
-    }
-
-    protected $appends = [
-        'size_quantity'
-    ];
+//    public function getSizeQuantityAttribute()
+//    {
+//        $quantity = 0;
+//        foreach ($this->colors as $color){
+//            $quantity += $color->quantity;
+//        }
+//        return $quantity;
+//    }
+//
+//    protected $appends = [
+//        'size_quantity'
+//    ];
 
     public function product(): BelongsTo
     {
