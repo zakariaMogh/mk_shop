@@ -35,6 +35,11 @@ Route::middleware('auth:api')->group(static function(){
     Route::get('user','UserController@show')->name('user.show');
 
     Route::resource('orders','OrderController')->except(['edit', 'create', 'delete', 'update']);
+
+    Route::resource('reviews','ReviewController')->except(['edit', 'create', 'update', 'index']);
+
+    Route::resource('cart','CartController')->except(['edit', 'create', 'update', 'index', 'delete']);
+
 });
 
 

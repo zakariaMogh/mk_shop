@@ -66,13 +66,13 @@ class Product extends Model
 
     public function reviews(): BelongsToMany
     {
-        return $this->belongsToMany(User::class, 'reviews')->using(Review::class)->withPivot(['rate'])->withTimestamps();
+        return $this->belongsToMany(User::class, 'reviews')->using(Review::class)->withPivot(['rate', 'comment'])->withTimestamps();
     }
 
-    public function comments(): BelongsToMany
-    {
-        return $this->belongsToMany(User::class, 'comments')->using(Comment::class)->withPivot(['content'])->withTimestamps();
-    }
+//    public function comments(): BelongsToMany
+//    {
+//        return $this->belongsToMany(User::class, 'comments')->using(Comment::class)->withPivot(['content'])->withTimestamps();
+//    }
 
     public function orders(): BelongsToMany
     {

@@ -29,12 +29,7 @@ class ProductController extends Controller
         if (\request()->has('promotion') && \request()->get('promotion') == 'true')
         {
             $query->where('cashback', '>', 0 );
-            $products = $query->orderBy('created_at', 'desc')->paginate(20);
-            $response = ['products' => $products];
-            return response($response, 200);
         }
-
-
 
         if (\request()->has('q') && !empty(\request()->get('q')))
         {

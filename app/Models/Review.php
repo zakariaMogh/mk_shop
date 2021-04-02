@@ -12,7 +12,8 @@ class Review extends Pivot
 
 
     protected $fillable = [
-        'rate'
+        'rate',
+        'comment'
     ];
 
     protected $with = ['user','product'];
