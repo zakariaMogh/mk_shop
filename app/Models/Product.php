@@ -51,7 +51,7 @@ class Product extends Model
             $note += $review->pivot->rate;
         }
 
-        return $note/$this->reviews->count();
+        return $note/($this->reviews->count() > 0 ? $this->reviews->count() : 1);
     }
 
 
