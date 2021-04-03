@@ -119,6 +119,7 @@ class OrderController extends Controller
                 'quantity' => $color_product->quantity - $color['quantity']
             ]);
         }
+
         $response = ["message" =>'Order has been made'];
         return response($response, 200);
     }
