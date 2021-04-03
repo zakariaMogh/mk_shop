@@ -33,6 +33,7 @@ Route::resource('deliveries','DeliveryController')->except(['store', 'edit', 'cr
 Route::middleware('auth:api')->group(static function(){
     Route::put('user','UserController@update')->name('user.update');
     Route::get('user','UserController@show')->name('user.show');
+    Route::put('user/password','UserController@updatePassword')->name('user.password.update');
 
     Route::resource('orders','OrderController')->except(['edit', 'create', 'delete', 'update']);
 
