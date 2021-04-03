@@ -10,10 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="get user orders">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="note in all products&#10;Some optimisation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/ReviewController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +215,9 @@
       <workItem from="1617286057463" duration="9826000" />
       <workItem from="1617313432019" duration="10000" />
       <workItem from="1617371604745" duration="7525000" />
-      <workItem from="1617386346288" duration="2734000" />
+      <workItem from="1617386346288" duration="3586000" />
+      <workItem from="1617400618592" duration="13000" />
+      <workItem from="1617441359469" duration="1614000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -421,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617387963489</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="note in all products&#10;Some optimisation">
+      <created>1617389124236</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1617389124236</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +448,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="seeder" />
     <MESSAGE value="Api" />
     <MESSAGE value="Bug fix" />
     <MESSAGE value="passport install routes" />
@@ -465,20 +472,21 @@
     <MESSAGE value="Show product + reviews" />
     <MESSAGE value="show product fix" />
     <MESSAGE value="get user orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="get user orders" />
+    <MESSAGE value="note in all products&#10;Some optimisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="note in all products&#10;Some optimisation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617376028418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617376028418" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617381756868">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617400630311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617381756868" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617387999030">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617400630311" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617389128929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617387999030" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617389128929" />
   </component>
 </project>

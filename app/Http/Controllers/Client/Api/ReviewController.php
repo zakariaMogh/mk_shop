@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Validator;
 
 class ReviewController extends Controller
 {
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request){
         $validator = Validator::make($request->all(), [
             'product'       => ['required', 'numeric','gt:0'],
@@ -38,6 +43,25 @@ class ReviewController extends Controller
         $user->reviews()->attach($product->id, $data);
 
         $response = ['success' => 'Product has been rated'];
+        return response($response, 200);
+    }
+
+    /**
+     * @param $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id){
+        $user = \request()->user();
+
+        try {
+            $product = $user->reviews()->findOrFail($id);
+        } catch (ModelNotFoundException $ex) {
+            $response = ['Not found' => 'This product doesn\'t have a review'];
+            return response($response, 201);
+        }
+
+        $review = $product->pivot;
+        $response = ['review' => $review];
         return response($response, 200);
     }
 }
