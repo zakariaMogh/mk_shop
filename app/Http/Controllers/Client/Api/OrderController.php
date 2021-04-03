@@ -18,11 +18,26 @@ class OrderController extends Controller
     public function index(){
         $user = \request()->user();
 
-        $query = $user->orders()->with('colors.size.product');
+        $query = $user->orders();
 
         $orders = $query->orderBy('created_at', 'desc')->paginate(10);
 
         $response = ['orders' => $orders];
+        return response($response, 200);
+    }
+
+    public function show($id){
+        $user = \request()->user();
+
+        try {
+            $order = $user->orders()->findOrFail($id)->load('colors.size.product');
+        } catch (ModelNotFoundException $ex) {
+            $response = ['error' => 'Order not found'];
+            return response($response, 404);
+        }
+
+
+        $response = ['order' => $order];
         return response($response, 200);
     }
 
