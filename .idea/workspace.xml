@@ -10,28 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="nothing spcl">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="banners route + controller &#10;Orders fix admin panel&#10;Products fix admin panel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ProductSizes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ProductSizes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SizeColors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SizeColors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/QueryFilters/OrderSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/QueryFilters/OrderSearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/QueryFilters/Sort.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/QueryFilters/Sort.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/partials/sideBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/sideBar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/product-sizes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/product-sizes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +217,7 @@
       <workItem from="1617386346288" duration="3586000" />
       <workItem from="1617400618592" duration="13000" />
       <workItem from="1617441359469" duration="19273000" />
-      <workItem from="1617525911645" duration="3825000" />
+      <workItem from="1617525911645" duration="4750000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -477,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617447282182</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="banners route + controller &#10;Orders fix admin panel&#10;Products fix admin panel">
+      <created>1617536676718</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1617536676718</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +483,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bug fix" />
     <MESSAGE value="auth fix" />
     <MESSAGE value="Images URL" />
     <MESSAGE value="get category with sub categories" />
@@ -521,20 +507,21 @@
     <MESSAGE value="get one order / optimised get all orders" />
     <MESSAGE value="update user + update user password" />
     <MESSAGE value="nothing spcl" />
-    <option name="LAST_COMMIT_MESSAGE" value="nothing spcl" />
+    <MESSAGE value="banners route + controller &#10;Orders fix admin panel&#10;Products fix admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="banners route + controller &#10;Orders fix admin panel&#10;Products fix admin panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617450626840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617450626840" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617534671114">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617536601642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617534671114" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617446168214">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617536601642" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617536680681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617446168214" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617536680681" />
   </component>
 </project>
