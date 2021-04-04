@@ -75,12 +75,10 @@
 {{--@else--}}
 {{--    <livewire:admin.product-detail/>--}}
 {{--@endif--}}
+
 <livewire:product-sizes :product="$product"/>
 <div class="form-group">
     <label class="form-label" for="edit">Description*</label>
-    @error('description')
-    <div class="invalid-feedback">{{$message}}</div>
-    @enderror
     <div class="card card-editor">
         <div class="content-editor">
             <textarea id='edit' name="description" class="@error('description') is-invalid @enderror form-control" rows="10">
@@ -88,6 +86,11 @@
             </textarea>
         </div>
     </div>
+    @error('description')
+    <div class="text-danger">
+        {{$message}}
+    </div>
+    @enderror
 </div>
 
 <div class="form-group">

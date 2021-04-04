@@ -10,6 +10,7 @@ class ProductSizes extends Component
     public $inputs;
     public $i = 1;
     public $product;
+    public $sizes;
 
     public function add($i)
     {
@@ -24,7 +25,9 @@ class ProductSizes extends Component
 
     public function mount()
     {
-        if (isset($this->product) && !empty($this->product->sizes->toArray())){
+        $this->sizes = old('sizes');
+
+        if (!empty($this->product->sizes->toArray())){
             $this->inputs = [];
             $this->size = [];
             foreach ($this->product->sizes as $key => $size){
@@ -32,9 +35,30 @@ class ProductSizes extends Component
                 array_push($this->inputs ,$key);
             }
 
+        }elseif(!empty($this->sizes)){
+            $this->inputs = [];
+            $this->size = [];
+            foreach ($this->sizes as $key => $size){
+                array_push($this->size ,$size);
+                array_push($this->inputs ,$key);
+            }
         }else{
             $this->inputs = [1];
         }
+
+//
+//        if (empty($this->product->sizes->toArray()) && !empty($this->sizes)){
+//
+//            $this->inputs = [];
+//            $this->size = [];
+//            foreach ($this->sizes as $key => $size){
+//                array_push($this->size ,$size);
+//                array_push($this->inputs ,$key);
+//            }
+//
+//        }else{
+//            $this->inputs = [1];
+//        }
     }
     public function render()
     {

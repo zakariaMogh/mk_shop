@@ -27,7 +27,7 @@ class Product extends Model
 
 
     public function path(){
-        return url('/product/'.$this->id.'-'.Str::slug($this->name));
+        return url('/product/'.$this->id.'/'.Str::slug($this->name));
     }
 
     public function getStateAttribute(): string
@@ -44,6 +44,11 @@ class Product extends Model
         $image = isset($this->images[0]) ? '/storage/'.$this->images[0]->image : 'admin-assets/images/category/icon-1.svg';
         $this->makeHiddenIf(!\request()->is('api/products*'),'images');
         return $image;
+    }
+
+    public function getCurrentPriceAttribute(): string
+    {
+       return ($this->cashback > 0 ? $this->cashback : $this->price);
     }
 
     public function getNoteAttribute()

@@ -10,7 +10,7 @@ class Sort extends Filter
     protected function applyFilters($builder)
     {
         $sort = request($this->filterName());
-        if (!in_array($sort,['price','cashback','qte','name']))
+        if (!in_array($sort,['price','cashback','qte','username']))
         {
             $sort = 'name';
         }

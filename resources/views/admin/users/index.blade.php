@@ -20,16 +20,17 @@
                     <div class="col-lg-5 col-md-6">
                         <form>
 
-                        <div class="bulk-section mt-30">
+                            <div class="bulk-section mt-30">
                                 <div class="search-by-name-input">
-                                    <input type="text" name="q" class="form-control" placeholder="ID client">
+                                    <input type="text" name="q" class="form-control" placeholder="Client"
+                                           value="{{request()->get('q') ?? '' }}">
                                 </div>
                                 <div class="input-group">
                                     <div class="input-group-append">
                                         <button class="status-btn hover-btn" type="submit">Chercher</button>
                                     </div>
                                 </div>
-                        </div>
+                            </div>
                         </form>
                     </div>
 
@@ -40,15 +41,12 @@
                         <table class="table ucp-table table-hover">
                             <thead>
                             <tr>
-                                <th style="width:60px"><input type="checkbox" class="check-all"></th>
+
                                 <th style="width:60px">ID</th>
                                 <th style="width:100px">Image</th>
                                 <th>Utilisateur</th>
-                                <th style="width:100px">Points</th>
-                                <th style="width:100px">Achats</th>
-                                <th>Prénom</th>
-                                <th>Nom</th>
-                                <th>Status</th>
+                                <th>Email</th>
+                                <th>Numero de telephone</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -57,36 +55,35 @@
                             @foreach($users as $user)
 
                                 <tr>
-                                <td><input type="checkbox" class="check-item" name="ids[]" value="10"></td>
-                                <td>{{$user->id}}</td>
-                                <td>
-                                    <div class="cate-img-6">
-                                        <img src="{{asset('AdminAssets/assets/images/avatar/img-1.jpg')}}" alt="">
-                                    </div>
-                                </td>
-                                <td>{{$user->username}}</td>
-                                <td>{{$user->cash}}</td>
-                                <td>{{$user->transactions}}</td>
-                                <td>{{$user->first_name}}</td>
-                                <td>{{$user->last_name}}</td>
-                                <td>{{$user->status ? 'active' : 'inactive'}}</td>
-                                <td class="action-btns">
-                                    <a href="{{route('admin.users.show',$user->id)}}" class="view-shop-btn" title="View"><i class="fas fa-eye"></i></a>
-{{--                                    <a href="{{route('admin.users.edit',$user->id)}}" class="view-shop-btn" title="View"><i class="fas fa-edit"></i></a>--}}
-                                    <a href="javascript:void(0)" onclick="deleteRecord({{$user->id}})" class="delete-btn" title="delete"><i class="fas fa-trash-alt"></i></a>
-                                    <form action="{{route('admin.users.destroy',$user->id)}}" method="post" id="delete-form-{{$user->id}}">
-                                        @csrf
-                                        @method('DELETE')
-                                    </form>
-                                </td>
-                            </tr>
+                                    <td>{{$user->id}}</td>
+                                    <td>
+                                        <div class="cate-img-6">
+                                            <img src="{{asset($user->pic_url)}}" alt="">
+                                        </div>
+                                    </td>
+                                    <td>{{$user->username}}</td>
+                                    <td>{{$user->email}}</td>
+                                    <td>{{$user->phone_1}}</td>
+                                    <td class="action-btns">
+                                        <a href="{{route('admin.users.show',$user->id)}}" class="view-shop-btn"
+                                           title="View"><i class="fas fa-eye"></i></a>
+                                        {{--                                    <a href="{{route('admin.users.edit',$user->id)}}" class="view-shop-btn" title="View"><i class="fas fa-edit"></i></a>--}}
+{{--                                        <a href="javascript:void(0)" onclick="deleteRecord({{$user->id}})"--}}
+{{--                                           class="delete-btn" title="delete"><i class="fas fa-trash-alt"></i></a>--}}
+{{--                                        <form action="{{route('admin.users.destroy',$user->id)}}" method="post"--}}
+{{--                                              id="delete-form-{{$user->id}}">--}}
+{{--                                            @csrf--}}
+{{--                                            @method('DELETE')--}}
+{{--                                        </form>--}}
+                                    </td>
+                                </tr>
                             @endforeach
 
                             </tbody>
 
                         </table>
                         <div class="d-flex justify-content-center">
-                        {{$users->onEachSide(1)->withQueryString()->links()}}
+                            {{$users->onEachSide(1)->withQueryString()->links()}}
                         </div>
                     </div>
                 </div>

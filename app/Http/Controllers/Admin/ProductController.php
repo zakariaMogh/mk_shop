@@ -43,7 +43,7 @@ class ProductController extends Controller
         if (\request()->has('q') && !empty(\request()->get('q'))){
             $query->where('name','like','%'.\request('q').'%');
         }
-        $products = $query->paginate(20);
+        $products = $query->orderByDesc('created_at')->paginate(20);
         return view('admin.products.index',compact('products'));
     }
 

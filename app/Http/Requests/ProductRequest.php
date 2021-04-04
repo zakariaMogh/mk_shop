@@ -34,6 +34,7 @@ class ProductRequest extends FormRequest
             'quality'           => 'nullable|string|max:200',
             'categories.*'      => 'required|numeric|gt:0',
             'description'       => 'required|string',
+            'images'            => 'required|array|min:1',
             'images.*'          => 'required|file|image|max:5000',
             'sizes'             => 'required|array|min:1',
             'sizes.*'           => 'required|string|max:190',
@@ -46,7 +47,7 @@ class ProductRequest extends FormRequest
         ];
         if ($this->method() === 'PUT')
         {
-            $rules['images[]'] = 'sometimes|nullable|file|image|max:5000';
+            $rules['images'] = 'sometimes|nullable|file|image|max:5000';
         }
         return $rules;
     }

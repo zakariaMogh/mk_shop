@@ -96,6 +96,9 @@
                             @endforeach
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-center">
+                            {{$orders->onEachSide(1)->withQueryString()->links()}}
+                        </div>
                     </div>
                 </div>
             </div>

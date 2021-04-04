@@ -30,6 +30,9 @@ Route::resource('sub/categories','CategoryController')->except(['store', 'edit',
 
 Route::resource('deliveries','DeliveryController')->except(['store', 'edit', 'create', 'delete', 'update']);
 
+Route::resource('banners','BannerController')->except(['store', 'edit', 'create', 'delete', 'update']);
+
+
 Route::middleware('auth:api')->group(static function(){
     Route::put('user','UserController@update')->name('user.update');
     Route::get('user','UserController@show')->name('user.show');

@@ -39,12 +39,12 @@
                     Customers
                 </a>
                 <a class="nav-link {{request()->is('admin/banners') ? 'active' : ''}}" href="{{route('admin.banners.index')}}">
-                    <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-ad"></i></div>
                     Publicités
                 </a>
                 <a class="nav-link {{request()->is('admin/deliveries') ? 'active' : ''}}" href="{{route('admin.deliveries.index')}}">
-                    <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
-                    Paramètres
+                    <div class="sb-nav-link-icon"><i class="fas fa-truck"></i></div>
+                    Livrasion
                 </a>
             </div>
         </div>

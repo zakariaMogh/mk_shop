@@ -11,6 +11,8 @@ class SizeColors extends Component
     public $j = 1;
     public $sizeId;
     public $size;
+    public $colors;
+    public $quantities;
 
     public function add_color($j)
     {
@@ -25,6 +27,9 @@ class SizeColors extends Component
 
     public function mount()
     {
+
+        $this->colors = old('colors');
+        $this->quantities = old('quantities');
         if (isset($this->size) && !empty($this->size->colors->toArray())){
             $this->color_inputs = [];
             $this->color = [];
@@ -34,9 +39,35 @@ class SizeColors extends Component
                 array_push($this->color ,$color->color);
                 array_push($this->color_inputs ,$color_key);
             }
+        }elseif(!empty($this->colors)){
+            $this->color_inputs = [];
+            $this->color = [];
+            $this->quantity = [];
+            $i = 0;
+            foreach ($this->colors[$this->sizeId] as $color_key => $color){
+                array_push($this->quantity ,$this->quantities[$this->sizeId][$i]);
+                array_push($this->color ,$color);
+                array_push($this->color_inputs ,$color_key);
+                $i++;
+            }
         }else{
             $this->color_inputs = [1];
         }
+
+//        if (!isset($this->size) && !empty($this->colors[$this->sizeId])){
+//            $this->color_inputs = [];
+//            $this->color = [];
+//            $this->quantity = [];
+//            $i = 0;
+//            foreach ($this->colors[$this->sizeId] as $color_key => $color){
+//                array_push($this->quantity ,$this->quantities[$this->sizeId][$i]);
+//                array_push($this->color ,$color);
+//                array_push($this->color_inputs ,$color_key);
+//                $i++;
+//            }
+//        }else{
+//            $this->color_inputs = [1];
+//        }
 
     }
     public function render()

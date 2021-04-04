@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Pagination\Paginator;
 use Laravel\Passport\Console\ClientCommand;
 use Laravel\Passport\Console\InstallCommand;
 use Laravel\Passport\Console\KeysCommand;
@@ -30,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Paginator::useBootstrap();
         Schema::defaultStringLength(191);
         /*ADD THIS LINES*/
         $this->commands([

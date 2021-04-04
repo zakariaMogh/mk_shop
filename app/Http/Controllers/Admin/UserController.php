@@ -15,7 +15,13 @@ class UserController extends Controller
      */
     public function index(): View
     {
-        $users = User::paginate(20);
+        $query = User::query();
+        if (\request()->has('q') && !empty(\request()->get('q'))){
+            $query->where('username','like','%'.\request('q').'%')
+                ->orWhere('phone_1','like','%'.\request('q').'%')
+                ->orWhere('email','like','%'.\request('q').'%');
+        }
+        $users = $query->paginate(20);
         return view('admin.users.index', compact('users'));
     }
 

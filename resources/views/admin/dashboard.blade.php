@@ -75,41 +75,41 @@
                             </tr>
                             </thead>
                             <tbody>
-{{--                            @foreach($orders as $o)--}}
-{{--                                <tr>--}}
-{{--                                    <td>{{$o->id}}</td>--}}
-{{--                                    <td>--}}
-{{--                                        <a target="_blank">{{$o->name}}</a>--}}
-{{--                                    </td>--}}
-{{--                                    <td>--}}
-{{--                                        <span class="delivery-time">{{$o->shipping_date->format('d/m/Y')}}</span>--}}
-{{--                                        --}}{{--                                    <span class="delivery-time">4:00PM - 6.00PM</span>--}}
-{{--                                    </td>--}}
-{{--                                    <td>{{$o->address}}</td>--}}
-{{--                                    <td>--}}
-{{--                                        @if($o->state === 'pending')--}}
-{{--                                            <span class="badge-item badge-status">EN ATTENTE</span>--}}
-{{--                                        @endif--}}
-{{--                                        @if($o->state === 'canceled')--}}
-{{--                                            <span class="badge-item badge-status">ANNULÉE</span>--}}
-{{--                                        @endif--}}
-{{--                                        @if($o->state === 'processing')--}}
-{{--                                            <span class="badge-item badge-status">EN TRAITEMENT</span>--}}
-{{--                                        @endif--}}
-{{--                                        @if($o->state === 'validated')--}}
-{{--                                            <span class="badge-item badge-status">VALIDÉ</span>--}}
-{{--                                        @endif--}}
+                            @foreach($orders as $order)
+                                <tr>
+                                    <td>{{$order->id}}</td>
+                                    <td>
+                                        <a target="_blank">{{$order->name}}</a>
+                                    </td>
+                                    <td>
+                                        <span class="delivery-time">{{$order->created_at->format('d/m/Y')}}</span>
+                                        {{--                                    <span class="delivery-time">4:00PM - 6.00PM</span>--}}
+                                    </td>
+                                    <td>{{$order->address}}</td>
+                                    <td>
+                                        @if($order->state === 'pending')
+                                            <span class="badge-item badge-status">EN ATTENTE</span>
+                                        @endif
+                                        @if($order->state === 'canceled')
+                                            <span class="badge-item badge-status">ANNULÉE</span>
+                                        @endif
+                                        @if($order->state === 'processing')
+                                            <span class="badge-item badge-status">EN TRAITEMENT</span>
+                                        @endif
+                                        @if($order->state === 'validated')
+                                            <span class="badge-item badge-status">VALIDÉ</span>
+                                        @endif
 
-{{--                                    </td>--}}
-{{--                                    <td>{{$o->total}} DZD</td>--}}
-{{--                                    <td class="action-btns">--}}
-{{--                                        <a href="{{route('admin.orders.show',$o->id)}}" class="views-btn"><i class="fas fa-eye"></i></a>--}}
-{{--                                        <a href="{{route('admin.orders.edit',$o->id)}}" class="edit-btn"><i class="fas fa-edit"></i></a>--}}
-{{--                                        <a href="{{route('admin.orders.invoice.print',$o->id)}}" class="print-btn"><i class="fas fa-print"></i></a>--}}
+                                    </td>
+                                    <td>{{$order->total}} DZD</td>
+                                    <td class="action-btns">
+                                        <a href="{{route('admin.orders.show',$order->id)}}" class="views-btn"><i class="fas fa-eye"></i></a>
+                                        <a href="{{route('admin.orders.edit',$order->id)}}" class="edit-btn"><i class="fas fa-edit"></i></a>
+                                        {{--                                    <a href="{{route('admin.orders.invoice.print',$o->id)}}" class="print-btn"><i class="fas fa-print"></i></a>--}}
 
-{{--                                    </td>--}}
-{{--                                </tr>--}}
-{{--                            @endforeach--}}
+                                    </td>
+                                </tr>
+                            @endforeach
 
                             </tbody>
                         </table>

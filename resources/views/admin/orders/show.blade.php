@@ -15,13 +15,13 @@
             <div class="card card-static-2 mb-30">
                 <div class="card-title-2">
                     <h2 class="title1458">Facture</h2>
-                    <span class="order-id">N°: 000{{$order->id}}</span>
+                    <span class="order-id">N°: {{$order->id}}</span>
                 </div>
                 <div class="invoice-content">
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
                             <div class="ordr-date">
-                                <b>Le:</b> 29-05-2020
+                                <b>Le:</b> {{$order->created_at->format('d/m/Y')}}
                             </div>
                             <div class="ordr-date">
                                 <b>Adress :</b>119 Ter Rue Didouche Mourad, <br>
@@ -54,6 +54,8 @@
                                             <tr>
                                                 <th style="width:130px">#</th>
                                                 <th>Produits</th>
+                                                <th class="text-center">Taille</th>
+                                                <th class="text-center">Couleur</th>
                                                 <th style="width:150px" class="text-center">Prix</th>
                                                 <th style="width:150px" class="text-center">Qte</th>
                                                 <th style="width:100px" class="text-center">Total</th>
@@ -62,13 +64,24 @@
                                             <tbody>
                                             @foreach($order->colors as $color)
                                                 <tr>
-                                                    <td>1</td>
+                                                    <td>{{$color->id}}</td>
                                                     <td>
-                                                        <a href="{{$color->size->product->path()}}" target="_blank">{{$color->size->product->name}}</a>
+                                                        <a href="{{route('admin.products.show', $color->size->product->id)}}" target="_blank">{{$color->size->product->name}}</a>
                                                     </td>
-                                                    <td class="text-center">{{$color->size->product->price}} DZD</td>
+                                                    <td class="text-center">{{$color->size->size}}</td>
+                                                    <td class="text-center">
+                                                        <input type="color" value="{{$color->color}}" class="form-control" disabled>
+
+                                                    </td>
+                                                    <td class="text-center">
+                                                        @if($color->size->product->cashback > 0)
+                                                            <s>{{$color->size->product->price}} </s>{{$color->size->product->current_price}} DZD
+                                                        @else
+                                                            {{$color->size->product->price}} DZD
+                                                        @endif
+                                                    </td>
                                                     <td class="text-center">{{$color->pivot->qte}}</td>
-                                                    <td class="text-center">{{$color->size->product->price * $color->pivot->qte}} DZD</td>
+                                                    <td class="text-center">{{$color->size->product->current_price * $color->pivot->qte}} DZD</td>
                                                 </tr>
                                             @endforeach
                                             </tbody>
@@ -84,7 +97,11 @@
                                     Sous-total
                                 </div>
                                 <div class="order-total-right-text">
-                                    {{$order->sub_total}} DZD
+                                    @if($order->cashback_sum !=  $order->sub_total)
+                                        <s>{{$order->sub_total}} </s>{{$order->cashback_sum}} DZD
+                                    @else
+                                        {{$order->sub_total}} DZD
+                                    @endif
                                 </div>
                             </div>
                             <div class="order-total-dt">

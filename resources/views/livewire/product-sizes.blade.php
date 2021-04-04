@@ -14,6 +14,7 @@
             </div>
             <div class="form-group col-7">
                 @if(!empty($product->sizes[$key]))
+{{--                    :size="$product->sizes[$key]"--}}
                     <livewire:size-colors :sizeId="$key" :size="$product->sizes[$key]" :key="$key"/>
                 @else
                     <livewire:size-colors :sizeId="$key"  :key="$key"/>
