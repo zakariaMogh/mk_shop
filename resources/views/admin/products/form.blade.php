@@ -117,7 +117,7 @@
         @for( $i = 0 ; $i <20 ; $i++)
             <div class="add-cate-img">
                 <img src="{{asset(isset($product->images[$i]) ? 'storage/'.$product->images[$i]->image : '')}}"
-                     id="imagePreview-{{$i}}" alt="{{isset($product->images[$i]) ? $product->name : ''}}"
+                     id="imagePreview-{{$i}}"
                      class="image-preview">
             </div>
         @endfor
@@ -129,7 +129,7 @@
 
         const readURLS = (input, id) => {
             $('.image-preview').each(function () {
-                $(this).attr('src', '')
+                $(this).attr('src','')
             })
             if (input.files) {
                 var filesAmount = input.files.length;

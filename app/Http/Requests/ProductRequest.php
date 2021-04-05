@@ -47,7 +47,8 @@ class ProductRequest extends FormRequest
         ];
         if ($this->method() === 'PUT')
         {
-            $rules['images'] = 'sometimes|nullable|file|image|max:5000';
+            $rules['images'] = 'sometimes|nullable|array|min:1';
+            $rules['images.*'] = 'sometimes|nullable|file|image|max:5000';
         }
         return $rules;
     }
