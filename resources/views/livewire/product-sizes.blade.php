@@ -7,12 +7,12 @@
                         wire:click="remove({{$key}})" wire:loading.attr="disabled">X
                 </button>
             </div>
-            <div class="form-group col-4 ">
+            <div class="form-group col-11 ">
                 <label class="form-label">Taille*</label>
                 <input type="text" class="form-control" placeholder="Maitre 0 si la taille est standard"
                        name="sizes[]" wire:model.defer="size.{{ $value }}" required>
             </div>
-            <div class="form-group col-7">
+            <div class="form-group col-6 offset-1">
                 @if(!empty($product->sizes[$key]))
 {{--                    :size="$product->sizes[$key]"--}}
                     <livewire:size-colors :sizeId="$key" :size="$product->sizes[$key]" :key="$key"/>
