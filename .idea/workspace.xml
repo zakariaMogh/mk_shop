@@ -10,14 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="fixed tracking link nullable / added tracking link to admin panel&#10;fixed admin panel &#10;default images">
-      <change afterPath="$PROJECT_DIR$/resources/views/pdf/order_invoice.blade.php" afterDir="false" />
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="fixed some stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/partials/sub_categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/partials/sub_categories.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +222,7 @@
       <workItem from="1617400618592" duration="13000" />
       <workItem from="1617441359469" duration="19273000" />
       <workItem from="1617525911645" duration="12504000" />
-      <workItem from="1617620893616" duration="2651000" />
+      <workItem from="1617620893616" duration="3792000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -485,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617621486021</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fixed some stuff">
+      <created>1617627699823</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1617627699823</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +509,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="get category with sub categories" />
     <MESSAGE value="removed full image link" />
     <MESSAGE value="categories show" />
     <MESSAGE value="color / size" />
@@ -529,7 +533,8 @@
     <MESSAGE value="banners route + controller &#10;Orders fix admin panel&#10;Products fix admin panel" />
     <MESSAGE value="added tracking link" />
     <MESSAGE value="fixed tracking link nullable / added tracking link to admin panel&#10;fixed admin panel &#10;default images" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed tracking link nullable / added tracking link to admin panel&#10;fixed admin panel &#10;default images" />
+    <MESSAGE value="fixed some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some stuff" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617450626840">
@@ -540,9 +545,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617621076906" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617621498532">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617627708226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617621498532" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617627708226" />
   </component>
 </project>

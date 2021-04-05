@@ -16,7 +16,7 @@
         <label class="form-label">Parent*</label>
         <select id="status" name="parent_id" class="form-control @error('parent_id') is-invalid @enderror">
             @foreach($parent as $p)
-                <option {{$category->parent_id === $p->id || old('parent_id') === $p->id ? 'selected' : ''}} value="{{$p->id}}">{{$p->name}} ({{$p->type}})</option>
+                <option {{$category->parent_id === $p->id || old('parent_id') === $p->id ? 'selected' : ''}} value="{{$p->id}}">{{$p->name}}</option>
             @endforeach
         </select>
         @error('parent_id')
@@ -45,6 +45,6 @@
 
     </div>
     <div class="add-cate-img">
-        <img src="{{$category->image_url}}" id="imagePreview" alt="{{$category->name ?? 'default image'}}">
+        <img src="{{asset($category->image_url)}}" id="imagePreview" alt="{{$category->name ?? 'default image'}}">
     </div>
 </div>

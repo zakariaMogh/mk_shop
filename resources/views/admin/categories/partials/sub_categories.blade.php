@@ -4,12 +4,12 @@
         @if(\Illuminate\Support\Str::contains(request()->path(),'edit'))
             <option  disabled >--Choisir une catégorie--</option>
             @foreach($parentCategories as $p)
-                <option value="{{$p->id}}" {{$product->categories->contains($p->id)  ? 'selected' : ''}}>{{$p->name}} ({{$p->type}})</option>
+                <option value="{{$p->id}}" {{$product->categories->contains($p->id)  ? 'selected' : ''}}>{{$p->name}}</option>
             @endforeach
         @else
             <option  disabled >--Choisir une catégorie--</option>
             @foreach($parentCategories as $p)
-                <option value="{{$p->id}}" {{$p->id === old('categories.0') ? 'selected' : ''}}>{{$p->name}} ({{$p->type}})</option>
+                <option value="{{$p->id}}" {{$p->id === old('categories.0') ? 'selected' : ''}}>{{$p->name}}</option>
             @endforeach
         @endif
     </select>
@@ -23,12 +23,12 @@
         @if(\Illuminate\Support\Str::contains(request()->path(),'edit'))
             <option  disabled>--Choisir une sous-catégorie --</option>
             @foreach($categories as $cat)
-                <option class="sub-cate-to-{{$cat->parent_id}}"  value="{{$cat->id}}" {{$product->categories->contains($cat->id)  ? 'selected' : ''}}>{{$cat->name}} ({{$cat->type}}) </option>
+                <option class="sub-cate-to-{{$cat->parent_id}}"  value="{{$cat->id}}" {{$product->categories->contains($cat->id)  ? 'selected' : ''}}>{{$cat->name}}</option>
             @endforeach
         @else
             <option  {{old('categories.1') === null ? 'selected' : '' }} disabled>--Choisir une sous-catégorie --</option>
             @foreach($categories as $cat)
-                <option class="sub-cate-to-{{$cat->parent_id}}"  value="{{$cat->id}}" {{$cat->id === old('categories.1') ? 'selected' : ''}} >{{$cat->name}} ({{$cat->type}})</option>
+                <option class="sub-cate-to-{{$cat->parent_id}}"  value="{{$cat->id}}" {{$cat->id === old('categories.1') ? 'selected' : ''}} >{{$cat->name}}</option>
             @endforeach
         @endif
 

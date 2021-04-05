@@ -68,7 +68,7 @@
                                         <td>{{$category->id}}</td>
                                         <td>
                                             <div class="cate-img">
-                                                <img src="{{$category->image_url}}" alt="">
+                                                <img src="{{asset($category->image_url)}}" alt="">
                                             </div>
                                         </td>
                                         <td>{{$category->name}}</td>
@@ -97,7 +97,7 @@
                                         <td>{{$category->id}}</td>
                                         <td>
                                             <div class="cate-img">
-                                                <img src="{{$category->image_url}}" alt="">
+                                                <img src="{{asset($category->image_url)}}" alt="">
                                             </div>
                                         </td>
                                         <td>{{$category->name}}</td>
