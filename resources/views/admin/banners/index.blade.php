@@ -53,7 +53,7 @@
                                     <td>{{$banner->id}}</td>
                                     <td>
                                         <div class="cate-img-5">
-                                            <img src="{{asset('storage/'.$banner->image)}}" alt="">
+                                            <img src="{{asset($banner->image_url)}}" alt="">
                                         </div>
                                     </td>
                                     <td>{{$banner->title}}</td>
