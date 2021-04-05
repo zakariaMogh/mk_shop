@@ -82,7 +82,7 @@
     <div class="card card-editor">
         <div class="content-editor">
             <textarea id='edit' name="description" class="@error('description') is-invalid @enderror form-control" rows="10">
-                {!! $product->description ?? old('description') !!}
+                {{$product->description ?? old('description') }}
             </textarea>
         </div>
     </div>
