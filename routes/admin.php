@@ -32,6 +32,9 @@ Route::middleware('auth:admin')->group(static function(){
     Route::resource('orders','OrderController')
         ->except('store', 'create');
 
+    Route::get('/{id}/print','OrderController@printInvoice')->name('invoice.print');
+
+
 //    Route::prefix('order')->as('orders.')->group(static function (){
 //        Route::get('/','OrderController@index')->name('index');
 //        Route::put('/{id}','OrderController@update')->name('update');

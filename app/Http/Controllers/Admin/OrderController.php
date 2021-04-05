@@ -71,7 +71,7 @@ class OrderController extends Controller
 
     public function printInvoice($id)
     {
-        $order = Order::findOrFail($id);
-        return view('page.order.print_invoice',compact('order'));
+        $order = Order::findOrFail($id)->load('colors.size.product', 'user');
+        return view('pdf.order_invoice',compact('order'));
     }
 }

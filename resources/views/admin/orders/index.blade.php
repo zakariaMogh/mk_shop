@@ -89,7 +89,7 @@
                                 <td class="action-btns">
                                     <a href="{{route('admin.orders.show',$order->id)}}" class="views-btn"><i class="fas fa-eye"></i></a>
                                     <a href="{{route('admin.orders.edit',$order->id)}}" class="edit-btn"><i class="fas fa-edit"></i></a>
-{{--                                    <a href="{{route('admin.orders.invoice.print',$o->id)}}" class="print-btn"><i class="fas fa-print"></i></a>--}}
+                                    <a href="{{route('admin.invoice.print',$order->id)}}" class="print-btn"><i class="fas fa-print"></i></a>
 
                                 </td>
                             </tr>

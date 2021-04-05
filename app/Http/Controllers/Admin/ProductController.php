@@ -187,8 +187,11 @@ class ProductController extends Controller
                 Storage::delete($image->image);
                 $image->delete();
             }
-            foreach ($product->product_details as $product_detail) {
-                $product_detail->delete();
+            foreach ($product->sizes as $size) {
+                foreach ($size->colors as $color){
+                    $color->delete();
+                }
+                $size->delete();
             }
             $product->delete();
         } catch (\Exception $e) {

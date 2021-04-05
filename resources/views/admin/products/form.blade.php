@@ -114,7 +114,7 @@
 
     </div>
     <div class="d-flex justify-content-around flex-wrap">
-        @for( $i = 0 ; $i <10 ; $i++)
+        @for( $i = 0 ; $i <20 ; $i++)
             <div class="add-cate-img">
                 <img src="{{isset($product->images[$i]) ? $product->images[$i]->image_url : null}}"
                      id="imagePreview-{{$i}}" alt="{{isset($product->images[$i]) ? $product->name : ''}}"
