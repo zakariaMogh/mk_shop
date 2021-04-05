@@ -124,6 +124,10 @@
                         <div class="col-lg-7"></div>
                         <div class="col-lg-5">
                             <div class="select-status">
+                                <label for="link">Lien</label>
+                                <div class="input-group mb-2">
+                                    <a href="{{$order->tracking_link}}" target="_blank">Track link</a>
+                                </div>
                                 <label for="status">Status*</label>
                                 @if($order->state === 'pending')
                                     <div class="status-active">

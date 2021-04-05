@@ -24,6 +24,7 @@ class Order extends Model
         'shipping',
         'shipping_type',
         'shipping_location',
+        'tracking_link'
     ];
 
     protected $with = ['user'];

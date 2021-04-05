@@ -67,22 +67,27 @@
                                                 <tr>
                                                     <td>{{$color->id}}</td>
                                                     <td>
-                                                        <a href="{{route('admin.products.show', $color->size->product->id)}}" target="_blank">{{$color->size->product->name}}</a>
+                                                        <a href="{{route('admin.products.show', $color->size->product->id)}}"
+                                                           target="_blank">{{$color->size->product->name}}</a>
                                                     </td>
                                                     <td class="text-center">{{$color->size->size}}</td>
                                                     <td class="text-center">
-                                                        <input type="color" value="{{$color->color}}" class="form-control" disabled>
+                                                        <input type="color" value="{{$color->color}}"
+                                                               class="form-control" disabled>
 
                                                     </td>
                                                     <td class="text-center">
                                                         @if($color->size->product->cashback > 0)
-                                                            <s>{{$color->size->product->price}} </s>{{$color->size->product->current_price}} DZD
+                                                            <s>{{$color->size->product->price}} </s>{{$color->size->product->current_price}}
+                                                            DZD
                                                         @else
                                                             {{$color->size->product->price}} DZD
                                                         @endif
                                                     </td>
                                                     <td class="text-center">{{$color->pivot->qte}}</td>
-                                                    <td class="text-center">{{$color->size->product->current_price * $color->pivot->qte}} DZD</td>
+                                                    <td class="text-center">{{$color->size->product->current_price * $color->pivot->qte}}
+                                                        DZD
+                                                    </td>
                                                 </tr>
                                             @endforeach
                                             </tbody>
@@ -128,18 +133,32 @@
                                 @csrf
                                 @method('PUT')
                                 <div class="select-status">
+                                    <label for="link">Lien</label>
+                                    <div class="input-group mb-2">
+                                        <input type="text" name="tracking_link" class="form-control" id="link"
+                                               placeholder="Lien de suivi de la command"
+                                               value="{{$order->tracking_link}}">
+                                    </div>
                                     <label for="status">Status*</label>
-                                    <div class="input-group">
+                                    <div class="input-group mb-2">
                                         <select id="status" name="state" class="custom-select ">
-                                            <option value="pending" {{$order->state === 'pending' ? 'selected' : ''}}>En attente</option>
-                                            <option value="processing" {{$order->state === 'processing' ? 'selected' : ''}}>En traitement</option>
-                                            <option value="validated" {{$order->state === 'validated' ? 'selected' : ''}}>Validée</option>
-                                            <option value="canceled" {{$order->state === 'canceled' ? 'selected' : ''}}>Annulée</option>
+                                            <option
+                                                value="processing" {{$order->state === 'processing' ? 'selected' : ''}}>
+                                                En traitement
+                                            </option>
+                                            <option
+                                                value="validated" {{$order->state === 'validated' ? 'selected' : ''}}>
+                                                Validée
+                                            </option>
+                                            <option value="canceled" {{$order->state === 'canceled' ? 'selected' : ''}}>
+                                                Annulée
+                                            </option>
                                         </select>
                                         <div class="input-group-append">
                                             <button class="status-btn hover-btn" type="submit">Appliquer</button>
                                         </div>
                                     </div>
+
                                 </div>
                             </form>
                         </div>

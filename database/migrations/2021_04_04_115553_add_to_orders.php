@@ -14,7 +14,7 @@ class AddToOrders extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->string('tracking_link');
+            $table->string('tracking_link')->nullable();
         });
     }
 

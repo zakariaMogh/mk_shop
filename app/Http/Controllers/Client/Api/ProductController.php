@@ -19,8 +19,9 @@ class ProductController extends Controller
 
         if (\request()->has('trending') && \request()->get('trending') == 'true')
         {
-            $query = Product::withCount('orders');
+            $query = Product::withCount('sizes.colors.orders');
             $products = $query->orderBy('orders_count', 'desc')->take(10)->get();
+
             $response = ['products' => $products];
             return response($response, 200);
         }

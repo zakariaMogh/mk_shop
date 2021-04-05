@@ -41,7 +41,7 @@ class Product extends Model
 
     public function getImageUrlAttribute(): string
     {
-        $image = isset($this->images[0]) ? '/storage/'.$this->images[0]->image : 'admin-assets/images/category/icon-1.svg';
+        $image = isset($this->images[0]) ? '/storage/'.$this->images[0]->image : 'admin-assets/images/product/png.png';
         $this->makeHiddenIf(!\request()->is('api/products*'),'images');
         return $image;
     }

@@ -43,52 +43,25 @@ class OrderController extends Controller
     public function update($id)
     {
         $data = request()->validate([
-            'state' => 'required|string|in:validated,canceled,processing'
+            'state' => 'required|string|in:validated,canceled,processing',
+            'tracking_link' => 'nullable|sometimes|string|max:250'
         ]);
         $order = Order::findOrFail($id);
-        if ($data['state'] === 'processing' && in_array($order->state,['validated','canceled','processing'])  )
-        {
-            session()->flash('error','You can\'t return to processing state');
-            return  redirect()->back();
+
+        if ($order->state != 'canceled' && $data['state'] == 'canceled'){
+            foreach ($order->colors as $color){
+                $color->update([
+                    'quantity' => $color->quantity + $color->pivot->qte
+                ]);
+            }
         }
 
-        // validate order
-
-        if ($data['state'] === 'validated' && $order->state !== 'validated')
-        {
-            $order->user->cash += $order->cashback_sum;
-            ++$order->user->transactions;
-            if ($order->state === 'canceled')
-            {
-                $order->products->each(static function ($p){
-                    if ($p->pivot->qte < $p->qte){
-                        $p->qte -= $p->pivot->qte;
-                    }else{
-                        $p->qte = 0;
-                    }
-                    $p->save();
-                });
+        if ($order->state === 'canceled' && $data['state'] != 'canceled'){
+            foreach ($order->colors as $color){
+                $color->update([
+                    'quantity' => $color->quantity - $color->pivot->qte
+                ]);
             }
-            $order->user->save();
-        }
-
-        // canceled the order
-
-        if ($data['state'] === 'canceled' && $order->state !== 'canceled'){
-            // remove products cash back from the user cash
-            if ($order->state === 'validated')
-            {
-                --$order->user->transactions;
-                $order->user->cash -= $order->cashback_sum;
-            }
-            // update the product qte
-            $order->products->each(function ($p){
-                $p->qte += $p->pivot->qte;
-                $p->save();
-            });
-
-
-            $order->user->save();
         }
 
         $order->update($data);
