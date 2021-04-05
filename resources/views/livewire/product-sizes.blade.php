@@ -1,18 +1,16 @@
 <div>
     @foreach($inputs as $key => $value)
-        <div class="row">
-            <div class="form-group col-1">
+        <div class="row border border-1 p-2">
+            <div class="form-group w-100">
                 <label class="form-label"></label>
-                <button class="btn btn-danger " {{$key == 0 ? 'disabled' : ''}} type="button"
+                <button class="btn btn-danger btn-sm float-right" {{$key == 0 ? 'disabled' : ''}} type="button"
                         wire:click="remove({{$key}})" wire:loading.attr="disabled">X
                 </button>
-            </div>
-            <div class="form-group col-11 ">
                 <label class="form-label">Taille*</label>
                 <input type="text" class="form-control" placeholder="Maitre 0 si la taille est standard"
                        name="sizes[]" wire:model.defer="size.{{ $value }}" required>
             </div>
-            <div class="form-group col-6 offset-1">
+            <div class="form-group col-12">
                 @if(!empty($product->sizes[$key]))
 {{--                    :size="$product->sizes[$key]"--}}
                     <livewire:size-colors :sizeId="$key" :size="$product->sizes[$key]" :key="$key"/>

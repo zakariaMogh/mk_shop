@@ -1,6 +1,6 @@
 <div>
     @foreach($color_inputs as $color_key => $color_value)
-        <div class="row">
+        <div class="row border border-1 mt-1">
             <div class="form-group col-4">
                 <label class="form-label">Couleur*</label>
                 <input type="color" class="form-control" placeholder="Couleur"
@@ -13,14 +13,14 @@
             </div>
             <div class="form-group col-4">
                 <div class="d-flex align-items-end h-75">
-                    <button class="btn btn-danger ml-auto" {{$color_key == 0 ? 'disabled' : ''}} type="button"
+                    <button class="btn btn-danger ml-auto btn-sm" {{$color_key == 0 ? 'disabled' : ''}} type="button"
                             wire:click="remove({{$color_key}})" wire:loading.attr="disabled">X
                     </button>
                 </div>
             </div>
         </div>
     @endforeach
-    <div class="w-100 d-flex">
+    <div class="w-100 d-flex m-2">
         <button class="btn btn-success ml-auto" type="button" wire:click="add_color({{$j}})"  wire:loading.attr="disabled">Ajouter une couleur</button>
     </div>
 
