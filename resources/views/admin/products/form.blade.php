@@ -117,7 +117,7 @@
         @for( $i = 0 ; $i <20 ; $i++)
             <div class="add-cate-img">
                 <img src="{{asset(isset($product->images[$i]) ? 'storage/'.$product->images[$i]->image : '')}}"
-                     id="imagePreview-{{$i}}"
+                     id="imagePreview-{{$i}}" alt=""
                      class="image-preview">
             </div>
         @endfor
