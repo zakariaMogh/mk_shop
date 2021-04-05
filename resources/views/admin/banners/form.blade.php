@@ -44,6 +44,6 @@
         </div>
     </div>
     <div class="add-cate-img-1">
-        <img src="{{$banner->image_url}}" alt="{{$banner->name ?? 'default image'}}" id="preview">
+        <img src="{{asset($banner->image_url)}}" alt="{{$banner->name ?? 'default image'}}" id="preview">
     </div>
 </div>

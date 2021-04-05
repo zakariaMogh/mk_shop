@@ -34,8 +34,10 @@ class Product extends Model
     {
         $quantity = 0;
         foreach ($this->sizes as $size){
-            $quantity += $size->size_quantity;
+            foreach ($size->colors as $color)
+            $quantity += $color->quantity;
         }
+
         return $quantity > 0 ? 'active' : 'inactive';
     }
 

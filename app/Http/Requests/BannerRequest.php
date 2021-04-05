@@ -26,7 +26,7 @@ class BannerRequest extends FormRequest
         $rules = [
             'title' => 'required|string|max:200',
             'link' => 'required|string|max:600',
-            'image' => 'sometimes|required|file|image|max:2000',
+            'image' => 'required|file|image|max:2000',
         ];
         if ($this->method() === 'PUT')
         {
