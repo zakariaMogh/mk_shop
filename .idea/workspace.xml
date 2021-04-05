@@ -10,7 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="Soft delete&#10;design changements&#10;validation in french">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="small fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +220,7 @@
       <workItem from="1617400618592" duration="13000" />
       <workItem from="1617441359469" duration="19273000" />
       <workItem from="1617525911645" duration="12504000" />
-      <workItem from="1617620893616" duration="12985000" />
+      <workItem from="1617620893616" duration="13461000" />
     </task>
     <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
       <created>1615462701162</created>
@@ -529,7 +530,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617654160745</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="small fix">
+      <created>1617654393364</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1617654393364</updated>
+    </task>
+    <task id="LOCAL-00046" summary="small fix">
+      <created>1617654527120</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1617654527120</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +563,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="categories show" />
     <MESSAGE value="color / size" />
     <MESSAGE value="product with size / color" />
     <MESSAGE value="fixed product : colors and sizes" />
@@ -573,7 +587,8 @@
     <MESSAGE value="fixed tracking link nullable / added tracking link to admin panel&#10;fixed admin panel &#10;default images" />
     <MESSAGE value="fixed some stuff" />
     <MESSAGE value="Soft delete&#10;design changements&#10;validation in french" />
-    <option name="LAST_COMMIT_MESSAGE" value="Soft delete&#10;design changements&#10;validation in french" />
+    <MESSAGE value="small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617650509858">
@@ -584,9 +599,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617621076906" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617654165850">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617654530309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617654165850" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617654530309" />
   </component>
 </project>

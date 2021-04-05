@@ -116,7 +116,7 @@
     <div class="d-flex justify-content-around flex-wrap">
         @for( $i = 0 ; $i <20 ; $i++)
             <div class="add-cate-img">
-                <img src="{{asset($product->image_url)}}"
+                <img src="{{asset(isset($product->images[$i]) ? 'storage/'.$product->images[$i]->image : '')}}"
                      id="imagePreview-{{$i}}" alt="{{isset($product->images[$i]) ? $product->name : ''}}"
                      class="image-preview">
             </div>
