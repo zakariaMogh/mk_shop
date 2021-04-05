@@ -33,12 +33,28 @@
                                 <span class="right-dt">{{$product->price}} DZD</span>
                             </div>
                             <div class="shopowner-dt-list">
-                                <span class="left-dt">Cash-back</span>
-                                <span class="right-dt">{{$product->cashback}}%</span>
+                                <span class="left-dt">Prix aprer promotion</span>
+                                <span class="right-dt">{{$product->cashback}}</span>
+                            </div>
+                            <div class="shopowner-dt-list">
+                                <span class="left-dt">Tailles</span>
+                                <span class="right-dt">
+                                    @foreach($product->sizes as $size)
+                                        {{$size->size}} @if(!$loop->last) / @endif
+                                    @endforeach
+                                </span>
                             </div>
                             <div class="shopowner-dt-list">
                                 <span class="left-dt">Couleur</span>
-                                <span class="right-dt">{{$product->color}}</span>
+                                <span class="right-dt d-flex">
+                                    @foreach($product->sizes as $size)
+                                        @foreach($size->colors as $color)
+                                            <div class="form-control" style="background-color:  {{$color->color}}">
+                                            </div>
+
+                                        @endforeach
+                                    @endforeach
+                                </span>
                             </div>
                             <div class="shopowner-dt-list">
                                 <span class="left-dt">Marque</span>
@@ -59,6 +75,26 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach($product->images as $image)
+                        <div class="carousel-item @if($loop->first) active @endif">
+                            <img class="d-block w-100" src="{{asset($image->image_url)}}" alt="First slide">
+                        </div>
+                    @endforeach
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
         </div>
     </div>
 

@@ -38,7 +38,7 @@ class Order extends Model
 
     public function colors(): BelongsToMany
     {
-        return $this->belongsToMany(Color::class)->withPivot('qte');
+        return $this->belongsToMany(Color::class)->withPivot('qte')->withTrashed();
     }
 
     public function user(): BelongsTo
