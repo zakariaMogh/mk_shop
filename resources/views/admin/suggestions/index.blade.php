@@ -46,7 +46,7 @@
 {{--                                        <a href="{{route('admin.suggestions.show',$suggestion->id)}}" class="view-shop-btn"--}}
 {{--                                           title="View"><i class="fas fa-eye"></i></a>--}}
                                         {{--                                    <a href="{{route('admin.suggestions.edit',$suggestion->id)}}" class="view-shop-btn" title="View"><i class="fas fa-edit"></i></a>--}}
-                                        <form action="{{route('admin.suggestions.destroy', $suggestion->pivot->id)}}" method="post"
+                                        <form action="{{route('admin.suggestions.destroy', $suggestion->id)}}" method="post"
                                               id="delete-suggestion-form">
                                             @csrf
                                             @method('delete')
