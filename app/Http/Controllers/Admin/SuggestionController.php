@@ -22,9 +22,9 @@ class SuggestionController extends Controller
      * @return \Illuminate\Contracts\View\View
      * @throws \Exception
      */
-    public function delete(Suggestion $suggestion){
+    public function destroy(Suggestion $suggestion){
         $suggestion->delete();
         session()->flash('success', 'Suggestion deleted successfully');
-        return view('admin.suggestions.index');
+        return redirect()->route('admin.suggestions.index');
     }
 }
