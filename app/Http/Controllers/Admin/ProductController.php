@@ -18,7 +18,6 @@ class ProductController extends Controller
      *
      * @return Response
      */
-///->withSum('sizes', 'size_quantity');
     public function index(): View
     {
         $query = Product::with(['categories', 'images', 'sizes']);
@@ -109,7 +108,8 @@ class ProductController extends Controller
     public function show(Product $product): View
     {
         $product->load('categories');
-        return  view('admin.products.show',compact('product'));
+        $reviews = $product->reviews()->paginate(10);
+        return  view('admin.products.show',compact('product', 'reviews'));
     }
 
     /**

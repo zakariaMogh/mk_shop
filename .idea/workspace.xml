@@ -10,10 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="aw ana li bghel normalement ntesti f local">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="temporarly fixed trending">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/suggestions/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/suggestions/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Color.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Color.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SizeColors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SizeColors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/partials/sideBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/sideBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-colors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-colors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,20 +173,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\resources\views\admin" />
       <recent name="C:\wamp64\www\mk_shop\resources\views" />
       <recent name="C:\wamp64\www\mk_shop\public\admin-assets\images\product" />
       <recent name="C:\wamp64\www\mk_shop\public\admin-assets\images\category" />
       <recent name="C:\wamp64\www\mk_shop\app\Http\Controllers\Client\Api" />
-      <recent name="C:\wamp64\www\mk_shop\app\Http\Controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\mk_shop\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -222,14 +230,8 @@
       <workItem from="1617441359469" duration="19273000" />
       <workItem from="1617525911645" duration="12504000" />
       <workItem from="1617620893616" duration="14137000" />
-      <workItem from="1617697838228" duration="4031000" />
-    </task>
-    <task id="LOCAL-00001" summary="first commit / database/ models / routes / auth / controllers">
-      <created>1615462701162</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1615462701162</updated>
+      <workItem from="1617697838228" duration="4145000" />
+      <workItem from="1617807985302" duration="6846000" />
     </task>
     <task id="LOCAL-00002" summary="admin panel set up">
       <created>1615888189611</created>
@@ -567,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617655443244</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="temporarly fixed trending">
+      <created>1617701900574</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1617701900575</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +595,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="product with size / color" />
     <MESSAGE value="fixed product : colors and sizes" />
     <MESSAGE value="fixed product : colors and sizes #2" />
     <MESSAGE value="Updated order table &#10;Created order_color table&#10;store order function" />
@@ -611,20 +619,21 @@
     <MESSAGE value="Soft delete&#10;design changements&#10;validation in french" />
     <MESSAGE value="small fix" />
     <MESSAGE value="aw ana li bghel normalement ntesti f local" />
-    <option name="LAST_COMMIT_MESSAGE" value="aw ana li bghel normalement ntesti f local" />
+    <MESSAGE value="temporarly fixed trending" />
+    <option name="LAST_COMMIT_MESSAGE" value="temporarly fixed trending" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617699232246">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617820864707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617699232246" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617621076906">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617820864707" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617701985161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617621076906" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617655446872">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617701985161" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617701918466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617655446872" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617701918466" />
   </component>
 </project>

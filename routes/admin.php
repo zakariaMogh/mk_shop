@@ -24,7 +24,6 @@ Route::middleware('auth:admin')->group(static function(){
     Route::resource('banners','BannerController')
         ->except('show');
 
-    //Route::post('products/multiple/destroy','ProductController@multipleDelete')->name('products.multiple.destroy');
     Route::resource('products','ProductController');
 
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
@@ -34,22 +33,10 @@ Route::middleware('auth:admin')->group(static function(){
 
     Route::get('/{id}/print','OrderController@printInvoice')->name('invoice.print');
 
-
-//    Route::prefix('order')->as('orders.')->group(static function (){
-//        Route::get('/','OrderController@index')->name('index');
-//        Route::put('/{id}','OrderController@update')->name('update');
-//        Route::get('/{id}/edit','OrderController@edit')->name('edit');
-////        Route::get('/last','OrderController@latest')->name('last');
-//        Route::get('/{id}','OrderController@show')->name('show');
-//        Route::get('/{id}/print','OrderController@printInvoice')->name('invoice.print');
-//
-//    });
-
     Route::resource('deliveries','DeliveryController')->except(['destroy', 'update', 'create', 'edit']);
 
-//    Route::prefix('settings')->as('settings.')->group(static function (){
-////        Route::post('/','SettingController@update')->name('update');
-////        Route::get('/','SettingController@shipping')->name("shipping");
-//
-//    });
+    Route::resource('reviews','ReviewController')->except(['index', 'update', 'create', 'edit', 'store']);
+
+    Route::resource('suggestions','SuggestionController')->except(['update', 'create', 'edit', 'store']);
+
 });

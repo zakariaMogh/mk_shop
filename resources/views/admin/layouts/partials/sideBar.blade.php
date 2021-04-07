@@ -46,6 +46,10 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-truck"></i></div>
                     Livrasion
                 </a>
+                <a class="nav-link {{request()->is('admin/suggestions') ? 'active' : ''}}" href="{{route('admin.suggestions.index')}}">
+                    <div class="sb-nav-link-icon"><i class="far fa-lightbulb"></i></div>
+                    Suggestion
+                </a>
             </div>
         </div>
     </nav>

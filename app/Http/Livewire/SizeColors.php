@@ -36,7 +36,7 @@ class SizeColors extends Component
             $this->quantity = [];
             foreach ($this->size->colors as $color_key => $color){
                 array_push($this->quantity ,$color->quantity);
-                array_push($this->color ,$color->color);
+                array_push($this->color ,'#'.$color->color);
                 array_push($this->color_inputs ,$color_key);
             }
         }elseif(!empty($this->colors)){

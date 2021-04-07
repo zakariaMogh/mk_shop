@@ -9,7 +9,7 @@
             <div class="form-group col-4">
                 <label class="form-label">Qte*</label>
                 <input type="number" class="form-control" placeholder="000"
-                       name="quantities[{{$sizeId}}][]" required wire:model.defer="quantity.{{ $color_value }}">
+                       name="quantities[{{$sizeId}}][]" required wire:model.defer="quantity.{{ $color_value }}" >
             </div>
             <div class="form-group col-4">
                 <div class="d-flex align-items-end h-75">

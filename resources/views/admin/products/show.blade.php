@@ -49,7 +49,7 @@
                                 <span class="right-dt d-flex">
                                     @foreach($product->sizes as $size)
                                         @foreach($size->colors as $color)
-                                            <div class="form-control" style="background-color:  {{$color->color}}">
+                                            <div class="form-control" style="background-color:  #{{$color->color}}">
                                             </div>
 
                                         @endforeach
@@ -95,6 +95,59 @@
                 </a>
             </div>
 
+        </div>
+        <div class="col-lg-12 col-md-12">
+            <div class="card card-static-2 mt-30 mb-30">
+                <div class="card-title-2">
+                    <h4>Tous les commentaires</h4>
+                </div>
+                @include('admin.layouts.partials.messages')
+                <div class="card-body-table">
+                    <div class="table-responsive">
+                        <table class="table ucp-table table-hover">
+                            <thead>
+                            <tr>
+                                <th style="width:60px">ID</th>
+                                <th>Client</th>
+                                <th>Note</th>
+                                <th>Commentaire</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{--                            <form id="deleteForm" action="{{route('admin.products.multiple.destroy')}}" method="post">--}}
+                            {{--                                @csrf--}}
+                            @foreach($reviews as $review)
+                                <tr>
+                                    {{--                                <td><input type="checkbox" class="check-item action-check" name="ids[]" value="{{$product->id}}"></td>--}}
+                                    <td>{{$review->pivot->id}}</td>
+                                    <td>{{$review->username}}</td>
+                                    <td>{{$review->pivot->rate}} / 5</td>
+                                    <td>{{$review->pivot->comment}}</td>
+                                    <td class="action-btns">
+                                        <form action="{{route('admin.reviews.destroy', $review->pivot->id)}}" method="post"
+                                              id="delete-review-form">
+                                            @csrf
+                                            @method('delete')
+                                            <button class="delete-btn btn p-0" onclick="return confirm('Voulez vous vraiment supprimer ce commentaire')"
+                                                    id="delete-review">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            {{--                            </form>--}}
+
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-center">
+                            {{$reviews->onEachSide(1)->withQueryString()->links()}}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

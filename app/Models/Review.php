@@ -10,13 +10,15 @@ class Review extends Pivot
 {
     use HasFactory;
 
+    protected $table = 'reviews';
+
 
     protected $fillable = [
         'rate',
         'comment'
     ];
 
-    protected $with = ['user','product'];
+    protected $with = ['user', 'product'];
 
     public function user(): BelongsTo
     {
