@@ -72,8 +72,8 @@
                                                     </td>
                                                     <td class="text-center">{{$color->size->size}}</td>
                                                     <td class="text-center">
-                                                        <input type="color" value="{{$color->color}}"
-                                                               class="form-control" disabled>
+                                                        <div class="form-control" style="background-color: {{$color->color}}">
+                                                        </div>
 
                                                     </td>
                                                     <td class="text-center">

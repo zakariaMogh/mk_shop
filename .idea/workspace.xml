@@ -10,10 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="passport route">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="design changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,14 +226,9 @@
       <workItem from="1617807985302" duration="7460000" />
       <workItem from="1617824422427" duration="15000" />
       <workItem from="1618130691123" duration="907000" />
-      <workItem from="1618133919385" duration="1573000" />
-    </task>
-    <task id="LOCAL-00007" summary="passport install routes">
-      <created>1616351680109</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1616351680109</updated>
+      <workItem from="1618133919385" duration="1894000" />
+      <workItem from="1618147728455" duration="529000" />
+      <workItem from="1618169781773" duration="205000" />
     </task>
     <task id="LOCAL-00008" summary="passport install routes">
       <created>1616351875110</created>
@@ -571,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618131695221</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="design changes">
+      <created>1618135877152</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1618135877152</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +592,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated order table &#10;Created order_color table&#10;store order function" />
     <MESSAGE value="migration route" />
     <MESSAGE value="Removed # from colors / Fixed orders / Migration : shipping location" />
     <MESSAGE value="Delivery controller + route" />
@@ -615,7 +616,8 @@
     <MESSAGE value="temporarly fixed trending" />
     <MESSAGE value="some changes" />
     <MESSAGE value="passport route" />
-    <option name="LAST_COMMIT_MESSAGE" value="passport route" />
+    <MESSAGE value="design changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="design changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617820864707">
@@ -626,9 +628,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617824435748" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1618131698750">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1618136085906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618131698750" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618136085906" />
   </component>
 </project>
