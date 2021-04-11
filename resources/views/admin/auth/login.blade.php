@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description-gambolthemes" content="">
     <meta name="author-gambolthemes" content="">
+    <link rel="icon" href="{{asset('logo/favicon.png')}}">
     <title>Login Admin</title>
     <link href="{{asset('admin-assets/css/styles.css')}}" rel="stylesheet">
     <link href="{{asset('admin-assets/css/admin-style.css')}}" rel="stylesheet">
@@ -18,7 +19,7 @@
 
 </head>
 
-<body class="bg-sign">
+<body style="background-color: #ffb79b">
 <div id="layoutAuthentication">
     <div id="layoutAuthentication_content">
         <main>
@@ -26,8 +27,9 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-5">
                         <div class="card shadow-lg border-0 rounded-lg mt-5">
-                            <div class="card-header card-sign-header">
-                                <h3 class="text-center font-weight-light my-4">S'identifier</h3>
+                            <div class="card-header card-sign-header text-center">
+                                <img src="{{asset('logo/mk_logo.png')}}">
+{{--                                <h3 class="text-center font-weight-light my-4">S'identifier</h3>--}}
                             </div>
                             <div class="card-body">
                                 @if ($errors->any())
@@ -52,7 +54,7 @@
                                                placeholder="Mot de passe" name="password">
                                     </div>
                                     <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                        <button class="btn btn-sign hover-btn" href="">S'identifier</button>
+                                        <button class="btn btn-sign hover-btn" style="background-color: #ffb79b !important;">S'identifier</button>
                                     </div>
                                 </form>
                             </div>

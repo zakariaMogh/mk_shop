@@ -10,9 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some changes">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="passport route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,14 +225,8 @@
       <workItem from="1617697838228" duration="4145000" />
       <workItem from="1617807985302" duration="7460000" />
       <workItem from="1617824422427" duration="15000" />
-      <workItem from="1618130691123" duration="629000" />
-    </task>
-    <task id="LOCAL-00006" summary="Bug fix">
-      <created>1616350711466</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1616350711466</updated>
+      <workItem from="1618130691123" duration="907000" />
+      <workItem from="1618133919385" duration="1573000" />
     </task>
     <task id="LOCAL-00007" summary="passport install routes">
       <created>1616351680109</created>
@@ -569,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617821590500</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="passport route">
+      <created>1618131695221</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1618131695221</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +590,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed product : colors and sizes #2" />
     <MESSAGE value="Updated order table &#10;Created order_color table&#10;store order function" />
     <MESSAGE value="migration route" />
     <MESSAGE value="Removed # from colors / Fixed orders / Migration : shipping location" />
@@ -613,7 +614,8 @@
     <MESSAGE value="aw ana li bghel normalement ntesti f local" />
     <MESSAGE value="temporarly fixed trending" />
     <MESSAGE value="some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+    <MESSAGE value="passport route" />
+    <option name="LAST_COMMIT_MESSAGE" value="passport route" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617820864707">
@@ -624,9 +626,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617824435748" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617821593276">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1618131698750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617821593276" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618131698750" />
   </component>
 </project>
