@@ -87,7 +87,7 @@ class CategoryController extends Controller
     public function edit(Category $category)
     {
         if (\request()->is('admin/sub/categories*')){
-            $parent = Category::where('id', '<>', $category->id)->orderBy('name')->get();
+            $parent = Category::mainCategories()->orderBy('name')->get();
             return view('admin.categories.edit',compact('category','parent'));
         }
         return view('admin.categories.edit',compact('category'));

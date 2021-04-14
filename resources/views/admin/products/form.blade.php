@@ -15,7 +15,8 @@
     @enderror
 </div>
 
-@include('admin.categories.partials.sub_categories')
+{{--@include('admin.categories.partials.sub_categories')--}}
+<livewire:categories :categories="$parentCategories">
 
 
 <div class="form-group">
