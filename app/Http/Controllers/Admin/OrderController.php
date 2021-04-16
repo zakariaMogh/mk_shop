@@ -17,6 +17,7 @@ class OrderController extends Controller
                 \App\QueryFilters\Sort::class,
                 \App\QueryFilters\OrderSearch::class,
                 \App\QueryFilters\State::class,
+                \App\QueryFilters\Client::class,
             ])
             ->thenReturn()
             ->orderBy('created_at','desc')

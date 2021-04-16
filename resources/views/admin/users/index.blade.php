@@ -65,8 +65,11 @@
                                     <td>{{$user->email}}</td>
                                     <td>{{$user->phone_1}}</td>
                                     <td class="action-btns">
+                                        <a href="{{route('admin.orders.index',['client' => $user->id])}}" class="view-shop-btn"
+                                           title="View"><i class="fas fa-list"></i></a>
                                         <a href="{{route('admin.users.show',$user->id)}}" class="view-shop-btn"
                                            title="View"><i class="fas fa-eye"></i></a>
+
                                         {{--                                    <a href="{{route('admin.users.edit',$user->id)}}" class="view-shop-btn" title="View"><i class="fas fa-edit"></i></a>--}}
 {{--                                        <a href="javascript:void(0)" onclick="deleteRecord({{$user->id}})"--}}
 {{--                                           class="delete-btn" title="delete"><i class="fas fa-trash-alt"></i></a>--}}
