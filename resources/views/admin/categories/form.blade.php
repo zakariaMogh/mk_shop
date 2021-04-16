@@ -45,6 +45,6 @@
 
     </div>
     <div class="add-cate-img">
-        <img src="{{asset($category->image_url)}}" id="imagePreview" alt="{{$category->name ?? 'default image'}}">
+        <img src="{{asset($category->image_url)}}" id="imagePreview" alt="">
     </div>
 </div>

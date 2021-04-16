@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+Route::get('', [\App\Http\Controllers\Admin\AuthController::class, 'create']);
 
 
 Route::get('artisan', function (){
