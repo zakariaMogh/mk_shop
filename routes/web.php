@@ -28,11 +28,10 @@ Route::get('migrate', function (){
 
 Route::get('install_passport', function (){
 //    //\Illuminate\Support\Facades\Artisan::call("migrate");
-//    \Illuminate\Support\Facades\Artisan::call("passport:install");
-//    \Illuminate\Support\Facades\Artisan::call("passport:keys");
-//    \Illuminate\Support\Facades\Artisan::call("config:clear");
+    \Illuminate\Support\Facades\Artisan::call("passport:install");
     \Illuminate\Support\Facades\Artisan::call("passport:keys");
-
+    \Illuminate\Support\Facades\Artisan::call("passport:keys");
+    \Illuminate\Support\Facades\Artisan::call("config:clear");
     return "done";
 });
 
