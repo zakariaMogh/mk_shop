@@ -75,7 +75,7 @@ class AuthController extends Controller
             $response = ['token' => $token];
             return response($response, 200);
         }
-        return response('Oops something went wrong', 422);
+        return response(["message" =>'Oops something went wrong'], 422);
 
 
     }
