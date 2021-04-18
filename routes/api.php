@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::post('login',[AuthController::class, 'login'])->name('login');
 Route::post('register',[AuthController::class, 'register'])->name('register');
 
+Route::post('login/social',[AuthController::class, 'loginSocial'])->name('login.social');
+
 Route::post('forgot-password', 'ForgotPasswordController@store');
 Route::post('code-confirmation', 'ForgotPasswordController@codeConfirmation');
 Route::post('reset-password', 'ForgotPasswordController@resetPassword');

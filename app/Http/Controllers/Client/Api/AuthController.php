@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Client\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Services\SocialUserResolver;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Laravel\Socialite\Facades\Socialite;
 
 class AuthController extends Controller
 {
@@ -15,7 +17,7 @@ class AuthController extends Controller
             'phone_1'           => ['required', 'regex:/^([0-9\s\-\+\(\)]*)$/','min:10'],
             'username'          => ['required', 'string', 'max:255','unique:users,username'],
             'email'             => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password'          => ['required', 'string', 'min:8', 'confirmed', 'max:100'],
+            'password'          => ['nullable', 'sometimes', 'string', 'min:8', 'confirmed', 'max:100'],
         ]);
         if ($validator->fails())
         {
@@ -43,7 +45,7 @@ class AuthController extends Controller
         $user = User::where('email', $request->email)->first();
         if ($user) {
             if (Hash::check($request->password, $user->password)) {
-                $token = $user->createToken('Print pic client token')->accessToken;
+                $token = $user->createToken('Mk shop client token')->accessToken;
                 $response = ['token' => $token];
                 return response($response, 200);
             } else {
@@ -54,5 +56,23 @@ class AuthController extends Controller
             $response = ["message" =>'User does not exist'];
             return response($response, 205);
         }
+    }
+
+
+    public function loginSocial (Request $request) {
+        $validator = Validator::make($request->all(), [
+            'provider' => 'required|string|in:facebook,google',
+            'access_token' => 'required',
+        ]);
+        if ($validator->fails())
+        {
+            return response(['errors'=>$validator->errors()->all()], 422);
+        }
+
+        $user = (new SocialUserResolver())->resolveUserByProviderCredentials($request->provider, $request->access_token);
+        $token = $user->createToken('Mk shop client token')->accessToken;
+        $response = ['token' => $token];
+        return response($response, 200);
+
     }
 }

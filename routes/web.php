@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('', [\App\Http\Controllers\Admin\AuthController::class, 'create']);
 
+Route::view('privacy_policies', 'privacy_policies')->name('privacy_policies');
+
 //
 //Route::get('artisan', function (){
 //    \Illuminate\Support\Facades\Artisan::call("migrate:fresh --seed");
