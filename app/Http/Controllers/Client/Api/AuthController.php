@@ -70,9 +70,13 @@ class AuthController extends Controller
         }
 
         $user = (new SocialUserResolver())->resolveUserByProviderCredentials($request->provider, $request->access_token);
-        $token = $user->createToken('Mk shop client token')->accessToken;
-        $response = ['token' => $token];
-        return response($response, 200);
+        if ($user){
+            $token = $user->createToken('Mk shop client token')->accessToken;
+            $response = ['token' => $token];
+            return response($response, 200);
+        }
+        return response('Oops something went wrong', 422);
+
 
     }
 }

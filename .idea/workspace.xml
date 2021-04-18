@@ -10,8 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="conf route">
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="mn3rf">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/SocialUserResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/SocialUserResolver.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,14 +241,7 @@
       <workItem from="1618598773279" duration="175000" />
       <workItem from="1618733597274" duration="7900000" />
       <workItem from="1618754366951" duration="697000" />
-      <workItem from="1618755072441" duration="829000" />
-    </task>
-    <task id="LOCAL-00022" summary="Removed # from colors / Fixed orders / Migration : shipping location">
-      <created>1617181835962</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1617181835962</updated>
+      <workItem from="1618755072441" duration="989000" />
     </task>
     <task id="LOCAL-00023" summary="Delivery controller + route">
       <created>1617190379930</created>
@@ -584,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618755609959</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="mn3rf">
+      <created>1618755931040</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1618755931040</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +605,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="get user orders" />
     <MESSAGE value="note in all products&#10;Some optimisation" />
     <MESSAGE value="get one review by product" />
     <MESSAGE value="get one order / optimised get all orders" />
@@ -628,7 +629,8 @@
     <MESSAGE value="migrate link" />
     <MESSAGE value="fix" />
     <MESSAGE value="conf route" />
-    <option name="LAST_COMMIT_MESSAGE" value="conf route" />
+    <MESSAGE value="mn3rf" />
+    <option name="LAST_COMMIT_MESSAGE" value="mn3rf" />
   </component>
   <component name="WindowStateProjectService">
     <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618747918001">
@@ -651,10 +653,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618748211002" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1618755612752">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1618755934562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618755612752" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618755934561" />
     <state x="752" y="379" key="scopes" timestamp="1618747973912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
