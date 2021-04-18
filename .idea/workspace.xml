@@ -10,24 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="client orders">
-      <change afterPath="$PROJECT_DIR$/app/Services/SocialService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/SocialUserResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/privacy_policies.blade.php" afterDir="false" />
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="migrate link">
       <change beforePath="$PROJECT_DIR$/.idea/mk_shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mk_shop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/SocialUserResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/SocialUserResolver.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_03_101234_add_phone_to_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_03_101234_add_phone_to_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +51,6 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
@@ -169,7 +156,6 @@
       <path value="$PROJECT_DIR$/vendor/biscolab/laravel-recaptcha" />
       <path value="$PROJECT_DIR$/vendor/laravel-validation-rules/colour" />
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
-      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
       <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
       <path value="$PROJECT_DIR$/vendor/coderello/laravel-passport-social-grant" />
     </include_path>
@@ -256,21 +242,8 @@
       <workItem from="1618582546364" duration="611000" />
       <workItem from="1618598773279" duration="175000" />
       <workItem from="1618733597274" duration="7900000" />
-      <workItem from="1618754366951" duration="51000" />
-    </task>
-    <task id="LOCAL-00018" summary="fixed product : colors and sizes">
-      <created>1617117399867</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1617117399867</updated>
-    </task>
-    <task id="LOCAL-00019" summary="fixed product : colors and sizes #2">
-      <created>1617118738212</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1617118738212</updated>
+      <workItem from="1618754366951" duration="697000" />
+      <workItem from="1618755072441" duration="383000" />
     </task>
     <task id="LOCAL-00020" summary="Updated order table &#10;Created order_color table&#10;store order function">
       <created>1617136658651</created>
@@ -601,7 +574,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618577839921</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Connect through social accounts">
+      <created>1618754610130</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1618754610130</updated>
+    </task>
+    <task id="LOCAL-00068" summary="migrate link">
+      <created>1618754805341</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1618754805341</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,8 +607,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trending products / promotion products" />
-    <MESSAGE value="store reviews + cart check" />
     <MESSAGE value="Show product + reviews" />
     <MESSAGE value="show product fix" />
     <MESSAGE value="get user orders" />
@@ -645,7 +630,9 @@
     <MESSAGE value="passport route" />
     <MESSAGE value="removed conf routes" />
     <MESSAGE value="client orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="client orders" />
+    <MESSAGE value="Connect through social accounts" />
+    <MESSAGE value="migrate link" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrate link" />
   </component>
   <component name="WindowStateProjectService">
     <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618747918001">
@@ -668,10 +655,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618748211002" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1618577843621">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1618754891351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618577843621" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1618754891351" />
     <state x="752" y="379" key="scopes" timestamp="1618747973912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
