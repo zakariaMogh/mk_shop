@@ -23,10 +23,10 @@ Route::view('privacy_policies', 'privacy_policies')->name('privacy_policies');
 //    return "done";
 //});
 //
-//Route::get('migrate', function (){
-//    \Illuminate\Support\Facades\Artisan::call("migrate");
-//    return "done";
-//});
+Route::get('migrate', function (){
+    \Illuminate\Support\Facades\Artisan::call("migrate");
+    return "done";
+});
 //
 //Route::get('install_passport', function (){
 ////    //\Illuminate\Support\Facades\Artisan::call("migrate");
