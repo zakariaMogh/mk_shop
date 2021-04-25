@@ -16,7 +16,7 @@
 </div>
 
 {{--@include('admin.categories.partials.sub_categories')--}}
-<livewire:categories :categories="$parentCategories">
+<livewire:categories :categories="$parentCategories" :product="$product">
 
 
 <div class="form-group">

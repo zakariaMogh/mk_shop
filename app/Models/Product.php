@@ -68,6 +68,15 @@ class Product extends Model
 
     protected $appends = ['image_url', 'note'];
 
+    public function getCategoryAttribute()
+    {
+        return $this->categories->whereNull('parent_id');
+    }
+
+    public function getSubCategoryAttribute()
+    {
+        return $this->categories->whereNotNull('parent_id');
+    }
 
     public function categories(): BelongsToMany
     {
