@@ -5,7 +5,7 @@
             @if(\Illuminate\Support\Str::contains(request()->path(),'edit'))
                 <option  disabled >--Choisir une catégorie--</option>
                 @foreach($categories as $p)
-                    <option value="{{$p->id}}" {{$product->categories->contains($p->id)  ? 'selected' : ''}}>{{$p->name}}</option>
+                    <option value="{{$p->id}}" {{$p->categories->contains($p->id)  ? 'selected' : ''}}>{{$p->name}}</option>
                 @endforeach
             @else
                 <option  disabled >--Choisir une catégorie--</option>
