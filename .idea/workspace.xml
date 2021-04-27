@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="error fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,14 +248,7 @@
       <workItem from="1619374750697" duration="3640000" />
       <workItem from="1619384773231" duration="8000" />
       <workItem from="1619471807416" duration="2001000" />
-      <workItem from="1619562361638" duration="103000" />
-    </task>
-    <task id="LOCAL-00027" summary="Show product + reviews">
-      <created>1617381739299</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1617381739299</updated>
+      <workItem from="1619562361638" duration="669000" />
     </task>
     <task id="LOCAL-00028" summary="show product fix">
       <created>1617386412939</created>
@@ -593,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619379371359</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="error fixed">
+      <created>1619562486470</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1619562486470</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,10 +660,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618748211002" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619379377624">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619562491867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619379377624" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619562491867" />
     <state x="752" y="379" key="scopes" timestamp="1618747973912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

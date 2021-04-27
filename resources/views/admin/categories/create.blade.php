@@ -37,3 +37,23 @@
     </div>
 
 @endsection
+@push('js')
+
+    <script type="text/javascript" >
+        let image = document.querySelector('#imagePreview');
+        let input = document.querySelector('#inputGroupFile04')
+
+        input.addEventListener('change',event => {
+            image.src = URL.createObjectURL(event.target.files[0])
+            image.onload = () => {
+                URL.revokeObjectURL(image.src) // free memory
+            }
+        })
+        const deleteSubmit = (message) => {
+            let deleteForm = document.getElementById(`categoryDeleteForm`)
+            confirm(message) && deleteForm.submit();
+        }
+
+    </script>
+
+@endpush
