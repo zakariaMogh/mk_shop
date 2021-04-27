@@ -75,8 +75,8 @@
                                     </div>
                                 </td>
                                 <td>{{$product->name}}</td>
-                                <td>{{isset($product->categories) && $product->categories->count() > 0 ? $product->categories->where('parent_id','=',null)->first()->name : '/'}}</td>
-                                <td>{{isset($product->categories) && $product->categories->count() > 0 ? $product->categories->where('parent_id','!=',null)->first()->name : '/'}}</td>
+                                <td>{{isset($product->categories) && $product->categories->count() > 0 ? ($product->categories->where('parent_id','=',null)->first()->name ?? '/') : '/'}}</td>
+                                <td>{{isset($product->categories) && $product->categories->count() > 0 ? ($product->categories->where('parent_id','!=',null)->first()->name ?? '/') : '/'}}</td>
                                 <td>{{$product->price}} DZD</td>
                                 <td><span class="badge-item badge-status">{{$product->state}}</span></td>
                                 <td class="action-btns">
