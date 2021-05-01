@@ -93,7 +93,7 @@
                                                         </td>
                                                         <td class="text-center">{{$color->size->size}}</td>
                                                         <td class="text-center">
-                                                            <div class="form-control" style="background-color: {{$color->color}}">
+                                                            <div class="form-control" style="background-color: {{'#'.$color->color}}">
                                                             </div>
 
                                                         </td>

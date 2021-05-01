@@ -36,7 +36,7 @@
                 </a>
                 <a class="nav-link {{request()->is('admin/users*') ? 'active' : ''}}" href="{{route('admin.users.index')}}">
                     <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
-                    Customers
+                    Clients
                 </a>
                 <a class="nav-link {{request()->is('admin/banners') ? 'active' : ''}}" href="{{route('admin.banners.index')}}">
                     <div class="sb-nav-link-icon"><i class="fas fa-ad"></i></div>

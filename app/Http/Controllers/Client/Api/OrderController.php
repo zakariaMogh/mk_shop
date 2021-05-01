@@ -96,7 +96,7 @@ class OrderController extends Controller
                 return response($response, 409);
             }
 
-            $sub_total += $product->price;
+            $sub_total += $product->price * $color['quantity'];
             $cashback_sum += ($product->cashback > 0 ? $product->cashback : $product->price);
         }
 
