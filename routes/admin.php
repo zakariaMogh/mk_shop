@@ -33,10 +33,13 @@ Route::middleware('auth:admin')->group(static function(){
 
     Route::get('/{id}/print','OrderController@printInvoice')->name('invoice.print');
 
-    Route::resource('deliveries','DeliveryController')->except(['destroy', 'update', 'create', 'edit']);
+    Route::resource('deliveries','DeliveryController')->except(['update', 'create', 'edit']);
 
     Route::resource('reviews','ReviewController')->except(['index', 'update', 'create', 'edit', 'store']);
 
     Route::resource('suggestions','SuggestionController')->except(['update', 'create', 'edit', 'store']);
+
+    Route::resource('information','InformationController')->except(['index', 'create', 'destroy', 'store']);
+
 
 });

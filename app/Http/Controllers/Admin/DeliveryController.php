@@ -33,7 +33,22 @@ class DeliveryController extends Controller
             ['location' => $request->location],
             ['domicile' => $request->domicile, 'bureau' => $request->bureau]
         );
+        session()->flash('success','Delivery has been created successfully');
 
+        return redirect()->route('admin.deliveries.index');
+
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param Delivery $delivery
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Delivery $delivery)
+    {
+        $delivery->delete();
+        session()->flash('success','Delivery has been deleted successfully');
         return redirect()->route('admin.deliveries.index');
 
     }

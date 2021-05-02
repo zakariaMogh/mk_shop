@@ -2,13 +2,14 @@
 
 namespace App\Providers;
 
+use App\Http\View\Composers\SideBarComposer;
 use App\Services\SocialUserResolver;
 use Coderello\SocialGrant\Resolvers\SocialUserResolverInterface;
 use Illuminate\Pagination\Paginator;
 use Laravel\Passport\Console\ClientCommand;
 use Laravel\Passport\Console\InstallCommand;
 use Laravel\Passport\Console\KeysCommand;
-use Laravel\Passport\Passport;
+use Illuminate\Support\Facades\View;
 
 
 use Illuminate\Support\Facades\Schema;
@@ -50,6 +51,7 @@ class AppServiceProvider extends ServiceProvider
             ClientCommand::class,
             KeysCommand::class,
         ]);
+        View::composer('admin.layouts.partials.sideBar', SideBarComposer::class);
 
 
     }

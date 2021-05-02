@@ -25,7 +25,7 @@ class OrderRequest extends FormRequest
     {
         $rules = [
             'name'              => 'required|string|max:200',
-            'phone'             => 'required|string|max:10|min:9',
+            'phone'             => 'required|string|max:15|min:9',
             'address'           => 'required|string|max:200',
             'wilaya'            => 'required|string|max:200',
             'province'          => 'required|string|max:200',

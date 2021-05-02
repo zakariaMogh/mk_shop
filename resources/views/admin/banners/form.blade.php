@@ -14,12 +14,12 @@
 </div>
 
 <div class="form-group">
-    <label class="form-label">Link</label>
+    <label class="form-label">Lien*</label>
     <input type="text" class="form-control @error('link') is-invalid @enderror"
            placeholder="Lien de la publicité"
            name="link"
            value="{{$banner->link ?? old('link')}}">
-    @error('title')
+    @error('link')
     <div class="invalid-feedback">
         {{$message}}
     </div>

@@ -47,11 +47,11 @@
                                     <b>Le:</b> {{$order->created_at->format('d/m/Y')}}
                                 </div>
                                 <div class="ordr-date">
-                                    <b>Adress :</b>119 Ter Rue Didouche Mourad, <br>
-                                    Alger center<br>
-                                    Alger<br>
-                                    <b>Tel :</b>+213 558 547 879<br>
-                                    <b>Email :</b>email@gmail.com<br>
+                                    <b>Adress :</b>{{$information->address ?? ''}}, <br>
+                                    {{$information->province ?? ''}}<br>
+                                    {{$information->wilaya ?? ''}}<br>
+                                    <b>Tel :</b>{{$information->phone ?? ''}}<br>
+                                    <b>Email :</b>{{$information->email ?? ''}}<br>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6">

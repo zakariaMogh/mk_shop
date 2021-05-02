@@ -10,48 +10,60 @@
     </ol>
     <div class="row">
         <div class="col-xl-3 col-md-6">
-            <div class="dashboard-report-card purple">
-                <div class="card-content">
-                    <span class="card-title">EN ATTENTE</span>
-                    <span class="card-count">{{$pending}}</span>
+            <a href="{{route('admin.orders.index', ['state' => 'pending'])}}" class="text-decoration-none">
+                <div class="dashboard-report-card purple">
+                    <div class="card-content">
+                        <span class="card-title">EN ATTENTE</span>
+                        <span class="card-count">{{$pending}}</span>
+                    </div>
+                    <div class="card-media">
+                        <i class="fab fa-rev"></i>
+                    </div>
                 </div>
-                <div class="card-media">
-                    <i class="fab fa-rev"></i>
-                </div>
-            </div>
+            </a>
+
         </div>
         <div class="col-xl-3 col-md-6">
-            <div class="dashboard-report-card red">
-                <div class="card-content">
-                    <span class="card-title">ANNULÉE</span>
-                    <span class="card-count">{{$canceled}}</span>
+            <a href="{{route('admin.orders.index', ['state' => 'canceled'])}}" class="text-decoration-none">
+
+                <div class="dashboard-report-card red">
+                    <div class="card-content">
+                        <span class="card-title">ANNULÉE</span>
+                        <span class="card-count">{{$canceled}}</span>
+                    </div>
+                    <div class="card-media">
+                        <i class="far fa-times-circle"></i>
+                    </div>
                 </div>
-                <div class="card-media">
-                    <i class="far fa-times-circle"></i>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-xl-3 col-md-6">
-            <div class="dashboard-report-card info">
-                <div class="card-content">
-                    <span class="card-title">EN TRAITEMENT</span>
-                    <span class="card-count">{{$processing}}</span>
+            <a href="{{route('admin.orders.index', ['state' => 'processing'])}}" class="text-decoration-none">
+
+                <div class="dashboard-report-card info">
+                    <div class="card-content">
+                        <span class="card-title">EN TRAITEMENT</span>
+                        <span class="card-count">{{$processing}}</span>
+                    </div>
+                    <div class="card-media">
+                        <i class="fas fa-sync-alt rpt_icon"></i>
+                    </div>
                 </div>
-                <div class="card-media">
-                    <i class="fas fa-sync-alt rpt_icon"></i>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-xl-3 col-md-6">
-            <div class="dashboard-report-card success">
-                <div class="card-content">
-                    <span class="card-title">CLIENTS</span>
-                    <span class="card-count">{{$users}}</span>
+            <a href="{{route('admin.users.index')}}" class="text-decoration-none">
+
+                <div class="dashboard-report-card success">
+                    <div class="card-content">
+                        <span class="card-title">CLIENTS</span>
+                        <span class="card-count">{{$users}}</span>
+                    </div>
+                    <div class="card-media">
+                        <i class="fas fa-users rpt_icon"></i>
+                    </div>
                 </div>
-                <div class="card-media">
-                    <i class="fas fa-users rpt_icon"></i>
-                </div>
-            </div>
+            </a>
         </div>
 
         <div class="col-xl-12 col-md-12">
@@ -103,8 +115,10 @@
                                     </td>
                                     <td>{{$order->total}} DZD</td>
                                     <td class="action-btns">
-                                        <a href="{{route('admin.orders.show',$order->id)}}" class="views-btn"><i class="fas fa-eye"></i></a>
-                                        <a href="{{route('admin.orders.edit',$order->id)}}" class="edit-btn"><i class="fas fa-edit"></i></a>
+                                        <a href="{{route('admin.orders.show',$order->id)}}" class="views-btn"><i
+                                                class="fas fa-eye"></i></a>
+                                        <a href="{{route('admin.orders.edit',$order->id)}}" class="edit-btn"><i
+                                                class="fas fa-edit"></i></a>
                                         {{--                                    <a href="{{route('admin.orders.invoice.print',$o->id)}}" class="print-btn"><i class="fas fa-print"></i></a>--}}
 
                                     </td>

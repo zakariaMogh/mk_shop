@@ -28,22 +28,23 @@ Route::view('privacy_policies', 'privacy_policies')->name('privacy_policies');
 //    return "done";
 //});
 //
-Route::get('install_passport', function (){
-//    //\Illuminate\Support\Facades\Artisan::call("migrate");
-//    \Illuminate\Support\Facades\Artisan::call("passport:install");
-//    \Illuminate\Support\Facades\Artisan::call("passport:keys");
-//    \Illuminate\Support\Facades\Artisan::call("passport:client --personal", ['--force' => true]);
-    \Illuminate\Support\Facades\Artisan::call("config:clear");
-    return "done";
-});
+//Route::get('install_passport', function (){
+////    //\Illuminate\Support\Facades\Artisan::call("migrate");
+////    \Illuminate\Support\Facades\Artisan::call("passport:install");
+////    \Illuminate\Support\Facades\Artisan::call("passport:keys");
+////    \Illuminate\Support\Facades\Artisan::call("passport:client --personal", ['--force' => true]);
+//    \Illuminate\Support\Facades\Artisan::call("config:clear");
+//    return "done";
+//});
 //
 //Route::get('storage', function (){
 //    \Illuminate\Support\Facades\Artisan::call("storage:link");
 //    return "done";
 //});
 
-//Route::get('artisan', function (){
+Route::get('artisan', function (){
 //    \Illuminate\Support\Facades\Artisan::call("migrate");
 //    \Illuminate\Support\Facades\Artisan::call("passport:install");
-//    return "done";
-//});
+    \Illuminate\Support\Facades\Artisan::call("db:seed --class=InformationTableSeeder");
+    return "done";
+});

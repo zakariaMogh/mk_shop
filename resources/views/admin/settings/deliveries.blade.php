@@ -34,64 +34,64 @@
                                     <label class="form-label">Wilaya</label>
                                     <select id="categeory" name="location" class="form-control">
                                         <option selected>--Selectioneer wilaya--</option>
-                                        <option value="Adrar">Adrar</option>
-                                        <option value="Chlef">Chlef</option>
-                                        <option value="Laghouat">Laghouat</option>
-                                        <option value="Oum El Bouaghi">Oum El Bouaghi</option>
-                                        <option value="Batna">Batna</option>
-                                        <option value="Béjaïa">Béjaïa</option>
-                                        <option value="Biskra">Biskra</option>
-                                        <option value="Béchar">Béchar</option>
-                                        <option value="Blida">Blida</option>
-                                        <option value="Bouïra">Bouïra</option>
-                                        <option value="Tamanrasset">Tamanrasset</option>
-                                        <option value="Tébessa">Tébessa</option>
-                                        <option value="Tlemcen">Tlemcen</option>
-                                        <option value="Tiaret">Tiaret</option>
-                                        <option value="Tizi Ouzou">Tizi Ouzou</option>
-                                        <option value="Alger">Alger</option>
-                                        <option value="Djelfa">Djelfa</option>
-                                        <option value="Jijel">Jijel</option>
-                                        <option value="Sétif">Sétif</option>
-                                        <option value="Saïda">Saïda</option>
-                                        <option value="Skikda">Skikda</option>
-                                        <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
-                                        <option value="Annaba">Annaba</option>
-                                        <option value="Guelma">Guelma</option>
-                                        <option value="Constantine">Constantine</option>
-                                        <option value="Médéa">Médéa</option>
-                                        <option value="Mostaganem">Mostaganem</option>
-                                        <option value="M'Sila">M'Sila</option>
-                                        <option value="Mascara">Mascara</option>
-                                        <option value="Ouargla">Ouargla</option>
-                                        <option value="Oran">Oran</option>
-                                        <option value="El Bayadh">El Bayadh</option>
-                                        <option value="Illizi">Illizi</option>
-                                        <option value="Bordj Bou Arréridj">Bordj Bou Arréridj</option>
-                                        <option value="Boumerdès">Boumerdès</option>
-                                        <option value="El Tarf">El Tarf</option>
-                                        <option value="Tindouf">Tindouf</option>
-                                        <option value="Tissemsilt">Tissemsilt</option>
-                                        <option value="El Oued">El Oued</option>
-                                        <option value="Khenchela">Khenchela</option>
-                                        <option value="Souk Ahras">Souk Ahras</option>
-                                        <option value="Tipaza">Tipaza</option>
-                                        <option value="Mila">Mila</option>
-                                        <option value="Aïn Defla">Aïn Defla</option>
-                                        <option value="Naâma">Naâma</option>
-                                        <option value="Aïn Témouchent">Aïn Témouchent</option>
-                                        <option value="Ghardaïa">Ghardaïa</option>
-                                        <option value="Relizane">Relizane</option>
-                                        <option value="El M'ghair">El M'ghair</option>
-                                        <option value="El Menia">El Menia</option>
-                                        <option value="Ouled Djellal">Ouled Djellal</option>
-                                        <option value="Bordj Baji Mokhtar">Bordj Baji Mokhtar</option>
-                                        <option value="Béni Abbès">Béni Abbès</option>
-                                        <option value="Timimoun">Timimoun</option>
-                                        <option value="Touggourt">Touggourt</option>
-                                        <option value="Djanet">Djanet</option>
-                                        <option value="In Salah">In Salah</option>
-                                        <option value="In Guezzam">In Guezzam</option>
+                                        <option value="01 - Adrar">01 - Adrar</option>
+                                        <option value="02 - Chlef">02 - Chlef</option>
+                                        <option value="03 - Laghouat">03 - Laghouat</option>
+                                        <option value="04 - Oum El Bouaghi">04 - Oum El Bouaghi</option>
+                                        <option value="05 - Batna">05 - Batna</option>
+                                        <option value="06 - Béjaïa">06 - Béjaïa</option>
+                                        <option value="07 - Biskra">07 - Biskra</option>
+                                        <option value="08 - Béchar">08 - Béchar</option>
+                                        <option value="09 - Blida">09 - Blida</option>
+                                        <option value="10 - Bouïra">10 - Bouïra</option>
+                                        <option value="11 - Tamanrasset">11 - Tamanrasset</option>
+                                        <option value="12 - Tébessa">12 - Tébessa</option>
+                                        <option value="13 - Tlemcen">13 - Tlemcen</option>
+                                        <option value="14 - Tiaret">14 - Tiaret</option>
+                                        <option value="15 - Tizi Ouzou">15 - Tizi Ouzou</option>
+                                        <option value="16 - Alger">16 - Alger</option>
+                                        <option value="17 - Djelfa">17 - Djelfa</option>
+                                        <option value="18 - Jijel">18 - Jijel</option>
+                                        <option value="19 - Sétif">19 - Sétif</option>
+                                        <option value="20 - Saïda">20 - Saïda</option>
+                                        <option value="21 - Skikda">21 - Skikda</option>
+                                        <option value="22 - Sidi Bel Abbès">22 - Sidi Bel Abbès</option>
+                                        <option value="23 - Annaba">23 - Annaba</option>
+                                        <option value="24 - Guelma">24 - Guelma</option>
+                                        <option value="25 - Constantine">25 - Constantine</option>
+                                        <option value="26 - Médéa">26 - Médéa</option>
+                                        <option value="27 - Mostaganem">27 - Mostaganem</option>
+                                        <option value="28 - M'Sila">28 - M'Sila</option>
+                                        <option value="29 - Mascara">29 - Mascara</option>
+                                        <option value="30 - Ouargla">30 - Ouargla</option>
+                                        <option value="31 - Oran">31 - Oran</option>
+                                        <option value="32 - El Bayadh">32 - El Bayadh</option>
+                                        <option value="33 - Illizi">33 - Illizi</option>
+                                        <option value="34 - Bordj Bou Arréridj">34 - Bordj Bou Arréridj</option>
+                                        <option value="35 - Boumerdès">35 - Boumerdès</option>
+                                        <option value="36 - El Tarf">36 - El Tarf</option>
+                                        <option value="37 - Tindouf">37 - Tindouf</option>
+                                        <option value="38 - Tissemsilt">38 - Tissemsilt</option>
+                                        <option value="39 - El Oued">39 - El Oued</option>
+                                        <option value="40 - Khenchela">40 - Khenchela</option>
+                                        <option value="41 - Souk Ahras">41 - Souk Ahras</option>
+                                        <option value="42 - Tipaza">42 - Tipaza</option>
+                                        <option value="43 - Mila">43 - Mila</option>
+                                        <option value="44 - Aïn Defla">44 - Aïn Defla</option>
+                                        <option value="45 - Naâma">45 - Naâma</option>
+                                        <option value="46 - Aïn Témouchent">46 - Aïn Témouchent</option>
+                                        <option value="47 - Ghardaïa">47 - Ghardaïa</option>
+                                        <option value="48 - Relizane">48 - Relizane</option>
+                                        <option value="49 - El M'ghair">49 - El M'ghair</option>
+                                        <option value="50 - El Menia">50 - El Menia</option>
+                                        <option value="51 - Ouled Djellal">51 - Ouled Djellal</option>
+                                        <option value="52 - Bordj Baji Mokhtar">52 - Bordj Baji Mokhtar</option>
+                                        <option value="53 - Béni Abbès">53 - Béni Abbès</option>
+                                        <option value="54 - Timimoun">54 - Timimoun</option>
+                                        <option value="55 - Touggourt">55 - Touggourt</option>
+                                        <option value="56 - Djanet">56 - Djanet</option>
+                                        <option value="57 - In Salah">57 - In Salah</option>
+                                        <option value="58 - In Guezzam">58 - In Guezzam</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -104,7 +104,7 @@
                                     <input type="text" class="form-control datepicker-here" data-language='en'
                                            placeholder="000 DZD" name="bureau" required>
                                 </div>
-                                <button class="save-btn hover-btn" type="submit">Enregistrer</button>
+                                <button class="save-btn hover-btn" type="submit">Enregistrer / Modifier</button>
                             </form>
 
                         </div>
@@ -127,6 +127,7 @@
                                         <th>Wilaya</th>
                                         <th>Domicile</th>
                                         <th>Bureau</th>
+                                        <th>Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -135,6 +136,17 @@
                                             <td>{{$delivery->location}}</td>
                                             <td>{{$delivery->domicile}} DZD</td>
                                             <td>{{$delivery->bureau}} DZD</td>
+                                            <td>
+                                                <form action="{{route('admin.deliveries.destroy', $delivery->id)}}" method="post"
+                                                      id="delete-delivery-form">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <button class="delete-btn btn p-0" onclick="return confirm('Voulez vous vraiment supprimer cette livraison')"
+                                                            id="delete-delivery">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
                                         </tr>
                                     @endforeach
                                     </tbody>

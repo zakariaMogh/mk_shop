@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Information;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Pipeline;
@@ -29,15 +30,18 @@ class OrderController extends Controller
 
     public function edit($id)
     {
+        $information = Information::first();
+
         $order = Order::findOrFail($id);
-        return view('admin.orders.edit',compact('order'));
+        return view('admin.orders.edit',compact('order', 'information'));
 
     }
 
     public function show($id)
     {
+        $information = Information::first();
         $order = Order::findOrFail($id);
-        return view('admin.orders.show',compact('order'));
+        return view('admin.orders.show',compact('order', 'information'));
 
     }
 
@@ -72,7 +76,9 @@ class OrderController extends Controller
 
     public function printInvoice($id)
     {
+        $information = Information::first();
+
         $order = Order::findOrFail($id)->load('colors.size.product', 'user');
-        return view('pdf.order_invoice',compact('order'));
+        return view('pdf.order_invoice',compact('order', 'information'));
     }
 }

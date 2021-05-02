@@ -50,6 +50,11 @@
                     <div class="sb-nav-link-icon"><i class="far fa-lightbulb"></i></div>
                     Suggestion
                 </a>
+
+                <a class="nav-link {{request()->is('admin/information') ? 'active' : ''}}" href="{{route('admin.information.edit', $information)}}">
+                    <div class="sb-nav-link-icon"><i class="fas fa-info-circle"></i></div>
+                    Informations
+                </a>
             </div>
         </div>
     </nav>

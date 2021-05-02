@@ -19,137 +19,136 @@
 <livewire:categories :categories="$parentCategories" :product="$product">
 
 
-<div class="form-group">
-    <label class="form-label" for="price">Prix*</label>
-    <input type="number"
-           id="price"
-           value="{{$product->price ?? old('price')}}"
-           class="form-control @error('price') is-invalid @enderror"
-           placeholder="DZD" name="price">
-    @error('price')
-    <div class="invalid-feedback">{{$message}}</div>
-    @enderror
-</div>
-<div class="form-group">
-    <label class="form-label" for="cashback">Reduction*</label>
-    <input type="number" id="cashback"
-           class="form-control @error('cashback') is-invalid @enderror"
-           placeholder="Nouveau prix"
-           name="cashback"
-           value="{{$product->cashback ?? old('cashback')}}"
-    >
-    @error('cashback')
-    <div class="invalid-feedback">{{$message}}</div>
-    @enderror
-</div>
-
-<div class="form-group">
-    <label class="form-label">Marque</label>
-    <input type="text"
-           name="brand"
-           class="form-control @error('brand') is-invalid @enderror"
-           value="{{$product->brand ?? old('brand')}}"
-           placeholder="Marque du produit">
-    @error('brand')
-    <div class="invalid-feedback">
-        {{$message}}
+    <div class="form-group">
+        <label class="form-label" for="price">Prix*</label>
+        <input type="number"
+               id="price"
+               value="{{$product->price ?? old('price')}}"
+               class="form-control @error('price') is-invalid @enderror"
+               placeholder="DZD" name="price">
+        @error('price')
+        <div class="invalid-feedback">{{$message}}</div>
+        @enderror
     </div>
-    @enderror
-</div>
-
-<div class="form-group">
-    <label class="form-label">Qualité</label>
-    <input type="text"
-           name="quality"
-           class="form-control @error('quality') is-invalid @enderror"
-           value="{{$product->quality ?? old('quality')}}"
-           placeholder="Qualité du produit">
-    @error('quality')
-    <div class="invalid-feedback">
-        {{$message}}
+    <div class="form-group">
+        <label class="form-label" for="cashback">Reduction*</label>
+        <input type="number" id="cashback"
+               class="form-control @error('cashback') is-invalid @enderror"
+               placeholder="Nouveau prix"
+               name="cashback"
+               value="{{$product->cashback ?? old('cashback')}}"
+        >
+        @error('cashback')
+        <div class="invalid-feedback">{{$message}}</div>
+        @enderror
     </div>
-    @enderror
-</div>
 
-{{--@if($product->product_details()->count() > 0)--}}
-{{--    <livewire:admin.product-detail :product="$product"/>--}}
-{{--@else--}}
-{{--    <livewire:admin.product-detail/>--}}
-{{--@endif--}}
-
-<livewire:product-sizes :product="$product"/>
-<div class="form-group">
-    <label class="form-label" for="edit">Description*</label>
-    <div class="card card-editor">
-        <div class="content-editor">
-            <textarea id='edit' name="description" class="@error('description') is-invalid @enderror form-control" rows="10">
-                {{$product->description ?? old('description') }}
-            </textarea>
+    <div class="form-group">
+        <label class="form-label">Marque</label>
+        <input type="text"
+               name="brand"
+               class="form-control @error('brand') is-invalid @enderror"
+               value="{{$product->brand ?? old('brand')}}"
+               placeholder="Marque du produit">
+        @error('brand')
+        <div class="invalid-feedback">
+            {{$message}}
         </div>
+        @enderror
     </div>
-    @error('description')
-    <div class="text-danger">
-        {{$message}}
-    </div>
-    @enderror
-</div>
 
-<div class="form-group">
-    <label class="form-label">Image*</label>
-    @error('images')
-    <div class="text-danger">
-        {{$message}}
-    </div>
-    @enderror
-    <div class="input-group">
-        <div class="custom-file">
-            <input type="file" class="custom-file-input @error('images') is-invalid @enderror"
-                   name="images[]"
-                   id="inputGroupFile04"
-                   aria-describedby="inputGroupFileAddon04"
-                   multiple
-            >
-
-            <label class="custom-file-label" for="inputGroupFile04">Choisissez une image</label>
+    <div class="form-group">
+        <label class="form-label">Qualité</label>
+        <input type="text"
+               name="quality"
+               class="form-control @error('quality') is-invalid @enderror"
+               value="{{$product->quality ?? old('quality')}}"
+               placeholder="Qualité du produit">
+        @error('quality')
+        <div class="invalid-feedback">
+            {{$message}}
         </div>
-
+        @enderror
     </div>
-    <div class="d-flex justify-content-around flex-wrap">
-        @for( $i = 0 ; $i <20 ; $i++)
-            <div class="add-cate-img">
-                <img src="{{asset(isset($product->images[$i]) ? 'storage/'.$product->images[$i]->image : '')}}"
-                     id="imagePreview-{{$i}}" alt=""
-                     class="image-preview">
+
+    {{--@if($product->product_details()->count() > 0)--}}
+    {{--    <livewire:admin.product-detail :product="$product"/>--}}
+    {{--@else--}}
+    {{--    <livewire:admin.product-detail/>--}}
+    {{--@endif--}}
+
+    <livewire:product-sizes :product="$product"/>
+    <div class="form-group">
+        <label class="form-label" for="edit">Description*</label>
+        <div class="card card-editor">
+            <div class="content-editor">
+                <textarea id='edit' name="description" class="@error('description') is-invalid @enderror form-control"
+                          rows="10">{{$product->description ?? old('description') }}</textarea>
             </div>
-        @endfor
+        </div>
+        @error('description')
+        <div class="text-danger">
+            {{$message}}
+        </div>
+        @enderror
     </div>
 
-</div>
-@push('js')
-    <script>
+    <div class="form-group">
+        <label class="form-label">Image*</label>
+        @error('images')
+        <div class="text-danger">
+            {{$message}}
+        </div>
+        @enderror
+        <div class="input-group">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input @error('images') is-invalid @enderror"
+                       name="images[]"
+                       id="inputGroupFile04"
+                       aria-describedby="inputGroupFileAddon04"
+                       multiple
+                >
 
-        const readURLS = (input, id) => {
-            $('.image-preview').each(function () {
-                $(this).attr('src','')
-            })
-            if (input.files) {
-                var filesAmount = input.files.length;
-                for (let i = 0; i < filesAmount; i++) {
-                    let reader = new FileReader();
-                    reader.onload = function (e) {
-                        let id = document.getElementsByClassName("image-preview")[i].id
-                        $('#' + id).attr('src', e.target.result);
-                    };
-                    reader.readAsDataURL(input.files[i]);
+                <label class="custom-file-label" for="inputGroupFile04">Choisissez une image</label>
+            </div>
 
+        </div>
+        <div class="d-flex justify-content-around flex-wrap">
+            @for( $i = 0 ; $i <20 ; $i++)
+                <div class="add-cate-img">
+                    <img src="{{asset(isset($product->images[$i]) ? 'storage/'.$product->images[$i]->image : '')}}"
+                         id="imagePreview-{{$i}}" alt=""
+                         class="image-preview">
+                </div>
+            @endfor
+        </div>
+
+    </div>
+    @push('js')
+        <script>
+
+            const readURLS = (input, id) => {
+                $('.image-preview').each(function () {
+                    $(this).attr('src', '')
+                })
+                if (input.files) {
+                    var filesAmount = input.files.length;
+                    for (let i = 0; i < filesAmount; i++) {
+                        let reader = new FileReader();
+                        reader.onload = function (e) {
+                            let id = document.getElementsByClassName("image-preview")[i].id
+                            $('#' + id).attr('src', e.target.result);
+                        };
+                        reader.readAsDataURL(input.files[i]);
+
+                    }
                 }
             }
-        }
-        $("#inputGroupFile04").change(function () {
-            readURLS(this, 'pic_preview');
-        });
-    </script>
-    @livewireScripts
+            $("#inputGroupFile04").change(function () {
+                readURLS(this, 'pic_preview');
+            });
+        </script>
+        @livewireScripts
 @endpush
 
 

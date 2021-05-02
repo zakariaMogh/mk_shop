@@ -97,7 +97,7 @@ class OrderController extends Controller
             }
 
             $sub_total += $product->price * $color['quantity'];
-            $cashback_sum += ($product->cashback > 0 ? $product->cashback : $product->price);
+            $cashback_sum += ($product->cashback > 0 ? $product->cashback : $product->price) * $color['quantity'];
         }
 
         $total = $data['shipping'] + ($cashback_sum > 0 ? $cashback_sum : $sub_total);
