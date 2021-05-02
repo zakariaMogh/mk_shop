@@ -45,6 +45,8 @@ Route::view('privacy_policies', 'privacy_policies')->name('privacy_policies');
 Route::get('artisan', function (){
 //    \Illuminate\Support\Facades\Artisan::call("migrate");
 //    \Illuminate\Support\Facades\Artisan::call("passport:install");
+    \Illuminate\Support\Facades\Artisan::call("migrate");
     \Illuminate\Support\Facades\Artisan::call("db:seed --class=InformationTableSeeder");
+    \Illuminate\Support\Facades\Artisan::call("config:clear");
     return "done";
 });
