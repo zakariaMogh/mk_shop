@@ -16,7 +16,7 @@ class DeliveryController extends Controller
      */
     public function index()
     {
-        $deliveries = Delivery::all();
+        $deliveries = Delivery::orderBy('location')->get();
         return view('admin.settings.deliveries', compact('deliveries'));
     }
 

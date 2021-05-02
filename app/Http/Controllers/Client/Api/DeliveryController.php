@@ -12,7 +12,7 @@ class DeliveryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $deliveries = Delivery::all();
+        $deliveries = Delivery::orderBy('location')->get();
         $response = ['deliveries' => $deliveries];
         return response($response, 200);
     }

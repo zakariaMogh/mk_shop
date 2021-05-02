@@ -10,8 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="Informations&#10;order fix&#10;dashboard clickable&#10;some modifications">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="delivery order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DeliveryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DeliveryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/DeliveryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/DeliveryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,14 +254,7 @@
       <workItem from="1619609274487" duration="81000" />
       <workItem from="1619651942492" duration="269000" />
       <workItem from="1619903810703" duration="1139000" />
-      <workItem from="1619956600727" duration="4791000" />
-    </task>
-    <task id="LOCAL-00030" summary="note in all products&#10;Some optimisation">
-      <created>1617389124236</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1617389124236</updated>
+      <workItem from="1619956600727" duration="6009000" />
     </task>
     <task id="LOCAL-00031" summary="get one review by product">
       <created>1617443524092</created>
@@ -597,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619961270436</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="artisan routes">
+      <created>1619961534382</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1619961534382</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,8 +618,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="nothing spcl" />
-    <MESSAGE value="banners route + controller &#10;Orders fix admin panel&#10;Products fix admin panel" />
     <MESSAGE value="added tracking link" />
     <MESSAGE value="fixed tracking link nullable / added tracking link to admin panel&#10;fixed admin panel &#10;default images" />
     <MESSAGE value="fixed some stuff" />
@@ -641,7 +641,9 @@
     <MESSAGE value="error ?" />
     <MESSAGE value="error fixed" />
     <MESSAGE value="Informations&#10;order fix&#10;dashboard clickable&#10;some modifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Informations&#10;order fix&#10;dashboard clickable&#10;some modifications" />
+    <MESSAGE value="artisan routes" />
+    <MESSAGE value="delivery order" />
+    <option name="LAST_COMMIT_MESSAGE" value="delivery order" />
   </component>
   <component name="WindowStateProjectService">
     <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618747918001">
@@ -664,10 +666,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618748211002" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619961274710">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619961537773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619961274710" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619961537773" />
     <state x="752" y="379" key="scopes" timestamp="1618747973912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
