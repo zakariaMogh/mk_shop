@@ -11,9 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="delivery order">
+      <change afterPath="$PROJECT_DIR$/app/Mail/OrderMailClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mails/orderMailClientView.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DeliveryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DeliveryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/DeliveryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/DeliveryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,21 +170,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\mk_shop\app\Http" />
-      <recent name="C:\wamp64\www\mk_shop\database\seeders" />
-      <recent name="C:\wamp64\www\mk_shop\resources\views\admin" />
-      <recent name="C:\wamp64\www\mk_shop\app\QueryFilters" />
-      <recent name="C:\wamp64\www\mk_shop\resources\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\mk_shop\app\Models" />
       <recent name="C:\wamp64\www\mk_shop\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\resources\views" />
+      <recent name="C:\wamp64\www\mk_shop\app\Mail" />
+      <recent name="C:\wamp64\www\mk_shop\app" />
+      <recent name="C:\wamp64\www\mk_shop\app\Http" />
+      <recent name="C:\wamp64\www\mk_shop\database\seeders" />
     </key>
   </component>
   <component name="RunManager">
@@ -254,14 +256,8 @@
       <workItem from="1619609274487" duration="81000" />
       <workItem from="1619651942492" duration="269000" />
       <workItem from="1619903810703" duration="1139000" />
-      <workItem from="1619956600727" duration="6009000" />
-    </task>
-    <task id="LOCAL-00031" summary="get one review by product">
-      <created>1617443524092</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1617443524092</updated>
+      <workItem from="1619956600727" duration="6133000" />
+      <workItem from="1619966348644" duration="2582000" />
     </task>
     <task id="LOCAL-00032" summary="get one order / optimised get all orders">
       <created>1617443767704</created>
@@ -599,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619961534382</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="delivery order">
+      <created>1619962916004</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1619962916004</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,14 +653,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618747918001" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619961054785">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619966917587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619961054785" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1619960939216">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619966917587" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1619966452161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619960939216" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1619966452161" />
     <state x="769" y="243" key="NewPhpClassDialog" timestamp="1618748035601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -666,10 +669,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618748211002" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619961537773">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1619962921170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619961537773" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1619962921170" />
     <state x="752" y="379" key="scopes" timestamp="1618747973912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

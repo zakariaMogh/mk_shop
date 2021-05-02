@@ -17,6 +17,8 @@ Route::get('', [\App\Http\Controllers\Admin\AuthController::class, 'create']);
 
 Route::view('privacy_policies', 'privacy_policies')->name('privacy_policies');
 
+Route::get('/{id}/print','Admin\OrderController@printInvoice')->name('invoice.print')->middleware('signed');
+
 //
 //Route::get('artisan', function (){
 //    \Illuminate\Support\Facades\Artisan::call("migrate:fresh --seed");

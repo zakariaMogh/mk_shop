@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Client\Api;
 
 use App\Http\Controllers\Controller;
+use App\Mail\OrderMailClient;
 use App\Models\Color;
 use App\Models\Delivery;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class OrderController extends Controller
@@ -119,6 +121,14 @@ class OrderController extends Controller
                 'quantity' => $color_product->quantity - $color['quantity']
             ]);
         }
+
+        dispatch(function () use ($user, $order) {
+            try {
+                Mail::to($user->email)->send(new OrderMailClient(['subject' => 'Vous avez une nouvelle commande', 'id' => $order->id, 'client' => $user->username]));
+            } catch (\Exception $exception) {
+
+            }
+        })->afterResponse();
 
         $response = ["message" =>'Order has been made'];
         return response($response, 200);
