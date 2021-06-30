@@ -19,6 +19,14 @@ Route::view('privacy_policies', 'privacy_policies')->name('privacy_policies');
 
 Route::get('/{id}/print','Admin\OrderController@printInvoice')->name('invoice.print')->middleware('signed');
 
+
+Route::view('shop', 'front.shop');
+Route::view('contact', 'front.contact');
+Route::view('home', 'front.home');
+Route::view('checkout', 'front.checkout');
+Route::view('cart', 'front.cart');
+Route::view('product-details', 'front.product-details');
+
 //
 //Route::get('artisan', function (){
 //    \Illuminate\Support\Facades\Artisan::call("migrate:fresh --seed");
