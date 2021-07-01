@@ -14,19 +14,19 @@
                 <div class="col-md-8 col-lg-8 col-sm-10 col-xs-10">
                     <nav class="mainmenu__nav hidden-xs hidden-sm">
                         <ul class="main__menu">
-                            <li class="drop"><a href="index.html">Home</a></li>
-                            <li class="drop"><a href="shop.html">Product</a></li>
-                            <li class="drop"><a href="cart.html">Cart</a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li class="drop"><a href="{{route('home')}}">Home</a></li>
+                            <li class="drop"><a href="{{route('shop')}}">Product</a></li>
+                            <li class="drop"><a href="{{route('cart')}}">Cart</a></li>
+                            <li><a href="{{route('contact')}}">contact</a></li>
                         </ul>
                     </nav>
                     <div class="mobile-menu clearfix visible-xs visible-sm">
                         <nav id="mobile_dropdown">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="shop.html">Product</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="contact.html">contact</a></li>
+                                <li><a href="{{route('home')}}">Home</a></li>
+                                <li><a href="{{route('shop')}}">Product</a></li>
+                                <li><a href="{{route('cart')}}">Cart</a></li>
+                                <li><a href="{{route('contact')}}">contact</a></li>
                             </ul>
                         </nav>
                     </div>
