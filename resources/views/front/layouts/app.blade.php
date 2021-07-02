@@ -29,9 +29,13 @@
     <!-- User style -->
     <link rel="stylesheet" href="{{asset('front-assets/css/custom.css')}}">
 
+    <link href="{{asset('admin-assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+
 
     <!-- Modernizr JS -->
     <script src="{{asset('front-assets/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+
+    @stack('css')
 </head>
 
 <body>
@@ -180,6 +184,8 @@
 <script src="{{asset('front-assets/js/waypoints.min.js')}}"></script>
 <!-- Main js file that contents all jQuery plugins activation. -->
 <script src="{{asset('front-assets/js/main.js')}}"></script>
+
+@stack('js')
 
 <script>
     $(".quick-view").click(function (e) {

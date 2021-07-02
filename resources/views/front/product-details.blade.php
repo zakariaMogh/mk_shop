@@ -1,5 +1,9 @@
 @extends('front.layouts.app')
 
+@push('css')
+    @livewireStyles
+@endpush
+
 @section('content')
     <!-- Start Bradcaump area -->
     <div class="ht__bradcaump__area"
@@ -11,7 +15,7 @@
                         <div class="bradcaump__inner text-center">
                             <h2 class="bradcaump-title">Product Details</h2>
                             <nav class="bradcaump-inner">
-                                <a class="breadcrumb-item" href="index.html">Home</a>
+                                <a class="breadcrumb-item" href="{{route('home')}}">Home</a>
                                 <span class="brd-separetor">/</span>
                                 <span class="breadcrumb-item active">Product Details</span>
                             </nav>
@@ -31,14 +35,15 @@
                         <!-- Start Small images -->
                         <ul class="product__small__images" role="tablist">
                             <li role="presentation" class=" pot-small-img hidden-xs hidden-sm active">
-                                <img src="images/product/2.png" alt="small-image" style="height: 100px;width: 100px">
+                                <img src="{{asset('front-assets/images/product/2.png')}}" alt="small-image"
+                                     style="height: 100px;width: 100px">
                             </li>
 
                         </ul>
                         <!-- End Small images -->
                         <div class="product__big__images">
                             <div class="portfolio-full-image tab-content">
-                                <img src="images/product/1.png" alt="full-image">
+                                <img src="{{asset('front-assets/images/product/1.png')}}" alt="full-image">
                             </div>
                         </div>
                     </div>
@@ -46,56 +51,32 @@
                 <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 smt-30 xmt-30">
                     <div class="htc__product__details__inner">
                         <div class="pro__detl__title">
-                            <h2>Black Clock</h2>
+                            <h2>{{$product->name}}</h2>
                         </div>
                         <div class="pro__dtl__rating">
                             <ul class="pro__rating">
-                                <li><span class="ti-star"></span></li>
-                                <li><span class="ti-star"></span></li>
-                                <li><span class="ti-star"></span></li>
-                                <li><span class="ti-star"></span></li>
-                                <li><span class="ti-star"></span></li>
+                                @for($i = 1 ; $i <= round($product->reviews->avg('pivot.rate')) ; $i++)
+                                    <li><span class="fas fa-star"></span></li>
+                                @endfor
+                                @for($i = 1 ; $i <= (5-round($product->reviews->avg('pivot.rate'))) ; $i++)
+                                    <li><span class="far fa-star"></span></li>
+                                @endfor
                             </ul>
-                            <span class="rat__qun">(Based on 0 Ratings)</span>
+                            <span class="rat__qun">({{$product->reviews->count()}})</span>
                         </div>
                         <div class="pro__details">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod temf incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostr exercitation ullamco
-                                laboris nisi ut aliquip ex ea. </p>
+                            <p>{!! $product->brand !!} </p>
+                            <p>{!! $product->quality !!} </p>
                         </div>
                         <ul class="pro__dtl__prize">
-                            <li class="old__prize">$15.21</li>
-                            <li>$10.00</li>
+                            @if($product->cashback > 0)
+                                <li class="old__prize">{{$product->price}} DA</li>
+                                <li>{{$product->cashback}} DA</li>
+                            @else
+                                <li>{{$product->price}} DA</li>
+                            @endif
                         </ul>
-                        <div class="pro__dtl__color">
-                            <h2 class="title__5">Choose Colour</h2>
-                            <ul class="pro__choose__color">
-                                <li ><i class="zmdi zmdi-circle " style="color: #d58512;"></i></li>
-
-                            </ul>
-                        </div>
-                        <div class="pro__dtl__size">
-                            <h2 class="title__5">Size</h2>
-                            <ul class="pro__choose__size">
-                                <li><a href="#">xl</a></li>
-                                <li><a href="#">m</a></li>
-                                <li><a href="#">ml</a></li>
-                                <li><a href="#">lm</a></li>
-                                <li><a href="#">xxl</a></li>
-                            </ul>
-                        </div>
-                        <div class="product-action-wrap">
-                            <div class="prodict-statas"><span>Quantity :</span></div>
-                            <div class="product-quantity">
-                                <form id='myform' method='POST' action='#'>
-                                    <div class="product-quantity">
-                                        <div class="cart-plus-minus">
-                                            <input class="cart-plus-minus-box" type="text" name="qtybutton" value="02">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <livewire:size-color :product="$product"/>
                         <ul class="pro__dtl__btn">
                             <li class="buy__now__btn"><a href="#">buy now</a></li>
                         </ul>
@@ -114,9 +95,9 @@
                         <li role="presentation" class="active">
                             <a href="#description" role="tab" data-toggle="tab">Description</a>
                         </li>
-                        <li role="presentation">
-                            <a href="#sheet" role="tab" data-toggle="tab">Data sheet</a>
-                        </li>
+                        {{--                        <li role="presentation">--}}
+                        {{--                            <a href="#sheet" role="tab" data-toggle="tab">Data sheet</a>--}}
+                        {{--                        </li>--}}
                         <li role="presentation">
                             <a href="#reviews" role="tab" data-toggle="tab">Reviews</a>
                         </li>
@@ -131,112 +112,79 @@
                             <div class="product__description__wrap">
                                 <div class="product__desc">
                                     <h2 class="title__6">Details</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        noexercit ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                        qui officia deserunt mollit anim id.</p>
+                                    <p>{!! $product->description !!}</p>
                                 </div>
-                                <div class="pro__feature">
-                                    <h2 class="title__6">Features</h2>
-                                    <ul class="feature__list">
-                                        <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Duis aute irure dolor in
-                                                reprehenderit in voluptate velit esse</a></li>
-                                        <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in
-                                                reprehenderit in voluptate velit esse</a></li>
-                                        <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor
-                                                incididunt ut labore et </a></li>
-                                        <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea
-                                                commodo consequat.</a></li>
-                                    </ul>
-                                </div>
+                                {{--                                <div class="pro__feature">--}}
+                                {{--                                    <h2 class="title__6">Features</h2>--}}
+                                {{--                                    <ul class="feature__list">--}}
+                                {{--                                        <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Duis aute irure dolor in--}}
+                                {{--                                                reprehenderit in voluptate velit esse</a></li>--}}
+                                {{--                                        <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in--}}
+                                {{--                                                reprehenderit in voluptate velit esse</a></li>--}}
+                                {{--                                        <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor--}}
+                                {{--                                                incididunt ut labore et </a></li>--}}
+                                {{--                                        <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea--}}
+                                {{--                                                commodo consequat.</a></li>--}}
+                                {{--                                    </ul>--}}
+                                {{--                                </div>--}}
                             </div>
                         </div>
                         <!-- End Single Content -->
                         <!-- Start Single Content -->
-                        <div role="tabpanel" id="sheet" class="product__tab__content fade">
-                            <div class="pro__feature">
-                                <h2 class="title__6">Data sheet</h2>
-                                <ul class="feature__list">
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse</a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in reprehenderit in
-                                            voluptate velit esse</a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in reprehenderit in
-                                            voluptate velit esse</a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor
-                                            incididunt ut labore et </a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor
-                                            incididunt ut labore et </a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea commodo
-                                            consequat.</a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea commodo
-                                            consequat.</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End Single Content -->
+                    {{--                        <div role="tabpanel" id="sheet" class="product__tab__content fade">--}}
+                    {{--                            <div class="pro__feature">--}}
+                    {{--                                <h2 class="title__6">Data sheet</h2>--}}
+                    {{--                                <ul class="feature__list">--}}
+                    {{--                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Duis aute irure dolor in--}}
+                    {{--                                            reprehenderit in voluptate velit esse</a></li>--}}
+                    {{--                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in reprehenderit in--}}
+                    {{--                                            voluptate velit esse</a></li>--}}
+                    {{--                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in reprehenderit in--}}
+                    {{--                                            voluptate velit esse</a></li>--}}
+                    {{--                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor--}}
+                    {{--                                            incididunt ut labore et </a></li>--}}
+                    {{--                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor--}}
+                    {{--                                            incididunt ut labore et </a></li>--}}
+                    {{--                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea commodo--}}
+                    {{--                                            consequat.</a></li>--}}
+                    {{--                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea commodo--}}
+                    {{--                                            consequat.</a></li>--}}
+                    {{--                                </ul>--}}
+                    {{--                            </div>--}}
+                    {{--                        </div>--}}
+                    <!-- End Single Content -->
                         <!-- Start Single Content -->
+
                         <div role="tabpanel" id="reviews" class="product__tab__content fade">
                             <div class="review__address__inner">
+                            @foreach($product->reviews as $user)
                                 <!-- Start Single Review -->
-                                <div class="pro__review">
-                                    <div class="review__thumb">
-                                        <img src="images/review/1.jpg" alt="review images">
-                                    </div>
-                                    <div class="review__details">
-                                        <div class="review__info">
-                                            <h4><a href="#">Gerald Barnes</a></h4>
-                                            <ul class="rating">
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star-half"></i></li>
-                                                <li><i class="zmdi zmdi-star-half"></i></li>
-                                            </ul>
-                                            <div class="rating__send">
-                                                <a href="#"><i class="zmdi zmdi-mail-reply"></i></a>
-                                                <a href="#"><i class="zmdi zmdi-close"></i></a>
+                                    <div class="pro__review">
+                                                                            <div class="review__thumb">
+{{--                                                                                <img src="images/review/1.jpg" alt="review images">--}}
+                                                                            </div>
+                                        <div class="review__details">
+                                            <div class="review__info">
+                                                <h4><a href="#">{{$user->name}}</a></h4>
+                                                <ul class="rating">
+                                                    @for($i = 1 ; $i <= $user->pivot->rate ; $i++)
+                                                        <li><i class="fas fa-star"></i></li>                                                    @endfor
+                                                    @for($i = 1 ; $i <= (5-$user->pivot->rate) ; $i++)
+                                                            <li><i class="far fa-star"></i></li>
+                                                    @endfor
+                                                </ul>
+{{--                                                <div class="rating__send">--}}
+{{--                                                    <a href="#"><i class="zmdi zmdi-mail-reply"></i></a>--}}
+{{--                                                    <a href="#"><i class="zmdi zmdi-close"></i></a>--}}
+{{--                                                </div>--}}
                                             </div>
-                                        </div>
-                                        <div class="review__date">
-                                            <span>27 Jun, 2016 at 2:30pm</span>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan
-                                            egestas elese ifend. Phasellus a felis at estei to bibendum feugiat ut eget
-                                            eni Praesent et messages in con sectetur posuere dolor non.</p>
-                                    </div>
-                                </div>
-                                <!-- End Single Review -->
-                                <!-- Start Single Review -->
-                                <div class="pro__review ans">
-                                    <div class="review__thumb">
-                                        <img src="images/review/2.jpg" alt="review images">
-                                    </div>
-                                    <div class="review__details">
-                                        <div class="review__info">
-                                            <h4><a href="#">Gerald Barnes</a></h4>
-                                            <ul class="rating">
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star-half"></i></li>
-                                                <li><i class="zmdi zmdi-star-half"></i></li>
-                                            </ul>
-                                            <div class="rating__send">
-                                                <a href="#"><i class="zmdi zmdi-mail-reply"></i></a>
-                                                <a href="#"><i class="zmdi zmdi-close"></i></a>
+                                            <div class="review__date">
+                                                <span>{{\Carbon\Carbon::parse($user->pivot->created_at)->diffForHumans()}}</span>
                                             </div>
+                                            <p>{{$user->pivot->comment}}</p>
                                         </div>
-                                        <div class="review__date">
-                                            <span>27 Jun, 2016 at 2:30pm</span>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan
-                                            egestas elese ifend. Phasellus a felis at estei to bibendum feugiat ut eget
-                                            eni Praesent et messages in con sectetur posuere dolor non.</p>
                                     </div>
-                                </div>
+                            @endforeach
                                 <!-- End Single Review -->
                             </div>
                             <!-- Start RAting Area -->
@@ -249,47 +197,11 @@
                                         <li><i class="zmdi zmdi-star-half"></i></li>
                                     </ul>
                                     <!-- End Single List -->
-                                    <!-- Start Single List -->
-                                    <ul class="rating">
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                    </ul>
-                                    <!-- End Single List -->
-                                    <!-- Start Single List -->
-                                    <ul class="rating">
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                    </ul>
-                                    <!-- End Single List -->
-                                    <!-- Start Single List -->
-                                    <ul class="rating">
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                    </ul>
-                                    <!-- End Single List -->
-                                    <!-- Start Single List -->
-                                    <ul class="rating">
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                        <li><i class="zmdi zmdi-star-half"></i></li>
-                                    </ul>
-                                    <!-- End Single List -->
                                 </div>
                             </div>
                             <!-- End RAting Area -->
                             <div class="review__box">
                                 <form id="review-form">
-                                    <div class="single-review-form">
-                                        <div class="review-box name">
-                                            <input type="text" placeholder="Type your name">
-                                            <input type="email" placeholder="Type your email">
-                                        </div>
-                                    </div>
                                     <div class="single-review-form">
                                         <div class="review-box message">
                                             <textarea placeholder="Write your review"></textarea>
@@ -309,3 +221,7 @@
     </section>
     <!-- End Product tab -->
 @endsection
+
+@push('js')
+    @livewireScripts
+@endpush

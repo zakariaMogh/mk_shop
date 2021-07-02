@@ -76,6 +76,11 @@ class User extends Authenticatable
         return isset($this->pic) ? 'storage/'.$this->pic : 'admin-assets/images/avatar/img-5.jpg';
     }
 
+    public function getNameAttribute()
+    {
+        return $this->username;
+    }
+
 
     public function orders(): HasMany
     {

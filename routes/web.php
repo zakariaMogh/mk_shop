@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', [\App\Http\Controllers\Admin\AuthController::class, 'create']);
+//Route::get('admin/login', [\App\Http\Controllers\Admin\AuthController::class, 'create']);
 
 Route::view('privacy_policies', 'privacy_policies')->name('privacy_policies');
 
@@ -27,12 +27,12 @@ Route::get('/{id}/print','Admin\OrderController@printInvoice')->name('invoice.pr
 //Route::view('cart', 'front.cart');
 //Route::view('product-details', 'front.product-details');
 
-Route::get('home', [\App\Http\Controllers\Client\Web\HomeController::class, 'index'])->name('home');
+Route::get('/', [\App\Http\Controllers\Client\Web\HomeController::class, 'index'])->name('home');
 Route::get('contact', [\App\Http\Controllers\Client\Web\ContactController::class, 'index'])->name('contact');
 Route::get('shop', [\App\Http\Controllers\Client\Web\ShopController::class, 'index'])->name('shop');
 Route::get('checkout', [\App\Http\Controllers\Client\Web\CheckoutController::class, 'index'])->name('checkout');
 Route::get('cart', [\App\Http\Controllers\Client\Web\CartController::class, 'index'])->name('cart');
-Route::get('product-details', [\App\Http\Controllers\Client\Web\ProductDetailController::class, 'index'])->name('product-details');
+Route::get('product-details/{id}', [\App\Http\Controllers\Client\Web\ProductDetailController::class, 'show'])->name('product-details');
 //
 //Route::get('artisan', function (){
 //    \Illuminate\Support\Facades\Artisan::call("migrate:fresh --seed");

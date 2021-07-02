@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo/logo.png" alt="logo">
+                        <a href="{{route('home')}}">
+                            <img src="{{asset('logo/mk_logo.png')}}" alt="logo">
                         </a>
                     </div>
                 </div>

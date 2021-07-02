@@ -3,12 +3,16 @@
 namespace App\Http\Controllers\Client\Web;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductDetailController extends Controller
 {
-    public function index()
+
+    public function show($id)
     {
-        return view('front.product-detail');
+        $product = Product::findOrFail($id)->load('images', 'reviews', 'sizes.colors');
+
+        return view('front.product-details', compact('product'));
     }
 }
