@@ -13,19 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('admin/login', [\App\Http\Controllers\Admin\AuthController::class, 'create']);
+
+Route::get('login',[\App\Http\Controllers\Client\Web\Auth\LoginController::class,'index'])->name('login.index');
+Route::post('login',[\App\Http\Controllers\Client\Web\Auth\LoginController::class,'login'])->name('login');
+
+Route::get('register',[\App\Http\Controllers\Client\Web\Auth\RegisterController::class,'index'])->name('register.index');
+Route::post('register',[\App\Http\Controllers\Client\Web\Auth\RegisterController::class,'register'])->name('register');
+
+Route::get('password/reset/{token}',[\App\Http\Controllers\Client\Web\Auth\ResetPasswordController::class,'showResetForm'])->name('password.reset');
+Route::post('password/reset',[\App\Http\Controllers\Client\Web\Auth\ResetPasswordController::class,'reset'])->name('reset');
+
+Route::get('forgot/password',[\App\Http\Controllers\Client\Web\Auth\ForgotPasswordController::class,'showLinkRequestForm'])->name('forgot.password.email');
+Route::post('forgot/password',[\App\Http\Controllers\Client\Web\Auth\ForgotPasswordController::class,'sendResetLinkEmail'])->name('forgot.password.send');
 
 Route::view('privacy_policies', 'privacy_policies')->name('privacy_policies');
 
 Route::get('/{id}/print','Admin\OrderController@printInvoice')->name('invoice.print')->middleware('signed');
 
+//Route::view('login', 'front.auth.login-register');
 
-//Route::view('shop', 'front.shop');
-//Route::view('contact', 'front.contact');
-////Route::view('home', 'front.home');
-//Route::view('checkout', 'front.checkout');
-//Route::view('cart', 'front.cart');
-//Route::view('product-details', 'front.product-details');
+Route::middleware('auth')->group(function (){
+    Route::any('logout',[\App\Http\Controllers\Client\Web\Auth\LoginController::class,'logout'])->name('logout');
+});
 
 Route::get('/', [\App\Http\Controllers\Client\Web\HomeController::class, 'index'])->name('home');
 Route::get('contact', [\App\Http\Controllers\Client\Web\ContactController::class, 'index'])->name('contact');

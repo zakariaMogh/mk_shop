@@ -10,19 +10,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="Controllers / home view">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="product detail&#10;search &#10;reviews">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/View/Composers/FooterComposer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/auth/passwords/password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ProductDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ProductDetailController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/product-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product-card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/auth/login-register.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/product-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product-details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -178,22 +184,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/front/auth/passwords" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\mk_shop\public\front-assets" />
-      <recent name="C:\wamp64\www\mk_shop\resources\views\front\layouts\partials" />
-      <recent name="C:\wamp64\www\mk_shop\resources\views\front" />
-      <recent name="C:\wamp64\www\mk_shop\resources\views\front\layouts" />
-      <recent name="C:\wamp64\www\mk_shop\resources\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\mk_shop\resources\views\front\auth" />
       <recent name="C:\wamp64\www\mk_shop\app\Models" />
       <recent name="C:\wamp64\www\mk_shop\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\resources\views\front\auth\passwords" />
+      <recent name="C:\wamp64\www\mk_shop\resources\views\front\auth" />
+      <recent name="C:\wamp64\www\mk_shop\app\Http\Controllers\Client\Web" />
+      <recent name="C:\wamp64\www\mk_shop\app\Http\View\Composers" />
+      <recent name="C:\wamp64\www\mk_shop\public\front-assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -286,13 +292,13 @@
       <workItem from="1625133897355" duration="5387000" />
       <workItem from="1625173266031" duration="822000" />
       <workItem from="1625252602002" duration="8706000" />
-    </task>
-    <task id="LOCAL-00036" summary="added tracking link">
-      <created>1617537428910</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1617537428910</updated>
+      <workItem from="1625262824122" duration="110000" />
+      <workItem from="1625309260967" duration="753000" />
+      <workItem from="1625310623591" duration="392000" />
+      <workItem from="1625315442607" duration="1218000" />
+      <workItem from="1625397236082" duration="255000" />
+      <workItem from="1625403600684" duration="1205000" />
+      <workItem from="1625571109642" duration="12110000" />
     </task>
     <task id="LOCAL-00037" summary="fixed tracking link nullable / added tracking link to admin panel&#10;fixed admin panel &#10;default images">
       <created>1617621486021</created>
@@ -630,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625173292755</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="product detail&#10;search &#10;reviews">
+      <created>1625262914581</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1625262914581</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +662,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="small fix" />
     <MESSAGE value="aw ana li bghel normalement ntesti f local" />
     <MESSAGE value="temporarly fixed trending" />
     <MESSAGE value="design changes" />
@@ -674,21 +686,22 @@
     <MESSAGE value="published laravel mail + changed mail link" />
     <MESSAGE value="Front end views setup + front assets" />
     <MESSAGE value="Controllers / home view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controllers / home view" />
+    <MESSAGE value="product detail&#10;search &#10;reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="product detail&#10;search &#10;reviews" />
   </component>
   <component name="WindowStateProjectService">
     <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618747918001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618747918001" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1625262401031">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1625579579373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625262401031" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1625087490202">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625579579373" />
+    <state x="353" y="323" key="FileChooserDialogImpl" timestamp="1625576545534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1625087490202" />
+    <state x="353" y="323" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1625576545534" />
     <state x="769" y="243" key="NewPhpClassDialog" timestamp="1618748035601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -701,6 +714,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625173302323" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1625572100382">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1625572100382" />
     <state x="752" y="379" key="scopes" timestamp="1618747973912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

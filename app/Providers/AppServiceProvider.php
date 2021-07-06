@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\View\Composers\FooterComposer;
 use App\Http\View\Composers\SideBarComposer;
 use App\Services\SocialUserResolver;
 use Coderello\SocialGrant\Resolvers\SocialUserResolverInterface;
@@ -52,6 +53,8 @@ class AppServiceProvider extends ServiceProvider
             KeysCommand::class,
         ]);
         View::composer('admin.layouts.partials.sideBar', SideBarComposer::class);
+        View::composer('front.layouts.partials.footer', FooterComposer::class);
+
 
 
     }

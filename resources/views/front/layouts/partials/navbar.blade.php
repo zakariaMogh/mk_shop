@@ -35,7 +35,7 @@
                 <div class="col-md-2 col-sm-6 col-xs-6">
                     <ul class="menu-extra">
                         <li class="search search__open hidden-xs"><span class="ti-search"></span></li>
-                        <li><a href="login-register.html"><span class="ti-user"></span></a></li>
+                        <li><a href="{{route('login')}}"><span class="ti-user"></span></a></li>
                         <li class="cart__menu"><span class="ti-shopping-cart"></span></li>
                     </ul>
                 </div>

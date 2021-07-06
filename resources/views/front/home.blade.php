@@ -84,7 +84,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <a href="tending.html" class="section__title row">
+                    <a href="{{route('shop', ['trending' => 1])}}" class="section__title row">
                         <h2 class="title__line col-lg-3 text-start">Tendance </h2>
                         <span class="col-lg-8" style="border-bottom: 1px solid #797979; height: 20px"></span>
                         <span class=" col-lg-1 text-right p-3">see all > </span></span>
@@ -113,7 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <a href="latest.html" class="section__title row">
+                    <a href="{{route('shop')}}" class="section__title row">
                         <h2 class="title__line col-lg-3 text-start">Latest</h2>
                         <span class="col-lg-8" style="border-bottom: 1px solid #797979; height: 20px"></span>
                         <span class=" col-lg-1 text-right p-3">see all > </span></span>
@@ -143,7 +143,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <a href="latest.html" class="section__title row">
+                    <a href="{{route('shop', ['promotion' => 1])}}" class="section__title row">
                         <h2 class="title__line col-lg-3 text-start">Promotion </h2>
                         <span class="col-lg-8" style="border-bottom: 1px solid #797979; height: 20px"></span>
                         <span class=" col-lg-1 text-right p-3">see all > </span></span>

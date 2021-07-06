@@ -30,10 +30,14 @@
                     <div class="col-md-12">
                         <div class="filter__menu__container">
                             <div class="product__menu">
-                                <button data-filter="*"  class="is-checked">All</button>
+                                <a  data-filter="*"  class="is-checked btn btn-lg" href="{{route('shop')}}"
+                                    {{request()->has('category') ? '' : 'style=color:#f19199'}} >All</a>
                                 @foreach($categories as $category)
-                                    <button data-filter=".cat--1">{{$category->name}}</button>
+                                    <a class="btn btn-lg"  data-filter=".cat--1"
+                                       href="{{route('shop', ['category' => $category->slug])}}"
+                                        {{request()->get('category') == $category->slug ? 'style=color:#f19199' : ''}}>{{$category->name}}</a>
                                 @endforeach
+
                             </div>
                             <div class="filter__box">
                                 <a class="filter__menu" href="#">filter</a>
