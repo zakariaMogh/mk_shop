@@ -7,7 +7,7 @@
             <div class="shp__single__product">
                 <div class="shp__pro__thumb">
                     <a href="#">
-                        <img src="images/product/1.png" alt="product images">
+                        <img src="" alt="product images">
                     </a>
                 </div>
                 <div class="shp__pro__details">
@@ -22,7 +22,7 @@
             <div class="shp__single__product">
                 <div class="shp__pro__thumb">
                     <a href="#">
-                        <img src="images/product/2.png" alt="product images">
+                        <img src="" alt="product images">
                     </a>
                 </div>
                 <div class="shp__pro__details">

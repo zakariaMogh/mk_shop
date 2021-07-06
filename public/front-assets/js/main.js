@@ -25,15 +25,15 @@
   12. Filter Area
   13. User Menu
   14. Overlay Close
-  15. Home Slider 
+  15. Home Slider
   16. Popular Product Wrap
   17. Testimonial Wrap
-  18. Magnific Popup  
+  18. Magnific Popup
   19. Price Slider Active
   20.  Plus Minus Button
   21. jQuery scroll Nav
 
-  
+
 
 /*--------------------------------
 [ End table content ]
@@ -47,7 +47,7 @@
 /*-------------------------------------------
   01. jQuery MeanMenu
 --------------------------------------------- */
-    
+
 $('.mobile-menu nav').meanmenu({
     meanMenuContainer: '.mobile-menu-area',
     meanScreenWidth: "991",
@@ -58,18 +58,18 @@ $('.mobile-menu nav').meanmenu({
   02. wow js active
 --------------------------------------------- */
   new WOW().init();
-    
-    
+
+
 /*-------------------------------------------
   03. Product  Masonry (width)
---------------------------------------------- */ 
+--------------------------------------------- */
 $('.htc__product__container').imagesLoaded( function() {
-  
+
     // filter items on button click
     $('.product__menu').on( 'click', 'button', function() {
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({ filter: filterValue });
-    }); 
+    });
     // init Isotope
     var $grid = $('.product__list').isotope({
       itemSelector: '.single__pro',
@@ -93,10 +93,10 @@ $('.product__menu button').on('click', function(event) {
 
 /*-------------------------------------------
   04. Sticky Header
---------------------------------------------- */ 
+--------------------------------------------- */
   var win = $(window);
   var sticky_id = $("#sticky-header-with-topbar");
-  win.on('scroll',function() {    
+  win.on('scroll',function() {
     var scroll = win.scrollTop();
     if (scroll < 245) {
       sticky_id.removeClass("scroll-header");
@@ -104,8 +104,8 @@ $('.product__menu button').on('click', function(event) {
       sticky_id.addClass("scroll-header");
     }
   });
-    
-    
+
+
 /*--------------------------
   05. ScrollUp
 ---------------------------- */
@@ -115,26 +115,26 @@ $.scrollUp({
     scrollSpeed: 900,
     animation: 'fade'
 });
-    
-    
+
+
 /*---------------------------
   06. Tooltip
-------------------------------*/    
+------------------------------*/
 $('[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
     placement: 'top',
     container: 'body'
 });
-    
-    
+
+
 /*-----------------------------------
   07. ScrollReveal Js Init
 -------------------------------------- */
     window.sr = ScrollReveal({ duration: 800 , reset: true });
     sr.reveal('.foo');
     sr.reveal('.bar');
-    
-    
+
+
 /*-------------------------------------------------------
   08. Fixed Footer bottom script ( Newsletter )
 --------------------------------------------------------*/
@@ -143,10 +143,10 @@ var $newsletter_height = $(".htc__foooter__area");
 $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
 
 
-/*------------------------------------    
+/*------------------------------------
   09. Search Bar
---------------------------------------*/ 
-    
+--------------------------------------*/
+
   $( '.search__open' ).on( 'click', function () {
     $( 'body' ).toggleClass( 'search__box__show__hide' );
     return false;
@@ -156,9 +156,9 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
     $( 'body' ).toggleClass( 'search__box__show__hide' );
     return false;
   });
-    
-    
-/*------------------------------------    
+
+
+/*------------------------------------
   10. Toogle Menu
 --------------------------------------*/
   $('.toggle__menu').on('click', function() {
@@ -172,7 +172,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
       $('.body__overlay').removeClass('is-visible');
   });
 
-/*------------------------------------    
+/*------------------------------------
   11. Shopping Cart Area
 --------------------------------------*/
 
@@ -194,7 +194,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
   });
 
 
-/*------------------------------------    
+/*------------------------------------
   12. Filter Area
 --------------------------------------*/
 
@@ -208,9 +208,9 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
       $('.filter__wrap').removeClass('filter__menu__on');
       $('.body__overlay').removeClass('is-visible');
   });
-    
-    
-/*------------------------------------    
+
+
+/*------------------------------------
   13. User Menu
 --------------------------------------*/
 
@@ -219,7 +219,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
     $('.body__overlay').addClass('is-visible');
 
   });
-    
+
   $('.offsetmenu__close__btn').on('click', function() {
       $('.user__meta').removeClass('user__meta__on');
       $('.body__overlay').removeClass('is-visible');
@@ -227,7 +227,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
 
 
 
-/*------------------------------------    
+/*------------------------------------
   14. Overlay Close
 --------------------------------------*/
   $('.body__overlay').on('click', function() {
@@ -238,7 +238,7 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
     $('.user__meta').removeClass('user__meta__on');
   });
 
-    
+
 /*-----------------------------------------------
   15. Home Slider
 -------------------------------------------------*/
@@ -316,8 +316,8 @@ $('.fixed__footer').css({'margin-bottom': $newsletter_height.height() + 'px'});
         }
       }
     });
-    
-    
+
+
 /*-----------------------------------------------
   17.  product-slider-active
 -------------------------------------------------*/
@@ -560,7 +560,7 @@ $('.image-popup').magnificPopup({
   mainClass: 'mfp-fade',
   removalDelay: 100,
   gallery:{
-      enabled:true, 
+      enabled:true,
   }
 });
 
@@ -582,10 +582,10 @@ $('.image-popup').magnificPopup({
 
 
 /*-------------------------------
-  20.  Plus Minus Button 
+  20.  Plus Minus Button
 --------------------------------*/
 
-    $(".cart-plus-minus").append('<div class="dec qtybutton">-</i></div><div class="inc qtybutton">+</div>');
+    $(".cart-plus-minus").append('<div class="dec qtybutton" style="cursor: pointer">-</i></div><div class="inc qtybutton" style="cursor: pointer">+</div>');
 
     $(".qtybutton").on("click", function () {
         var $button = $(this);
@@ -609,7 +609,7 @@ $('.image-popup').magnificPopup({
 ---------------------------- */
     $('.onepage--menu').onePageNav({
         scrollOffset: 0
-    }); 
+    });
 
 
 
@@ -621,16 +621,16 @@ $('.image-popup').magnificPopup({
 		$this.countdown(finalDate, function(event) {
 		$this.html(event.strftime('<span class="cdown day">%-D <p>Days</p></span> <span class="cdown hour">%-H <p>Hour</p></span> <span class="cdown minutes">%M <p>Min</p></span class="cdown second"> <span>%S <p>Sec</p></span>'));
 		});
-    });    
-    
-    
+    });
+
+
 /* isotop active */
     var $grid = $('.grid');
     var $gridJustified = $('.grid-justified');
     var $gridItems = '.grid-item';
     // filter items on button click
     $grid.imagesLoaded(function() {
-        
+
         $('.portfolio-menu-active').on('click', 'button', function() {
             $(this).siblings('.active').removeClass('active');
             $(this).addClass('active');
@@ -639,7 +639,7 @@ $('.image-popup').magnificPopup({
                 filter: filterValue
             });
         });
-        
+
         // init Isotope
         $grid.isotope({
             itemSelector: $gridItems,
@@ -649,7 +649,7 @@ $('.image-popup').magnificPopup({
                 columnWidth: $gridItems,
             }
         });
-        
+
         // init Isotope
         $gridJustified.isotope({
             itemSelector: $gridItems,
@@ -661,8 +661,8 @@ $('.image-popup').magnificPopup({
             }
         });
     });
-    
-    
+
+
     /*--
     Magnific Popup
     ------------------------*/
@@ -672,17 +672,17 @@ $('.image-popup').magnificPopup({
             enabled:true
         }
     });
-    
-    
+
+
     $('.sidebar-active').stickySidebar({
         topSpacing: 80,
         bottomSpacing: 30,
         minWidth: 767,
     });
-    
-    
-    
-    
+
+
+
+
 })(jQuery);
 
 

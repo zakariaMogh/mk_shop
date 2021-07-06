@@ -6,8 +6,8 @@
                 <div class="col-md-3 col-lg-3 col-sm-6">
                     <div class="ft__widget">
                         <div class="ft__logo">
-                            <a href="index.html">
-                                <img src="images/logo/logo.png" alt="footer logo">
+                            <a  href="{{route('home')}}">
+                                <img src="{{asset('logo/mk_logo.png')}}" alt="footer logo" height="50">
                             </a>
                         </div>
                         <div class="footer-address">
