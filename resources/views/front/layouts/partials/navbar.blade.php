@@ -27,6 +27,7 @@
                                 <li><a href="{{route('shop')}}">Product</a></li>
                                 <li><a href="{{route('cart')}}">Cart</a></li>
                                 <li><a href="{{route('contact')}}">contact</a></li>
+
                             </ul>
                         </nav>
                     </div>
@@ -37,6 +38,9 @@
                         <li class="search search__open hidden-xs"><span class="ti-search"></span></li>
                         <li><a href="{{route('login')}}"><span class="ti-user"></span></a></li>
                         <li class="cart__menu"><span class="ti-shopping-cart"></span></li>
+                        @auth
+                            <li><a href="{{route('logout')}}">logout</a></li>
+                        @endauth
                     </ul>
                 </div>
             </div>

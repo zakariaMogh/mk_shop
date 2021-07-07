@@ -8,6 +8,7 @@ class SizeColor extends Component
 {
     public $product;
     public $colors;
+    public $color;
 
     public function chooseSize($id)
     {
@@ -21,7 +22,11 @@ class SizeColor extends Component
         }else{
             $this->colors = collect();
         }
+    }
 
+    public function chooseColor($id)
+    {
+        $this->color = $id;
     }
 
     public function mount()

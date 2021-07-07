@@ -11,7 +11,7 @@
                         <div class="bradcaump__inner text-center">
                             <h2 class="bradcaump-title">Cart</h2>
                             <nav class="bradcaump-inner">
-                                <a class="breadcrumb-item" href="index.html">Home</a>
+                                <a class="breadcrumb-item" href="{{route('home')}}">Home</a>
                                 <span class="brd-separetor">/</span>
                                 <span class="breadcrumb-item active">Cart</span>
                             </nav>
@@ -43,76 +43,43 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                @forelse($cart as $color)
                                 <tr>
                                     <td class="product-thumbnail">
-                                        <img src="images/product/2.png" alt="product img" height="100" width="100"/>
+                                        <img src="{{$color->size->product->image_url}}" alt="{{$color->size->product->name}}" height="100" width="100"/>
                                     </td>
-                                    <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
+                                    <td class="product-name"><a href="{{route('product-details',$color->size->product->id)}}">{{$color->size->product->name}}</a></td>
                                     <td class="product-quantity" >
-                                        <input   style="background-color: #ffba00;margin: auto;
+                                        <div   style="background-color: #{{$color->color}};margin: auto;
                                                                             height: 60px;
                                                                             width: 60px;
                                                                             border-radius: 20px;">
+                                        </div>
                                     </td>
                                     <td class="product-name">
                                         <a href="#">
-                                            <span class="xxl__size">XXL</span>
+                                            <span class="xxl__size">{{$color->size->size}}</span>
                                         </a>
                                     </td>
-                                    <td class="product-price"><span class="amount">£165.00</span></td>
-                                    <td class="product-quantity"><input type="number" value="1"/></td>
-                                    <td class="product-subtotal">£165.00</td>
+                                    <td class="product-price"><span class="amount">{{$color->size->product->current_price}}DA</span></td>
+                                    <td class="product-quantity"><input type="number" value="{{$color->qty ?? 1}}"/></td>
+                                    <td class="product-subtotal">{{$color->size->product->current_price * ($color->qty ?? 1)}}DA</td>
                                     <td class="product-remove"><a href="#">X</a></td>
                                 </tr>
-                                <tr>
-                                    <td class="product-thumbnail">
-                                        <img src="images/product/2.png" alt="product img" height="100" width="100"/>
-                                    </td>
-                                    <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
-                                    <td class="product-quantity" >
-                                        <input   style="background-color: #ffba00;margin: auto;
-                                                                            height: 60px;
-                                                                            width: 60px;
-                                                                            border-radius: 20px;">
-                                    </td>
-                                    <td class="product-name">
-                                        <a href="#">
-                                            <span class="xxl__size">XXL</span>
-                                        </a>
-                                    </td>
-                                    <td class="product-price"><span class="amount">£165.00</span></td>
-                                    <td class="product-quantity"><input type="number" value="1"/></td>
-                                    <td class="product-subtotal">£165.00</td>
-                                    <td class="product-remove"><a href="#">X</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="product-thumbnail">
-                                        <img src="images/product/2.png" alt="product img" height="100" width="100"/>
-                                    </td>
-                                    <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
-                                    <td class="product-quantity" >
-                                        <input   style="background-color: #ffba00;margin: auto;
-                                                                            height: 60px;
-                                                                            width: 60px;
-                                                                            border-radius: 20px;">
-                                    </td>
-                                    <td class="product-name">
-                                        <a href="#">
-                                            <span class="xxl__size">XXL</span>
-                                        </a>
-                                    </td>
-                                    <td class="product-price"><span class="amount">£165.00</span></td>
-                                    <td class="product-quantity"><input type="number" value="1"/></td>
-                                    <td class="product-subtotal">£165.00</td>
-                                    <td class="product-remove"><a href="#">X</a></td>
-                                </tr>
+                                @empty
+                                    <tr>
+                                        <td colspan="8">
+                                            Empty cart
+                                        </td>
+                                    </tr>
+                                @endforelse
                                 </tbody>
                             </table>
                         </div>
                         <div class="row">
                             <div class="col-md-8 col-sm-7 col-xs-12">
                                 <div class="buttons-cart">
-                                    <a href="shop.html">Continue Shopping</a>
+                                    <a href="{{route('shop')}}">Continue Shopping</a>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-5 col-xs-12">
@@ -122,7 +89,7 @@
                                         <tr class="order-total">
                                             <th class="h1">Total</th>
                                             <td>
-                                                <strong><span class="amount">£215.00</span></strong>
+                                                <strong><span class="amount">{{array_sum($cart)}}</span></strong>
                                             </td>
                                         </tr>
                                         </tbody>

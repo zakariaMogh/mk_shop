@@ -37,10 +37,17 @@ Route::middleware('auth')->group(function (){
 });
 
 Route::get('/', [\App\Http\Controllers\Client\Web\HomeController::class, 'index'])->name('home');
+
 Route::get('contact', [\App\Http\Controllers\Client\Web\ContactController::class, 'index'])->name('contact');
+
 Route::get('shop', [\App\Http\Controllers\Client\Web\ShopController::class, 'index'])->name('shop');
+
 Route::get('checkout', [\App\Http\Controllers\Client\Web\CheckoutController::class, 'index'])->name('checkout');
+
 Route::get('cart', [\App\Http\Controllers\Client\Web\CartController::class, 'index'])->name('cart');
+Route::post('cart', [\App\Http\Controllers\Client\Web\CartController::class, 'store'])->name('cart.store');
+
+
 Route::get('product-details/{id}', [\App\Http\Controllers\Client\Web\ProductDetailController::class, 'show'])->name('product-details');
 //
 //Route::get('artisan', function (){

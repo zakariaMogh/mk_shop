@@ -82,9 +82,6 @@
                         @endif
                     </ul>
                     <livewire:size-color :product="$product"/>
-                    <ul class="pro__dtl__btn">
-                        <li class="buy__now__btn"><a href="#">buy now</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
