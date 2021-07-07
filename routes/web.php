@@ -34,6 +34,9 @@ Route::get('/{id}/print','Admin\OrderController@printInvoice')->name('invoice.pr
 
 Route::middleware('auth')->group(function (){
     Route::any('logout',[\App\Http\Controllers\Client\Web\Auth\LoginController::class,'logout'])->name('logout');
+
+    Route::get('checkout', [\App\Http\Controllers\Client\Web\CheckoutController::class, 'index'])->name('checkout');
+    Route::post('checkout', [\App\Http\Controllers\Client\Web\CheckoutController::class, 'store'])->name('checkout.store');
 });
 
 Route::get('/', [\App\Http\Controllers\Client\Web\HomeController::class, 'index'])->name('home');
@@ -41,8 +44,6 @@ Route::get('/', [\App\Http\Controllers\Client\Web\HomeController::class, 'index'
 Route::get('contact', [\App\Http\Controllers\Client\Web\ContactController::class, 'index'])->name('contact');
 
 Route::get('shop', [\App\Http\Controllers\Client\Web\ShopController::class, 'index'])->name('shop');
-
-Route::get('checkout', [\App\Http\Controllers\Client\Web\CheckoutController::class, 'index'])->name('checkout');
 
 Route::get('cart', [\App\Http\Controllers\Client\Web\CartController::class, 'index'])->name('cart');
 Route::post('cart', [\App\Http\Controllers\Client\Web\CartController::class, 'store'])->name('cart.store');

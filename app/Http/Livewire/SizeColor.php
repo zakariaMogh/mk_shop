@@ -9,9 +9,11 @@ class SizeColor extends Component
     public $product;
     public $colors;
     public $color;
+    public $size_id;
 
     public function chooseSize($id)
     {
+        $this->size_id = $id;
         $size = $this->product->sizes->filter(function($item) use ($id) {
             return $item->id == $id;
         })->first();
