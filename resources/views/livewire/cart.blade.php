@@ -67,7 +67,7 @@
                                     <tr class="order-total">
                                         <th class="h1">Total</th>
                                         <td>
-                                            <strong><span class="amount">{{$total}}</span></strong>
+                                            <strong><span class="amount">{{$total}}DA</span></strong>
                                         </td>
                                     </tr>
                                     </tbody>

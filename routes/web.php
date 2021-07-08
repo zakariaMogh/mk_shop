@@ -37,6 +37,9 @@ Route::middleware('auth')->group(function (){
 
     Route::get('checkout', [\App\Http\Controllers\Client\Web\CheckoutController::class, 'index'])->name('checkout');
     Route::post('checkout', [\App\Http\Controllers\Client\Web\CheckoutController::class, 'store'])->name('checkout.store');
+
+    Route::post('contact', [\App\Http\Controllers\Client\Web\ContactController::class, 'store'])->name('contact.store');
+
 });
 
 Route::get('/', [\App\Http\Controllers\Client\Web\HomeController::class, 'index'])->name('home');

@@ -12,8 +12,8 @@
                            class="quick-view modal-view detail-link"
                            href="{{route('product-details', $product->id)}}"><span
                                 class="ti-eye"></span></a></li>
-                    <li><a title="Add TO Cart" href="cart.html"><span
-                                class="ti-shopping-cart"></span></a></li>
+{{--                    <li><a title="Add TO Cart" href="cart.html"><span--}}
+{{--                                class="ti-shopping-cart"></span></a></li>--}}
 
                 </ul>
             </div>

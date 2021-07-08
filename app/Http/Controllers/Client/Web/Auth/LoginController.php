@@ -34,6 +34,10 @@ class LoginController extends Controller
      */
     public function index()
     {
+        if(!session()->has('url.intended'))
+        {
+            session(['url.intended' => url()->previous()]);
+        }
         return view('front.auth.login');
     }
 
@@ -47,7 +51,9 @@ class LoginController extends Controller
 
         // login success
         if ($this->guard()->attempt($data,$request->has('remember_me'))){
-            return redirect()->to($this->redirectTo);
+
+            return redirect(session()->get('url.intended'));
+//            return redirect()->to($this->redirectTo);
         }
 
         //login fails

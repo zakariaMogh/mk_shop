@@ -18,17 +18,17 @@ class CartController extends Controller
     {
         $data = $request->validate([
             'color' => 'required|exists:colors,id',
-            'qty' => 'required|numeric|min:0'
+//            'qty' => 'required|numeric|min:0'
         ]);
 
         $color = Color::findOrFail($data['color'])->load('size.product');
 
-        if ($color->qty > $data['qty']) {
-            session()->flash('error', 'Quantité insufisante');
-            return back();
-        }
+//        if ($color->qty > $data['qty']) {
+//            session()->flash('error', 'Quantité insufisante');
+//            return back();
+//        }
 
-        $color['qty'] = $data['qty'];
+        $color['qty'] = 1;
         $cart = session()->get('cart');
         if (!$cart) {
             $cart = [$color->id => $color];

@@ -10,7 +10,7 @@
                         <div class="bradcaump__inner text-center">
                             <h2 class="bradcaump-title">Contact US</h2>
                             <nav class="bradcaump-inner">
-                                <a class="breadcrumb-item" href="index.html">Home</a>
+                                <a class="breadcrumb-item" href="{{route('home')}}">Home</a>
                                 <span class="brd-separetor">/</span>
                                 <span class="breadcrumb-item active">Contact US</span>
                             </nav>
@@ -25,64 +25,76 @@
     <section class="htc__contact__area ptb--120 bg__white">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="htc__contact__container">
-                        <div class="htc__contact__address">
-                            <h2 class="contact__title">contact info</h2>
-                            <div class="contact__address__inner">
-                                <!-- Start Single Adress -->
-                                <div class="single__contact__address">
-                                    <div class="contact__icon">
-                                        <span class="ti-location-pin"></span>
-                                    </div>
-                                    <div class="contact__details">
-                                        <p>Location : <br> 77, seventh avenue, Brat road USA.</p>
-                                    </div>
-                                </div>
-                                <!-- End Single Adress -->
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 smt-30 xmt-30">
+                    <h2 class="contact__title">contact info</h2>
+                    <div class="contact__address__inner">
+                        <!-- Start Single Adress -->
+                        <div class="single__contact__address">
+                            <div class="contact__icon">
+                                <span class="ti-location-pin"></span>
                             </div>
-                            <div class="contact__address__inner">
-                                <!-- Start Single Adress -->
-                                <div class="single__contact__address">
-                                    <div class="contact__icon">
-                                        <span class="ti-mobile"></span>
-                                    </div>
-                                    <div class="contact__details">
-                                        <p> Phone : <br><a href="#">+012 345 678 102 </a></p>
-                                    </div>
-                                </div>
-                                <!-- End Single Adress -->
-                                <!-- Start Single Adress -->
-                                <div class="single__contact__address">
-                                    <div class="contact__icon">
-                                        <span class="ti-email"></span>
-                                    </div>
-                                    <div class="contact__details">
-                                        <p> Mail :<br><a href="#">info@example.com</a></p>
-                                    </div>
-                                </div>
-                                <!-- End Single Adress -->
+                            <div class="contact__details">
+                                <p>Location : <br> {{$information->address}}, {{$information->province}}, {{$information->wilaya}}</p>
                             </div>
                         </div>
+                        <!-- End Single Adress -->
+                    </div>
+                    <div class="contact__address__inner">
+                        <!-- Start Single Adress -->
+                        <div class="single__contact__address">
+                            <div class="contact__icon">
+                                <span class="ti-mobile"></span>
+                            </div>
+                            <div class="contact__details">
+                                <p> Phone : <br><a href="#">{{$information->phone}} </a></p>
+                            </div>
+                        </div>
+                        <!-- End Single Adress -->
+                        <!-- Start Single Adress -->
+                        <div class="single__contact__address">
+                            <div class="contact__icon">
+                                <span class="ti-email"></span>
+                            </div>
+                            <div class="contact__details">
+                                <p> Mail :<br><a href="#">{{$information->email}}</a></p>
+                            </div>
+                        </div>
+                        <!-- End Single Adress -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="htc__contact__container">
+
                         <div class="contact-form-wrap">
                             <div class="contact-title">
                                 <h2 class="contact__title">Get In Touch</h2>
                             </div>
-                            <form id="contact-form" action="mail.php" method="post">
+                            @include('front.layouts.partials.messages')
+
+                            <div class="form-output">
+                                @if ($errors->any())
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li class="text-danger small">*{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                            </div>
+                            <form  action="{{route('contact.store')}}" method="post">
+                                @csrf
                                 <div class="single-contact-form">
-                                    <div class="contact-box name">
-                                        <input type="text" name="name" placeholder="Your Nme*">
-                                        <input type="email" name="email" placeholder="Mail*">
+                                    <div class="contact-box subject">
+                                        <input type="email" name="email" placeholder="Mail*" value="{{old('email')}}">
                                     </div>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box subject">
-                                        <input type="text" name="subject" placeholder="Subject*">
+                                        <input type="text" name="subject" placeholder="Subject*" value="{{old('subject')}}">
                                     </div>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box message">
-                                        <textarea name="message"  placeholder="Massage*"></textarea>
+                                        <textarea name="content"  placeholder="Massage*">{{old('content')}}</textarea>
                                     </div>
                                 </div>
                                 <div class="contact-btn">
@@ -90,16 +102,10 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="form-output">
-                            <p class="form-messege"></p>
-                        </div>
+
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 smt-30 xmt-30">
-                    <div class="map-contacts">
-                        <div id="googleMap"></div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>

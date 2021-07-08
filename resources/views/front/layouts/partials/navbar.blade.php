@@ -37,7 +37,8 @@
                     <ul class="menu-extra">
                         <li class="search search__open hidden-xs"><span class="ti-search"></span></li>
                         <li><a href="{{route('login')}}"><span class="ti-user"></span></a></li>
-                        <li class="cart__menu"><span class="ti-shopping-cart"></span></li>
+                        <li ><a href="{{route('cart')}}"><span class="ti-shopping-cart"></span></a></li>
+{{--                        class="cart__menu"--}}
                         @auth
                             <li><a href="{{route('logout')}}">logout</a></li>
                         @endauth

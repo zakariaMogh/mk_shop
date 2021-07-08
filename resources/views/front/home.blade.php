@@ -55,10 +55,10 @@
                                 @if($category->children->isNotEmpty())
                                 <div class="category-menu-dropdown row">
                                     <div class=" category-common mb--30 col-sm-8">
-                                        <h4 class="categories-subtitle w-100"> {{$category->name}} </h4>
+                                        <h4 class="categories-subtitle w-100"><a href="{{route('shop', ['category' => $category->slug])}}">{{$category->name}}</a> </h4>
                                         <ul>
                                             @foreach($category->children as $c)
-                                            <li><a href="#"> {{$c->name}}</a></li>
+                                            <li><a href="{{route('shop', ['category' => $c->slug])}}"> {{$c->name}}</a></li>
                                             @endforeach
                                         </ul>
                                     </div>

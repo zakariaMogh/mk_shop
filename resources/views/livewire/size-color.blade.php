@@ -26,22 +26,22 @@
         @enderror
     </div>
     <div class="product-action-wrap">
-        <div class="prodict-statas"><span>Quantity :</span></div>
+{{--        <div class="prodict-statas"><span>Quantity :</span></div>--}}
         <div class="product-quantity">
             <form id='add-to-cart' method='POST' action="{{route('cart.store')}}" >
                 @csrf
                 <input type="hidden" name="size">
                 <input type="hidden" name="color" wire:model.defer="color">
-                <div class="product-quantity">
-                    <div class="cart-plus-minus">
-                        <input class="cart-plus-minus-box" type="text" name="qty" value="1">
-                    </div>
-                    @error('qty')
-                    <span class="text-danger small" >
-                                        *{{ $message }}
-                                    </span>
-                    @enderror
-                </div>
+{{--                <div class="product-quantity">--}}
+{{--                    <div class="cart-plus-minus">--}}
+{{--                        <input class="cart-plus-minus-box" type="text" name="qty" value="1">--}}
+{{--                    </div>--}}
+{{--                    @error('qty')--}}
+{{--                    <span class="text-danger small" >--}}
+{{--                                        *{{ $message }}--}}
+{{--                                    </span>--}}
+{{--                    @enderror--}}
+{{--                </div>--}}
             </form>
         </div>
     </div>
