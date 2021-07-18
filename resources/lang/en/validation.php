@@ -302,6 +302,7 @@ return [
         'sizes'                 => 'tailles',
         'tracking_link'         => 'Lien de suivi de la command',
         'phone_1'               => 'téléphone',
+        'old_password'               => 'Ancien mot de passe',
         ],
 
 ];

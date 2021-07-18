@@ -40,7 +40,7 @@ class ShopController extends Controller
         }
 
 
-        $products = $query->orderByDesc('created_at')->get();
+        $products = $query->orderByDesc('created_at')->paginate(24);
 
         return view('front.shop', compact('products', 'categories'));
     }

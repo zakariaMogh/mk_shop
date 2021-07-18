@@ -40,8 +40,14 @@ Route::middleware('auth')->group(function (){
 
     Route::post('contact', [\App\Http\Controllers\Client\Web\ContactController::class, 'store'])->name('contact.store');
 
-});
+    Route::get('profile', [\App\Http\Controllers\Client\Web\ProfileController::class, 'index'])->name('profile.index');
+    Route::put('profile', [\App\Http\Controllers\Client\Web\ProfileController::class, 'update'])->name('profile.update');
 
+    Route::post('review', [\App\Http\Controllers\Client\Web\ProductDetailController::class, 'storeReview'])->name('review.store');
+
+    Route::get('orders', [\App\Http\Controllers\Client\Web\OrderController::class, 'index'])->name('order.index');
+
+});
 Route::get('/', [\App\Http\Controllers\Client\Web\HomeController::class, 'index'])->name('home');
 
 Route::get('contact', [\App\Http\Controllers\Client\Web\ContactController::class, 'index'])->name('contact');

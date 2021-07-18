@@ -1,6 +1,6 @@
 <div>
     <div class="pro__dtl__size">
-        <h2 class="title__5">Size</h2>
+        <h2 class="title__5">Taille</h2>
         <ul class="pro__choose__size">
             @foreach($product->sizes as $size)
                 <li><a href="javascript:void(0)" wire:click="chooseSize({{$size->id}})"
@@ -9,7 +9,7 @@
         </ul>
     </div>
     <div class="pro__dtl__color">
-        <h2 class="title__5">Choose Colour</h2>
+        <h2 class="title__5">Couleur</h2>
         <ul class="pro__choose__color">
             @foreach($colors as $color)
                 @if($color->quantity > 0)
@@ -47,9 +47,9 @@
     </div>
     <ul class="pro__dtl__btn " >
         <li class="buy__now__btn">
-            <a href="javascript:void(0)" onclick="addToCart()" wire:loading.remove>buy now</a>
+            <a href="javascript:void(0)" onclick="addToCart()" wire:loading.remove>Ajouter a votre panier</a>
             <div wire:loading>
-                <a href="javascript:void(0)"  wire:loading class="bg-secondary">buy now</a>
+                <a href="javascript:void(0)"  wire:loading class="bg-secondary">Ajouter a votre panier</a>
             </div>
 
         </li>

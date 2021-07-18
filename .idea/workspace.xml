@@ -10,16 +10,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="Cart setup and fix&#10;checkout setup">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some fixed and changes">
+      <change afterPath="$PROJECT_DIR$/resources/views/front/orders.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/product-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product-card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ProductDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ProductDetailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ShopController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/product-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product-details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -179,16 +185,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/front" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\mk_shop\resources\views\front" />
       <recent name="C:\wamp64\www\mk_shop\resources\views\front\layouts\partials" />
       <recent name="D:\wamp64\www\mk_shop" />
       <recent name="C:\wamp64\www\mk_shop\public\front-assets" />
-      <recent name="C:\wamp64\www\mk_shop\resources\views\front" />
       <recent name="C:\wamp64\www\mk_shop\resources\views\front\layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -291,14 +297,16 @@
       <workItem from="1625584777856" duration="378000" />
       <workItem from="1625585190629" duration="3373000" />
       <workItem from="1625661008488" duration="14504000" />
-      <workItem from="1625736710837" duration="3674000" />
-    </task>
-    <task id="LOCAL-00038" summary="fixed some stuff">
-      <created>1617627699823</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1617627699823</updated>
+      <workItem from="1625736710837" duration="3733000" />
+      <workItem from="1625741778439" duration="22000" />
+      <workItem from="1625925605449" duration="31000" />
+      <workItem from="1625998462532" duration="22000" />
+      <workItem from="1626003010312" duration="43000" />
+      <workItem from="1626102745072" duration="2000" />
+      <workItem from="1626112249856" duration="33000" />
+      <workItem from="1626129432811" duration="1207000" />
+      <workItem from="1626344101584" duration="8439000" />
+      <workItem from="1626624256778" duration="5308000" />
     </task>
     <task id="LOCAL-00039" summary="fixed some stuff">
       <created>1617630210276</created>
@@ -636,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625690912222</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="some fixed and changes">
+      <created>1625741745791</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1625741745791</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,7 +670,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="temporarly fixed trending" />
     <MESSAGE value="design changes" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="categories fix" />
@@ -680,29 +694,30 @@
     <MESSAGE value="Controllers / home view" />
     <MESSAGE value="Cart setup" />
     <MESSAGE value="Cart setup and fix&#10;checkout setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cart setup and fix&#10;checkout setup" />
+    <MESSAGE value="some fixed and changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixed and changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="741" y="253" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1625662187045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="741" y="253" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625662187045" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1625737632466">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1626626672469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625737632466" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1625686204700">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626626672469" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1626366118701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1625686204700" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1626366118701" />
     <state width="503" height="446" key="SwitcherDM" timestamp="1625682472130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="503" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1625682472130" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625690920341">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625741790438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625690920341" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625741790438" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1625598020622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

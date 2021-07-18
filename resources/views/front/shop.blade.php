@@ -8,11 +8,11 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="bradcaump__inner text-center">
-                            <h2 class="bradcaump-title">Shop Page</h2>
+                            <h2 class="bradcaump-title">Boutique</h2>
                             <nav class="bradcaump-inner">
-                                <a class="breadcrumb-item" href="{{route('home')}}">Home</a>
+                                <a class="breadcrumb-item" href="{{route('home')}}">Accueille</a>
                                 <span class="brd-separetor">/</span>
-                                <span class="breadcrumb-item active">Shop Page</span>
+                                <span class="breadcrumb-item active">Boutique</span>
                             </nav>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
 
                             </div>
                             <div class="filter__box">
-                                <a class="filter__menu" href="#">filter</a>
+                                <a class="filter__menu" href="#">Filtre</a>
                             </div>
                         </div>
                     </div>
@@ -128,10 +128,8 @@
                 </div>
                 <!-- Start Load More BTn -->
                 <div class="row mt--60">
-                    <div class="col-md-12">
-                        <div class="htc__loadmore__btn">
-                            <a href="#">load more</a>
-                        </div>
+                    <div class="col-12" style="text-align: center">
+                        {{$products->onEachSide(1)->withQueryString()->links()}}
                     </div>
                 </div>
                 <!-- End Load More BTn -->

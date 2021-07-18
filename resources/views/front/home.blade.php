@@ -23,8 +23,7 @@
                                                 <h1>{{$banner->title}} </h1>
                                                 {{-- <span class="text--theme">Collection</span>--}}
                                                 <div class="slider__btn">
-                                                    <a class="htc__btn" href="{{$banner->link}}" target="_blank">shop
-                                                        now</a>
+                                                    <a class="htc__btn" href="{{$banner->link}}" target="_blank">Explorer</a>
                                                 </div>
                                             </div>
 
@@ -42,7 +41,7 @@
             <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 float-right-style">
                 <div class="categories-menu mrg-xs">
                     <div class="category-heading">
-                        <h3> Browse Categories</h3>
+                        <h3> Catégories</h3>
                     </div>
                     <div class="category-menu-list">
                         <ul>
@@ -88,7 +87,7 @@
                 <a href="{{route('shop', ['trending' => 1])}}" class="section__title row">
                     <h2 class="title__line col-lg-3 text-start">Tendance </h2>
                     <span class="col-lg-8" style="border-bottom: 1px solid #797979; height: 20px"></span>
-                    <span class=" col-lg-1 text-right p-3">see all > </span></span>
+                    <span class=" col-lg-1 text-right p-3">Voir tout > </span></span>
                 </a>
             </div>
         </div>
@@ -115,9 +114,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <a href="{{route('shop')}}" class="section__title row">
-                    <h2 class="title__line col-lg-3 text-start">Latest</h2>
+                    <h2 class="title__line col-lg-3 text-start">Derniers </h2>
                     <span class="col-lg-8" style="border-bottom: 1px solid #797979; height: 20px"></span>
-                    <span class=" col-lg-1 text-right p-3">see all > </span></span>
+                    <span class=" col-lg-1 text-right p-3">Voir tout > </span></span>
                 </a>
             </div>
         </div>
@@ -147,7 +146,7 @@
                 <a href="{{route('shop', ['promotion' => 1])}}" class="section__title row">
                     <h2 class="title__line col-lg-3 text-start">Promotion </h2>
                     <span class="col-lg-8" style="border-bottom: 1px solid #797979; height: 20px"></span>
-                    <span class=" col-lg-1 text-right p-3">see all > </span></span>
+                    <span class=" col-lg-1 text-right p-3">Voir tout > </span></span>
                 </a>
             </div>
         </div>

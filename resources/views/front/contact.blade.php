@@ -8,11 +8,11 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="bradcaump__inner text-center">
-                            <h2 class="bradcaump-title">Contact US</h2>
+                            <h2 class="bradcaump-title">Contact</h2>
                             <nav class="bradcaump-inner">
-                                <a class="breadcrumb-item" href="{{route('home')}}">Home</a>
+                                <a class="breadcrumb-item" href="{{route('home')}}">Accueille</a>
                                 <span class="brd-separetor">/</span>
-                                <span class="breadcrumb-item active">Contact US</span>
+                                <span class="breadcrumb-item active">Contact</span>
                             </nav>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                                 <span class="ti-mobile"></span>
                             </div>
                             <div class="contact__details">
-                                <p> Phone : <br><a href="#">{{$information->phone}} </a></p>
+                                <p> Téléphone : <br><a href="#">{{$information->phone}} </a></p>
                             </div>
                         </div>
                         <!-- End Single Adress -->
@@ -56,7 +56,7 @@
                                 <span class="ti-email"></span>
                             </div>
                             <div class="contact__details">
-                                <p> Mail :<br><a href="#">{{$information->email}}</a></p>
+                                <p> Email :<br><a href="#">{{$information->email}}</a></p>
                             </div>
                         </div>
                         <!-- End Single Adress -->
@@ -67,7 +67,7 @@
 
                         <div class="contact-form-wrap">
                             <div class="contact-title">
-                                <h2 class="contact__title">Get In Touch</h2>
+                                <h2 class="contact__title">Contactez nous</h2>
                             </div>
                             @include('front.layouts.partials.messages')
 
@@ -84,21 +84,21 @@
                                 @csrf
                                 <div class="single-contact-form">
                                     <div class="contact-box subject">
-                                        <input type="email" name="email" placeholder="Mail*" value="{{old('email')}}">
+                                        <input type="email" name="email" placeholder="Email*" value="{{old('email')}}">
                                     </div>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box subject">
-                                        <input type="text" name="subject" placeholder="Subject*" value="{{old('subject')}}">
+                                        <input type="text" name="subject" placeholder="Sujet*" value="{{old('subject')}}">
                                     </div>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box message">
-                                        <textarea name="content"  placeholder="Massage*">{{old('content')}}</textarea>
+                                        <textarea name="content"  placeholder="Message*">{{old('content')}}</textarea>
                                     </div>
                                 </div>
                                 <div class="contact-btn">
-                                    <button type="submit" class="fv-btn">SEND</button>
+                                    <button type="submit" class="fv-btn">Envoyez</button>
                                 </div>
                             </form>
                         </div>

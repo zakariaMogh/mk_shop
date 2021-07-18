@@ -14,19 +14,19 @@
                 <div class="col-md-8 col-lg-8 col-sm-10 col-xs-10">
                     <nav class="mainmenu__nav hidden-xs hidden-sm">
                         <ul class="main__menu">
-                            <li class="drop"><a href="{{route('home')}}">Home</a></li>
-                            <li class="drop"><a href="{{route('shop')}}">Product</a></li>
-                            <li class="drop"><a href="{{route('cart')}}">Cart</a></li>
-                            <li><a href="{{route('contact')}}">contact</a></li>
+                            <li class="drop"><a href="{{route('home')}}">Accueille</a></li>
+                            <li class="drop"><a href="{{route('shop')}}">Boutique</a></li>
+                            <li class="drop"><a href="{{route('cart')}}">Panier</a></li>
+                            <li><a href="{{route('contact')}}">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="mobile-menu clearfix visible-xs visible-sm">
                         <nav id="mobile_dropdown">
                             <ul>
-                                <li><a href="{{route('home')}}">Home</a></li>
-                                <li><a href="{{route('shop')}}">Product</a></li>
-                                <li><a href="{{route('cart')}}">Cart</a></li>
-                                <li><a href="{{route('contact')}}">contact</a></li>
+                                <li><a href="{{route('home')}}">Accueille</a></li>
+                                <li><a href="{{route('shop')}}">Boutique</a></li>
+                                <li><a href="{{route('cart')}}">Panier</a></li>
+                                <li><a href="{{route('contact')}}">Contact</a></li>
 
                             </ul>
                         </nav>
@@ -36,11 +36,11 @@
                 <div class="col-md-2 col-sm-6 col-xs-6">
                     <ul class="menu-extra">
                         <li class="search search__open hidden-xs"><span class="ti-search"></span></li>
-                        <li><a href="{{route('login')}}"><span class="ti-user"></span></a></li>
+                        <li><a href="{{route('order.index')}}"><span class="ti-user"></span></a></li>
                         <li ><a href="{{route('cart')}}"><span class="ti-shopping-cart"></span></a></li>
 {{--                        class="cart__menu"--}}
                         @auth
-                            <li><a href="{{route('logout')}}">logout</a></li>
+                            <li><a href="{{route('logout')}}">Déconnecter</a></li>
                         @endauth
                     </ul>
                 </div>

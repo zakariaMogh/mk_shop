@@ -1,6 +1,57 @@
 @extends('front.layouts.app')
 
 @push('css')
+
+
+
+    <style>
+        fieldset,
+        label {
+            margin: 0;
+            padding: 0
+        }
+
+        .person_rating {
+            border: none;
+            margin-right: 49px
+        }
+
+        .person_rating>[id^="star"] {
+            display: none
+        }
+
+        .person_rating>label:before {
+            margin: 5px;
+            font-size: 2.25em;
+            font-family: FontAwesome;
+            display: inline-block;
+            content: "\f005"
+        }
+
+        .person_rating>.half:before {
+            content: "\f089";
+            position: absolute
+        }
+
+        .person_rating>label {
+            color: #ddd;
+            float: right
+        }
+
+        .person_rating>[id^="star"]:checked~label,
+        .person_rating:not(:checked)>label:hover,
+        .person_rating:not(:checked)>label:hover~label {
+            color: #FFD700
+        }
+
+        .person_rating>[id^="star"]:checked+label:hover,
+        .person_rating>[id^="star"]:checked~label:hover,
+        .person_rating>label:hover~[id^="star"]:checked~label,
+        .person_rating>[id^="star"]:checked~label:hover~label {
+            color: #FFED85
+        }
+
+    </style>
 @livewireStyles
 @endpush
 
@@ -13,11 +64,11 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="bradcaump__inner text-center">
-                        <h2 class="bradcaump-title">Product Details</h2>
+                        <h2 class="bradcaump-title">Details du produit</h2>
                         <nav class="bradcaump-inner">
-                            <a class="breadcrumb-item" href="{{route('home')}}">Home</a>
+                            <a class="breadcrumb-item" href="{{route('home')}}">Accueille</a>
                             <span class="brd-separetor">/</span>
-                            <span class="breadcrumb-item active">Product Details</span>
+                            <span class="breadcrumb-item active">Details du produit</span>
                         </nav>
                     </div>
                 </div>
@@ -104,7 +155,7 @@
                     </li>
                     --}}
                     <li role="presentation">
-                        <a href="#reviews" role="tab" data-toggle="tab">Reviews</a>
+                        <a href="#reviews" role="tab" data-toggle="tab">Commentaires</a>
                     </li>
                 </ul>
             </div>
@@ -116,86 +167,11 @@
                     <div role="tabpanel" id="description" class="product__tab__content fade in active">
                         <div class="product__description__wrap">
                             <div class="product__desc">
-                                <h2 class="title__6">Details</h2>
+                                <h2 class="title__6">Détails</h2>
                                 <p>{!! $product->description !!}</p>
                             </div>
-                            {{--
-                            <div class="pro__feature">--}}
-                                {{-- <h2 class="title__6">Features</h2>--}}
-                                {{--
-                                <ul class="feature__list">--}}
-                                    {{--
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Duis aute irure dolor in--}}
-                                            {{-- reprehenderit in voluptate velit esse</a></li>
-                                    --}}
-                                    {{--
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in--}}
-                                            {{-- reprehenderit in voluptate velit esse</a></li>
-                                    --}}
-                                    {{--
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor--}}
-                                            {{-- incididunt ut labore et </a></li>
-                                    --}}
-                                    {{--
-                                    <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea--}}
-                                            {{-- commodo consequat.</a></li>
-                                    --}}
-                                    {{--
-                                </ul>
-                                --}}
-                                {{--
-                            </div>
-                            --}}
                         </div>
                     </div>
-                    <!-- End Single Content -->
-                    <!-- Start Single Content -->
-                    {{--
-                    <div role="tabpanel" id="sheet" class="product__tab__content fade">--}}
-                        {{--
-                        <div class="pro__feature">--}}
-                            {{-- <h2 class="title__6">Data sheet</h2>--}}
-                            {{--
-                            <ul class="feature__list">--}}
-                                {{--
-                                <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Duis aute irure dolor in--}}
-                                        {{-- reprehenderit in voluptate velit esse</a></li>
-                                --}}
-                                {{--
-                                <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in reprehenderit in--}}
-                                        {{-- voluptate velit esse</a></li>
-                                --}}
-                                {{--
-                                <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Irure dolor in reprehenderit in--}}
-                                        {{-- voluptate velit esse</a></li>
-                                --}}
-                                {{--
-                                <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor--}}
-                                        {{-- incididunt ut labore et </a></li>
-                                --}}
-                                {{--
-                                <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Sed do eiusmod tempor--}}
-                                        {{-- incididunt ut labore et </a></li>
-                                --}}
-                                {{--
-                                <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea commodo--}}
-                                        {{-- consequat.</a></li>
-                                --}}
-                                {{--
-                                <li><a href="#"><i class="zmdi zmdi-play-circle"></i>Nisi ut aliquip ex ea commodo--}}
-                                        {{-- consequat.</a></li>
-                                --}}
-                                {{--
-                            </ul>
-                            --}}
-                            {{--
-                        </div>
-                        --}}
-                        {{--
-                    </div>
-                    --}}
-                    <!-- End Single Content -->
-                    <!-- Start Single Content -->
 
                     <div role="tabpanel" id="reviews" class="product__tab__content fade">
                         <div class="review__address__inner">
@@ -234,30 +210,61 @@
                             <!-- End Single Review -->
                         </div>
                         <!-- Start RAting Area -->
-                        <div class="rating__wrap">
-                            <h2 class="rating-title">Write A review</h2>
-                            <h4 class="rating-title-2">Your Rating</h4>
-                            <div class="rating__list">
-                                <!-- Start Single List -->
-                                <ul class="rating">
-                                    <li><i class="zmdi zmdi-star-half"></i></li>
-                                </ul>
-                                <!-- End Single List -->
+                        <form id="review-form" method="post" action="{{route('review.store')}}">
+                            <div class="rating__wrap">
+                                @include('front.layouts.partials.messages')
+                                @if ($errors->any())
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li class="text-danger small">*{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                                <h2 class="rating-title">Ecrivez un commetaire</h2>
+                                <h4 class="rating-title-2">Votre note</h4>
+                                <div class="rating__list">
+                                    <!-- Start Single List -->
+                                    {{--                                <ul class="rating">--}}
+                                    {{--                                    <li><i class="zmdi zmdi-star-half"></i></li>--}}
+                                    {{--                                </ul>--}}
+                                    <fieldset class="person_rating">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label class="full" for="star5" title="5 étoiles"></label>
+
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label class="full" for="star4" title="4 étoiles"></label>
+
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label class="full" for="star3" title="3 étoiles"></label>
+
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label class="full" for="star2" title="2 étoiles"></label>
+
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label class="full" for="star1" title="1 étoile"></label>
+
+                                    </fieldset>
+
+                                    <!-- End Single List -->
+                                </div>
                             </div>
-                        </div>
-                        <!-- End RAting Area -->
-                        <div class="review__box">
-                            <form id="review-form">
-                                <div class="single-review-form">
-                                    <div class="review-box message">
-                                        <textarea placeholder="Write your review"></textarea>
+                            <!-- End RAting Area -->
+                            <div class="review__box">
+                                <div>
+                                    @csrf
+                                    <input type="hidden" value="{{$product->id}}" name="product">
+                                    <div class="single-review-form">
+                                        <div class="review-box message">
+                                            <textarea placeholder="Write your review" name="comment">{{old('comment')}}</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="review-btn">
+                                        <a class="fv-btn" href="javascript:void(0)" onclick="submit()">Confirmer</a>
                                     </div>
                                 </div>
-                                <div class="review-btn">
-                                    <a class="fv-btn" href="#">submit review</a>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
+
                     </div>
                     <!-- End Single Content -->
                 </div>
@@ -270,4 +277,22 @@
 
 @push('js')
 @livewireScripts
+
+<script>
+    function submit()
+    {
+        $('#review-form').submit()
+    }
+</script>
+
+<script>
+    $(document).ready(function(){
+
+        $("input[type='radio']").click(function(){
+            var sim = $("input[type='radio']:checked").val();
+//alert(sim);
+            if (sim<3) { $('.myratings').css('color','red'); $(".myratings").text(sim); }else{ $('.myratings').css('color','green'); $(".myratings").text(sim); } }); });
+</script>
+
+
 @endpush

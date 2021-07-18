@@ -10,13 +10,13 @@
                             <thead>
                             <tr>
                                 <th class="product-thumbnail">Image</th>
-                                <th class="product-name">Product</th>
-                                <th class="product-name">Color</th>
-                                <th class="product-name">Size</th>
-                                <th class="product-price">Price</th>
-                                <th class="product-quantity">Quantity</th>
+                                <th class="product-name">Produit</th>
+                                <th class="product-name">Couleur</th>
+                                <th class="product-name">Taille</th>
+                                <th class="product-price">Prix</th>
+                                <th class="product-quantity">Quantité</th>
                                 <th class="product-subtotal">Total</th>
-                                <th class="product-remove">Remove</th>
+                                <th class="product-remove">Enlever</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -47,7 +47,7 @@
                             @empty
                                 <tr>
                                     <td colspan="8">
-                                        Empty cart
+                                        Votre panier est vide
                                     </td>
                                 </tr>
                             @endforelse
@@ -57,7 +57,7 @@
                     <div class="row">
                         <div class="col-md-8 col-sm-7 col-xs-12">
                             <div class="buttons-cart">
-                                <a href="{{route('shop')}}">Continue Shopping</a>
+                                <a href="{{route('shop')}}">Continuez vos achats</a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-5 col-xs-12">
@@ -73,7 +73,7 @@
                                     </tbody>
                                 </table>
                                 <div class="wc-proceed-to-checkout">
-                                    <a href="{{route('checkout')}}">Proceed to Checkout</a>
+                                    <a href="{{route('checkout')}}">Continuez vers la finalisation</a>
                                 </div>
                             </div>
                         </div>
