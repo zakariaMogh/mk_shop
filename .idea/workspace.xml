@@ -10,25 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some fixed and changes">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/orders.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ProductDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ProductDetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/messages.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/product-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product-details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="Front end pages">
+      <change beforePath="$PROJECT_DIR$/resources/views/front/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/auth/login.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,14 +289,7 @@
       <workItem from="1626112249856" duration="33000" />
       <workItem from="1626129432811" duration="1207000" />
       <workItem from="1626344101584" duration="8439000" />
-      <workItem from="1626624256778" duration="5308000" />
-    </task>
-    <task id="LOCAL-00039" summary="fixed some stuff">
-      <created>1617630210276</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1617630210276</updated>
+      <workItem from="1626624256778" duration="5875000" />
     </task>
     <task id="LOCAL-00040" summary="fixed some stuff">
       <created>1617630494263</created>
@@ -651,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625741745791</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Front end pages">
+      <created>1626632993180</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1626632993180</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +653,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="design changes" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="categories fix" />
     <MESSAGE value="some changes" />
@@ -695,7 +677,8 @@
     <MESSAGE value="Cart setup" />
     <MESSAGE value="Cart setup and fix&#10;checkout setup" />
     <MESSAGE value="some fixed and changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some fixed and changes" />
+    <MESSAGE value="Front end pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front end pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="741" y="253" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1625662187045">
@@ -714,10 +697,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="503" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1625682472130" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625741790438">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626633004482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625741790438" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626633004482" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1625598020622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

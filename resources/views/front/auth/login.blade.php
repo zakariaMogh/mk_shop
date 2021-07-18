@@ -48,11 +48,11 @@
                                     </span>
                                 @enderror
                             </div>
-                            <div class="tabs__checkbox">
-                                <input type="checkbox" name="remember_me">
-                                <span> Remember me</span>
-                                <span class="forget"><a href="{{route('forgot.password.email')}}">Forget Pasword?</a></span>
-                            </div>
+{{--                            <div class="tabs__checkbox">--}}
+{{--                                <input type="checkbox" name="remember_me">--}}
+{{--                                <span> Remember me</span>--}}
+{{--                                <span class="forget"><a href="{{route('forgot.password.email')}}">Forget Pasword?</a></span>--}}
+{{--                            </div>--}}
                             <div class="htc__login__btn mt--30">
                                 <a onclick="login()" href="#">Login</a>
                             </div>
