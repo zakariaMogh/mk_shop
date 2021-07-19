@@ -17,7 +17,7 @@ class ShopController extends Controller
         if (\request()->has('trending') && \request()->get('trending') == 1)
         {
             $query = Product::with('categories')->withCount('reviews');
-            $products = $query->orderByDesc('reviews_count')->get();
+            $products = $query->orderByDesc('reviews_count')->paginate(24);
             return view('front.shop', compact('products', 'categories'));
         }
 
