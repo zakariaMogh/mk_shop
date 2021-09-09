@@ -529,3 +529,7 @@ div.style-customizer .skin-teal {
   display: block;
   margin-bottom: 20px;
 }
+.ui-widget-shadow{
+    -webkit-box-shadow: 0 0 5px #cac8c8;
+    box-shadow: 0 0 5px #cac8c8;
+}
