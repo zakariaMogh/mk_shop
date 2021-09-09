@@ -85,8 +85,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <a href="{{route('shop', ['trending' => 1])}}" class="section__title row">
-                    <h2 class="title__line  text-start col-lg-3">Tendance </h2>
-                    <span class="d-none d-lg-inline col-md-7 " style="border-bottom: 1px solid #797979; height: 20px"></span>
+                    <h2 class=" col-xs-9 text-start col-lg-3">Tendance </h2>
+                    <span class="col-md-7 hidden-xs" style="border-bottom: 1px solid #797979; height: 20px"></span>
                     <span class=" col-lg-2 text-right p-3">Voir tout ></span></span>
                 </a>
             </div>
@@ -114,9 +114,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <a href="{{route('shop')}}" class="section__title row">
-                    <h2 class="title__line col-lg-3 text-start">Derniers </h2>
-                    <span class="col-lg-8" style="border-bottom: 1px solid #797979; height: 20px"></span>
-                    <span class=" col-lg-1 text-right p-3">Voir tout > </span></span>
+                    <h2 class=" col-xs-9 col-lg-3 text-start">Derniers </h2>
+                    <span class="col-lg-7 hidden-xs" style="border-bottom: 1px solid #797979; height: 20px"></span>
+                    <span class=" col-lg-2 text-right p-3">Voir tout > </span></span>
                 </a>
             </div>
         </div>
@@ -144,9 +144,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <a href="{{route('shop', ['promotion' => 1])}}" class="section__title row">
-                    <h2 class="title__line col-lg-3 text-start">Promotion </h2>
-                    <span class="col-lg-8" style="border-bottom: 1px solid #797979; height: 20px"></span>
-                    <span class=" col-lg-1 text-right p-3">Voir tout > </span></span>
+                    <h2 class="  col-xs-9 col-lg-3 text-start">Promotion </h2>
+                    <span class="col-lg-7 hidden-xs" style="border-bottom: 1px solid #797979; height: 20px"></span>
+                    <span class=" col-lg-2 text-right p-3">Voir tout > </span></span>
                 </a>
             </div>
         </div>

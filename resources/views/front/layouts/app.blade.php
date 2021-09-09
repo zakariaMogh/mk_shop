@@ -79,6 +79,12 @@
 <script src="{{asset('front-assets/js/plugins.js')}}"></script>
 <script src="{{asset('front-assets/js/slick.min.js')}}"></script>
 <script src="{{asset('front-assets/js/owl.carousel.min.js')}}"></script>
+<script>
+
+    $(window).on('load', function () {
+        $('.preloader-wrapper').fadeOut(200);
+    });
+</script>
 <!-- Carousel -->
 <script>
     $('.owl-product').owlCarousel({

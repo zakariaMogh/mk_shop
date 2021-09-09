@@ -50,6 +50,10 @@
                             </div>
                         </div>
                         <!-- End Single Adress -->
+
+                    </div>
+                    <div class="contact__address__inner">
+
                         <!-- Start Single Adress -->
                         <div class="single__contact__address">
                             <div class="contact__icon">
