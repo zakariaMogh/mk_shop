@@ -1,9 +1,10 @@
 <div class="col-md-2 single__pro col-lg-2 cat--1 col-sm-4 col-xs-6 ">
-    <div class="product foo ">
+    <div class="product foo ui-widget-shadow" style="
+                border-radius: 10px;">
         <div class="product__inner">
-            <div class="pro__thumb ui-widget-shadow" style="background-image: url({{asset($product->image_url)}});
+            <div class="pro__thumb " style="background-image: url({{asset($product->image_url)}});
                 background-size: cover;background-position: center; height: 200px;
-                border-radius: 10px;box-shadow:  #2b2b2b">
+                border-radius: 10px;">
             </div>
             <div class="product__hover__info">
                 <ul class="product__action">
