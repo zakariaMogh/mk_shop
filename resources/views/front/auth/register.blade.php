@@ -3,7 +3,7 @@
 @section('content')
     <!-- Start Login Register Area -->
     <div class="htc__login__register bg__white ptb--100"
-         style="background: rgba(0, 0, 0, 0) url(images/bg/5.jpg) no-repeat scroll center center / cover ;">
+         style="background: rgba(0, 0, 0, 0) url({{asset('front-assets/images/bg/2.png')}}) ">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
@@ -38,7 +38,7 @@
                                     </span>
                                 @enderror
 
-                                <input  id="email" type="email"
+                                <input  id="email" type="email" class="my-1"
                                         placeholder="example@email.com*" name="email">
                                 @error('email')
                                 <span class="text-danger small" >
