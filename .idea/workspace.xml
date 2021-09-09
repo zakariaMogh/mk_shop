@@ -11,10 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="temporarely remove forget password">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/front-assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/navbar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,14 +292,7 @@
       <workItem from="1626624256778" duration="6527000" />
       <workItem from="1626687390075" duration="111000" />
       <workItem from="1631188210382" duration="12000" />
-      <workItem from="1631189676311" duration="2739000" />
-    </task>
-    <task id="LOCAL-00041" summary="fixed some stuff">
-      <created>1617630613952</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1617630613952</updated>
+      <workItem from="1631189676311" duration="3422000" />
     </task>
     <task id="LOCAL-00042" summary="fixed some stuff">
       <created>1617631654141</created>
@@ -640,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626633390562</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="temporarely remove forget password">
+      <created>1631192582248</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1631192582248</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,31 +682,5 @@
     <MESSAGE value="Front end pages" />
     <MESSAGE value="temporarely remove forget password" />
     <option name="LAST_COMMIT_MESSAGE" value="temporarely remove forget password" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="741" y="253" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1625662187045">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="741" y="253" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625662187045" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1626626672469">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626626672469" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1626366118701">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1626366118701" />
-    <state width="503" height="446" key="SwitcherDM" timestamp="1625682472130">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="503" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1625682472130" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626633430068">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626633430068" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1625598020622">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1625598020622" />
   </component>
 </project>

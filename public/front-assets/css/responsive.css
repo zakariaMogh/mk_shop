@@ -1407,7 +1407,7 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
-        width: 450px
+        width: auto
     }
     .blog__post__time {
         margin-bottom: 77px;
