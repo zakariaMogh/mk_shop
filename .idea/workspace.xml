@@ -11,30 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some design edit">
-      <change afterPath="$PROJECT_DIR$/public/front-assets/images/bg/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/css/shortcode/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/shortcode/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/banner/banner1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/banner/banner2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/bg/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/bg/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/bg/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/bg/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/bg/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/bg/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/logo/1000_F_117010732_1iVKWerX71v1lA28sTnSjxCPk74Ya4cS.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/logo/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/product/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/images/product/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/orders.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/orders.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/product-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/product-details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front-assets/css/shortcode/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/shortcode/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front-assets/css/shortcode/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/shortcode/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/partials/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/partials/search.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,14 +295,7 @@
       <workItem from="1626687390075" duration="111000" />
       <workItem from="1631188210382" duration="12000" />
       <workItem from="1631189676311" duration="4230000" />
-      <workItem from="1631194001122" duration="2385000" />
-    </task>
-    <task id="LOCAL-00044" summary="Soft delete&#10;design changements&#10;validation in french">
-      <created>1617654160745</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1617654160745</updated>
+      <workItem from="1631194001122" duration="2744000" />
     </task>
     <task id="LOCAL-00045" summary="small fix">
       <created>1617654393364</created>
@@ -661,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631194886938</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="some design edit">
+      <created>1631196405108</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1631196405109</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
