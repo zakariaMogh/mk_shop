@@ -12,6 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some design edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front-assets/css/plugins/meanmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/plugins/meanmenu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,14 +295,7 @@
       <workItem from="1631188210382" duration="12000" />
       <workItem from="1631189676311" duration="4230000" />
       <workItem from="1631194001122" duration="5133000" />
-      <workItem from="1631208261010" duration="309000" />
-    </task>
-    <task id="LOCAL-00048" summary="small fix">
-      <created>1617655065358</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1617655065358</updated>
+      <workItem from="1631208261010" duration="1049000" />
     </task>
     <task id="LOCAL-00049" summary="aw ana li bghel normalement ntesti f local">
       <created>1617655443244</created>
@@ -639,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631198501355</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="some design edit">
+      <created>1631208664234</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1631208664234</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
