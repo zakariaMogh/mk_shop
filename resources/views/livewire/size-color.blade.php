@@ -3,19 +3,21 @@
         <h2 class="title__5">Taille</h2>
         <ul class="pro__choose__size">
             @foreach($product->sizes as $size)
-                <li><a href="javascript:void(0)" wire:click="chooseSize({{$size->id}})"
-                    style="{{$size_id == $size->id ? 'color:#f19199' : ''}}">{{$size->size}}</a></li>
+                <li><a class="p-2  {{$size_id == $size->id ? 'isChecked' : ''}}" href="javascript:void(0)" wire:click="chooseSize({{$size->id}})"
+                    >{{$size->size}}</a></li>
             @endforeach
         </ul>
     </div>
     <div class="pro__dtl__color">
         <h2 class="title__5">Couleur</h2>
         <ul class="pro__choose__color">
-            @foreach($colors as $color)
-                @if($color->quantity > 0)
-                    <li><i class="zmdi zmdi-circle "
-                           style="color: #{{$color->color}}; cursor: pointer; border: solid black 2px; border-radius: 50%; "
-                           wire:click="chooseColor({{$color->id}})"></i></li>
+            @foreach($colors as $c)
+                @if($c->quantity > 0)
+                    <li>
+                        <i class="fa fa-circle fa-2x {{$color == $color->id ? 'isChecked' : ''}}"
+                           style="color: #{{$c->color}}; cursor: pointer; border: solid black 2px; border-radius: 50%; "
+                           wire:click="chooseColor({{$c->id}})"></i>
+                    </li>
                 @endif
             @endforeach
         </ul>
@@ -32,16 +34,6 @@
                 @csrf
                 <input type="hidden" name="size">
                 <input type="hidden" name="color" wire:model.defer="color">
-{{--                <div class="product-quantity">--}}
-{{--                    <div class="cart-plus-minus">--}}
-{{--                        <input class="cart-plus-minus-box" type="text" name="qty" value="1">--}}
-{{--                    </div>--}}
-{{--                    @error('qty')--}}
-{{--                    <span class="text-danger small" >--}}
-{{--                                        *{{ $message }}--}}
-{{--                                    </span>--}}
-{{--                    @enderror--}}
-{{--                </div>--}}
             </form>
         </div>
     </div>

@@ -13,6 +13,10 @@
     <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some design edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/front-assets/css/plugins/meanmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/plugins/meanmenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front-assets/css/style-customizer.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/style-customizer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,6 +300,8 @@
       <workItem from="1631189676311" duration="4230000" />
       <workItem from="1631194001122" duration="5133000" />
       <workItem from="1631208261010" duration="1049000" />
+      <workItem from="1631302225685" duration="53000" />
+      <workItem from="1631964580075" duration="3284000" />
     </task>
     <task id="LOCAL-00049" summary="aw ana li bghel normalement ntesti f local">
       <created>1617655443244</created>

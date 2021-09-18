@@ -268,32 +268,6 @@ div.style-customizer .skin-teal {
 }
 
 
-/*Background Patterns*/
-
-.pattern-1 {
-    background-image: url("../images/customizer/pattern/1.png");
-}
-.pattern-2 {
-    background-image: url("../images/customizer/pattern/2.png");
-}
-.pattern-3 {
-    background-image: url("../images/customizer/pattern/3.png");
-}
-.pattern-4 {
-    background-image: url("../images/customizer/pattern/4.png");
-}
-.pattern-5 {
-    background-image: url("../images/customizer/pattern/5.png");
-}
-.pattern-6 {
-    background-image: url("../images/customizer/pattern/6.png");
-}
-.pattern-7 {
-    background-image: url("../images/customizer/pattern/7.png");
-}
-.pattern-8 {
-    background-image: url("../images/customizer/pattern/8.png");
-}
 
 /*Background Images*/
 
@@ -533,3 +507,5 @@ div.style-customizer .skin-teal {
     -webkit-box-shadow: 0 0 5px #cac8c8;
     box-shadow: 0 0 5px #cac8c8;
 }
+
+

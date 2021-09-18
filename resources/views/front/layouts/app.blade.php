@@ -36,6 +36,16 @@
     <script src="{{asset('front-assets/js/vendor/modernizr-2.8.3.min.js')}}"></script>
 
     @stack('css')
+
+
+   <style>
+       .isChecked{
+           border:.2px solid #f19199!important;
+           color: #f19199;
+           border-radius: 10px;
+       }
+
+   </style>
 </head>
 
 <body>
