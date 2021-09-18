@@ -3,9 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>MkShop</title>
-    <meta name="description" content="">
+    <title>Mk_Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f19199" />
+    <meta name="keywords" content="website,e-commerce,constantine,shop,shopping,e-store,fashion,fammes,women " />
+    <meta name="description" content="Une platforme web pour la vente des vêtements et produits dédiées aux femmes.. " />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mk_SHOP" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="{{asset('front-assets/images/favicon.png')}}" />
+    <meta property="og:description" content="Une platforme web pour la vente des vêtements et produits dédiées aux femmes.." />
 
     <!-- Place favicon.png in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('front-assets/images/favicon.png')}}">
@@ -43,6 +53,33 @@
            border:.2px solid #f19199!important;
            color: #f19199;
            border-radius: 10px;
+           background-color: rgba(245, 199, 203, 0.14) !important;
+       }
+       .buy__now__btn a{
+           width: 300px!important;
+       }
+       .login input{
+           margin: 0!important;
+           margin-top: 20px!important;
+           margin-bottom: 20px!important;
+       }
+
+       @media (max-width: 768px) {
+           .product__menu a{
+               font-size: 14px;
+           }
+           .__title{
+               font-size: 18px;
+
+           }
+           .category-menu-list ul li:hover .category-menu-dropdown {
+               opacity: 1;
+               left: 20%!important;
+               top: 100%;
+               transition: ease-in 0.5s;
+               visibility: visible;
+               display: inline-block;
+           }
        }
 
    </style>

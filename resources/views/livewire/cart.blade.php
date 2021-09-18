@@ -1,4 +1,4 @@
-<div class="cart-main-area ptb--70 bg__white">
+<div class="cart-main-area ptb--70 bg__white" >
     <div class="container">
         <div class="row">
 

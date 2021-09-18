@@ -3,7 +3,7 @@
         <h2 class="title__5">Taille</h2>
         <ul class="pro__choose__size">
             @foreach($product->sizes as $size)
-                <li><a class="p-2  {{$size_id == $size->id ? 'isChecked' : ''}}" href="javascript:void(0)" wire:click="chooseSize({{$size->id}})"
+                <li><a  style="padding: 8px;background-color: #eeeeee;border-radius: 10px;min-width: 50px" class=" {{$size_id == $size->id ? 'isChecked' : ''}}" href="javascript:void(0)" wire:click="chooseSize({{$size->id}})"
                     >{{$size->size}}</a></li>
             @endforeach
         </ul>
@@ -14,9 +14,9 @@
             @foreach($colors as $c)
                 @if($c->quantity > 0)
                     <li>
-                        <i class="fa fa-circle fa-2x {{$color == $color->id ? 'isChecked' : ''}}"
-                           style="color: #{{$c->color}}; cursor: pointer; border: solid black 2px; border-radius: 50%; "
-                           wire:click="chooseColor({{$c->id}})"></i>
+                        <span class="fa fa-square fa-3x {{$color == $c->id ? 'isChecked' : ''}}"
+                           style="color: #{{$c->color}}; cursor: pointer; border-width:  2px!important; border-radius: 10px;padding: 2px!important;"
+                           wire:click="chooseColor({{$c->id}})"></span>
                     </li>
                 @endif
             @endforeach

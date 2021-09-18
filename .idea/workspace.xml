@@ -12,10 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some design edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/css/plugins/meanmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/plugins/meanmenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/css/style-customizer.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/style-customizer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -301,14 +301,7 @@
       <workItem from="1631194001122" duration="5133000" />
       <workItem from="1631208261010" duration="1049000" />
       <workItem from="1631302225685" duration="53000" />
-      <workItem from="1631964580075" duration="3284000" />
-    </task>
-    <task id="LOCAL-00049" summary="aw ana li bghel normalement ntesti f local">
-      <created>1617655443244</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1617655443244</updated>
+      <workItem from="1631964580075" duration="7994000" />
     </task>
     <task id="LOCAL-00050" summary="temporarly fixed trending">
       <created>1617701900574</created>
@@ -646,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631208664234</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="some design edit">
+      <created>1631969720274</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1631969720274</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
