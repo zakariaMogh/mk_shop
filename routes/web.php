@@ -59,16 +59,21 @@ Route::post('cart', [\App\Http\Controllers\Client\Web\CartController::class, 'st
 
 
 Route::get('product-details/{id}', [\App\Http\Controllers\Client\Web\ProductDetailController::class, 'show'])->name('product-details');
-//
+
 //Route::get('artisan', function (){
 //    \Illuminate\Support\Facades\Artisan::call("migrate:fresh --seed");
 //    return "done";
 //});
 //
-//Route::get('migrate', function (){
-//    \Illuminate\Support\Facades\Artisan::call("migrate");
+//Route::get('storage', function (){
+//    \Illuminate\Support\Facades\Artisan::call("storage:link");
 //    return "done";
 //});
+
+////Route::get('migrate', function (){
+////    \Illuminate\Support\Facades\Artisan::call("migrate");
+////    return "done";
+////});
 //
 //Route::get('install_passport', function (){
 ////    //\Illuminate\Support\Facades\Artisan::call("migrate");
@@ -79,16 +84,13 @@ Route::get('product-details/{id}', [\App\Http\Controllers\Client\Web\ProductDeta
 //    return "done";
 //});
 //
-//Route::get('storage', function (){
-//    \Illuminate\Support\Facades\Artisan::call("storage:link");
-//    return "done";
-//});
-
-//Route::get('artisan', function (){
+//
+//
+////Route::get('artisan', function (){
+//////    \Illuminate\Support\Facades\Artisan::call("migrate");
+//////    \Illuminate\Support\Facades\Artisan::call("passport:install");
 ////    \Illuminate\Support\Facades\Artisan::call("migrate");
-////    \Illuminate\Support\Facades\Artisan::call("passport:install");
-//    \Illuminate\Support\Facades\Artisan::call("migrate");
-//    \Illuminate\Support\Facades\Artisan::call("db:seed --class=InformationTableSeeder");
-//    \Illuminate\Support\Facades\Artisan::call("config:clear");
-//    return "done";
-//});
+////    \Illuminate\Support\Facades\Artisan::call("db:seed --class=InformationTableSeeder");
+////    \Illuminate\Support\Facades\Artisan::call("config:clear");
+////    return "done";
+////});

@@ -10,10 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="temporarely remove forget password">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Web/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/Api/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,14 +292,18 @@
       <workItem from="1626129432811" duration="1207000" />
       <workItem from="1626344101584" duration="8439000" />
       <workItem from="1626624256778" duration="6527000" />
-      <workItem from="1626687390075" duration="111000" />
-    </task>
-    <task id="LOCAL-00041" summary="fixed some stuff">
-      <created>1617630613952</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1617630613952</updated>
+      <workItem from="1626687390075" duration="874000" />
+      <workItem from="1627331221945" duration="734000" />
+      <workItem from="1627383386386" duration="92000" />
+      <workItem from="1627562179287" duration="1255000" />
+      <workItem from="1627664480660" duration="1369000" />
+      <workItem from="1627676639352" duration="640000" />
+      <workItem from="1628014984550" duration="22000" />
+      <workItem from="1629535013478" duration="687000" />
+      <workItem from="1630664677715" duration="14000" />
+      <workItem from="1630938895339" duration="4641000" />
+      <workItem from="1631190245430" duration="1371000" />
+      <workItem from="1631969370015" duration="436000" />
     </task>
     <task id="LOCAL-00042" summary="fixed some stuff">
       <created>1617631654141</created>
@@ -637,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626633390562</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="bug fix">
+      <created>1626687528993</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1626687528994</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +667,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="categories fix" />
     <MESSAGE value="some changes" />
     <MESSAGE value="passport route" />
     <MESSAGE value="removed conf routes" />
@@ -681,7 +691,8 @@
     <MESSAGE value="some fixed and changes" />
     <MESSAGE value="Front end pages" />
     <MESSAGE value="temporarely remove forget password" />
-    <option name="LAST_COMMIT_MESSAGE" value="temporarely remove forget password" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="741" y="253" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1625662187045">
@@ -692,18 +703,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626626672469" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1626366118701">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1628015005410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1626366118701" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628015005410" />
     <state width="503" height="446" key="SwitcherDM" timestamp="1625682472130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="503" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1625682472130" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626633430068">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626687655012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626633430068" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626687655012" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1625598020622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -76,7 +76,5 @@ class AuthController extends Controller
             return response($response, 200);
         }
         return response(["message" =>'Oops something went wrong'], 422);
-
-
     }
 }
