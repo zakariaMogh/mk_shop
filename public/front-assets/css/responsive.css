@@ -1,12 +1,4 @@
-/*-----------------------------------------------------------------------------------
-  Template Name: Tmart-Minimalist eCommerce HTML5 Template.
-  Template URI: #
-  Description: Tmart is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
-  Author: Theme365
-  Version: 1.0
-
------------------------------------------------------------------------------------*/
-/* Large screen desktop */
+@import "preloader.css";
 
 @media (min-width: 1366px) and (max-width: 1500px) {} @media (min-width: 1170px) and (max-width: 1500px) {
     .footer--4 .ft__widget.contact__us {
@@ -183,7 +175,7 @@
         margin-top: 10px;
     }
     /* Slider One */
-    
+
     .slider--one .slider__bg--1 {
         background-position: 30% 0;
     }
@@ -301,7 +293,7 @@
     .testimonial-2-content::before {
       left: 45%;
     }
-    
+
 }
 /* Tablet desktop :768px. */
 
@@ -309,7 +301,7 @@
     /*------------------
  Padding Top
 -----------------*/
-    
+
     .spt-20 {
         padding-top: 20px;
     }
@@ -420,7 +412,7 @@
         margin-left: 28px;
     }
     /* Slider One */
-    
+
     .slider--one .slider__bg--1 {
         background-color: #efefef;
         background-image: none;
@@ -641,12 +633,12 @@
 
 @media (max-width: 767px) {
     .container {
-        width: 300px
+        width: auto
     }
     /*------------------
  Padding Top
 -----------------*/
-    
+
     .xpt-20 {
         padding-top: 20px;
     }
@@ -1170,7 +1162,7 @@
         padding: 10px 20px;
     }
     /* Home 7 */
-    
+
     .wrapper__sidebar .menu-extra {
         justify-content: flex-end;
         margin-right: 0;
@@ -1401,13 +1393,13 @@
     .testimonial-3-name h3 {
       font-size: 20px;
     }
-    
+
 }
 /* Large Mobile :480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
-        width: 450px
+        width: auto
     }
     .blog__post__time {
         margin-bottom: 77px;

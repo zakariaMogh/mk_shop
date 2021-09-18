@@ -3,7 +3,7 @@
 @section('content')
     <!-- Start Bradcaump area -->
     <div class="ht__bradcaump__area"
-         style="background: rgba(0, 0, 0, 0) url({{asset('front-assets/images/bg/2.jpg')}}) no-repeat scroll center center / cover ;">
+         style="background: rgba(0, 0, 0, 0) url({{asset('front-assets/images/bg/2.png')}}) ;">
         <div class="ht__bradcaump__wrap">
             <div class="container">
                 <div class="row">

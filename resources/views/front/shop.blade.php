@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Start Bradcaump area -->
-    <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url({{asset('front-assets/images/bg/2.jpg')}}) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url({{asset('front-assets/images/bg/2.png')}});">
         <div class="ht__bradcaump__wrap">
             <div class="container">
                 <div class="row">
@@ -30,12 +30,12 @@
                     <div class="col-md-12">
                         <div class="filter__menu__container">
                             <div class="product__menu">
-                                <a  data-filter="*"  class="is-checked btn btn-lg" href="{{route('shop')}}"
-                                    {{request()->has('category') ? '' : 'style=color:#f19199'}} >All</a>
+                                <a  data-filter="*"  class=" btn btn-lg {{request()->has('category') ? '' : 'isChecked'}}" href="{{route('shop')}}"
+                                     >All</a>
                                 @foreach($categories as $category)
-                                    <a class="btn btn-lg"  data-filter=".cat--1"
+                                    <a class="btn btn-lg {{request()->get('category') == $category->slug ? 'isChecked' : ''}}"  data-filter=".cat--1"
                                        href="{{route('shop', ['category' => $category->slug])}}"
-                                        {{request()->get('category') == $category->slug ? 'style=color:#f19199' : ''}}>{{$category->name}}</a>
+                                        >{{$category->name}}</a>
                                 @endforeach
 
                             </div>

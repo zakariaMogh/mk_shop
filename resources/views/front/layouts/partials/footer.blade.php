@@ -88,3 +88,11 @@
         <!-- End Copyright Area -->
     </div>
 </footer>
+
+<!-- Preloader-->
+<div class="preloader-wrapper">
+    <div class="preloader">
+        <img src="{{asset('front-assets/images/preloader.svg')}}" alt="logo" height="100">
+    </div>
+</div>
+<!-- Preloader-->

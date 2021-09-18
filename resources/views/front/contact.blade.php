@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Start Bradcaump area -->
-    <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url({{asset('front-assets/images/bg/2.jpg')}}) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url({{asset('front-assets/images/bg/2.png')}}) ;">
         <div class="ht__bradcaump__wrap">
             <div class="container">
                 <div class="row">
@@ -50,6 +50,10 @@
                             </div>
                         </div>
                         <!-- End Single Adress -->
+
+                    </div>
+                    <div class="contact__address__inner">
+
                         <!-- Start Single Adress -->
                         <div class="single__contact__address">
                             <div class="contact__icon">

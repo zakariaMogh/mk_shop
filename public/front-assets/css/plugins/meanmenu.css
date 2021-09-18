@@ -52,7 +52,7 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav {
-  background: #0c1923 none repeat scroll 0 0;
+  background: #ec9292 none repeat scroll 0 0;
   float: left;
   margin-top: 10px;
   width: 100%;
@@ -127,7 +127,7 @@ a.meanmenu-reveal {
   -moz-border-right-colors: none !important;
   -moz-border-top-colors: none !important;
   background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
-  border-color: -moz-use-text-color -moz-use-text-color rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.4) !important;
+
   border-image: none !important;
   border-style: none none solid solid !important;
   border-width: medium medium 1px 1px !important;

@@ -1,4 +1,4 @@
-<div class="search__area">
+<div class="search__area visible-xs visible-sm visible-lg visible-md  ">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

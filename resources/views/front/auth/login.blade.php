@@ -3,13 +3,13 @@
 @section('content')
     <!-- Start Login Register Area -->
     <div class="htc__login__register bg__white ptb--100"
-         style="background: rgba(0, 0, 0, 0) url(images/bg/5.jpg) no-repeat scroll center center / cover ;">
+         style="background: rgba(0, 0, 0, 0) url({{asset('front-assets/images/bg/2.png')}}) ">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <ul class="login__register__menu" role="tablist">
                         <li role="presentation" class="login active"><a href="#">Login</a></li>
-                        <li role="presentation" class="register"><a href="{{route('register')}}" >Register</a>
+                        <li role="presentation" class="register"><a href="{{route('register')}}">Register</a>
                         </li>
                     </ul>
                 </div>
@@ -24,35 +24,33 @@
                             <div class="col-12 text-center">
                                 <div class="alert alert-danger">{{session('error')}}</div>
                             </div>
-                    @endif
-                        <!-- Start Single Content -->
+                       @endif
+                    <!-- Start Single Content -->
                         <form id="login"
                               role="tabpanel"
                               class="single__tabs__panel tab-pane fade in active"
-                              method="post" action="{{route('login')}}" >
-                            <div class="login" >
+                              method="post" action="{{route('login')}}">
+                            <div class="login">
                                 @csrf
-                                <input  id="email" type="email"
-                                       placeholder="example@email.com*" name="email">
+                                <input id="email"  type="email" placeholder="example@email.com*" name="email">
                                 @error('email')
-                                <span class="text-danger small" >
+                                <span class="text-danger small">
                                         *{{ $message }}
                                     </span>
                                 @enderror
 
-                                <input  id="password" type="password"
-                                        placeholder="********" name="password">
+                                <input id="password" type="password" placeholder="********" name="password">
                                 @error('password')
-                                <span class="text-danger small" >
+                                <span class="text-danger small">
                                         *{{ $message }}
                                     </span>
                                 @enderror
                             </div>
-{{--                            <div class="tabs__checkbox">--}}
-{{--                                <input type="checkbox" name="remember_me">--}}
-{{--                                <span> Remember me</span>--}}
-{{--                                <span class="forget"><a href="{{route('forgot.password.email')}}">Forget Pasword?</a></span>--}}
-{{--                            </div>--}}
+                            {{--                            <div class="tabs__checkbox">--}}
+                            {{--                                <input type="checkbox" name="remember_me">--}}
+                            {{--                                <span> Remember me</span>--}}
+                            {{--                                <span class="forget"><a href="{{route('forgot.password.email')}}">Forget Pasword?</a></span>--}}
+                            {{--                            </div>--}}
                             <div class="htc__login__btn mt--30">
                                 <a onclick="login()" href="#">Login</a>
                             </div>
@@ -81,13 +79,11 @@
 @endsection
 @push('js')
     <script>
-        function login()
-        {
+        function login() {
             $('#login').submit()
         }
 
-        function register()
-        {
+        function register() {
             $('#register').submit()
         }
     </script>

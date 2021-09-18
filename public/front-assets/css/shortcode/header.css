@@ -575,7 +575,7 @@
   transition: color 300ms ease 0s;
 }
 .search__area {
-  background: #cfcfcd none repeat scroll 0 0;
+  background: rgb(250, 221, 221) none repeat scroll 0 0;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);
   left: 0;
   position: fixed;
@@ -639,7 +639,7 @@
   transition: 0.3s;
 }
 .search__area .search__inner form button:hover {
-  background: #ff4136 none repeat scroll 0 0;
+  background: #f38d8d none repeat scroll 0 0;
 }
 .search__area .search__inner form button:hover::before {
   color: #fff;
@@ -663,7 +663,7 @@
 }
 .search__close__btn .search__close__btn_icon:hover i {
     transform: scale(2) rotate(180deg);
-    color: #ff4136;
+    color: #f38989;
 }
 .search__box__show__hide .search__area {
   transform: translateY(0px);

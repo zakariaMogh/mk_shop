@@ -36,6 +36,16 @@
     <script src="{{asset('front-assets/js/vendor/modernizr-2.8.3.min.js')}}"></script>
 
     @stack('css')
+
+
+   <style>
+       .isChecked{
+           border:.2px solid #f19199!important;
+           color: #f19199;
+           border-radius: 10px;
+       }
+
+   </style>
 </head>
 
 <body>
@@ -79,6 +89,12 @@
 <script src="{{asset('front-assets/js/plugins.js')}}"></script>
 <script src="{{asset('front-assets/js/slick.min.js')}}"></script>
 <script src="{{asset('front-assets/js/owl.carousel.min.js')}}"></script>
+<script>
+
+    $(window).on('load', function () {
+        $('.preloader-wrapper').fadeOut(200);
+    });
+</script>
 <!-- Carousel -->
 <script>
     $('.owl-product').owlCarousel({
