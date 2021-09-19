@@ -61,17 +61,19 @@
                             </div>
                             <div class="contact__details">
                                 <p> Email :<br><a href="#">{{$information->email}}</a></p>
+
                             </div>
                         </div>
                         <!-- End Single Adress -->
                     </div>
+                    <br>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                     <div class="htc__contact__container">
 
                         <div class="contact-form-wrap">
                             <div class="contact-title">
-                                <h2 class="contact__title">Contactez nous</h2>
+                                <h2 class="contact__title ">Contactez nous</h2>
                             </div>
                             @include('front.layouts.partials.messages')
 
