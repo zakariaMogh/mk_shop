@@ -10,9 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="fix">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SizeColor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SizeColor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,13 +298,8 @@
       <workItem from="1631208261010" duration="1049000" />
       <workItem from="1631302225685" duration="53000" />
       <workItem from="1631964580075" duration="7994000" />
-    </task>
-    <task id="LOCAL-00050" summary="temporarly fixed trending">
-      <created>1617701900574</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1617701900575</updated>
+      <workItem from="1632078842779" duration="341000" />
+      <workItem from="1632079480734" duration="380000" />
     </task>
     <task id="LOCAL-00051" summary="some changes">
       <created>1617821060905</created>
@@ -642,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631969720274</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="fixed">
+      <created>1632078104194</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1632078104194</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +663,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some changes" />
     <MESSAGE value="passport route" />
     <MESSAGE value="removed conf routes" />
     <MESSAGE value="client orders" />
@@ -686,7 +687,8 @@
     <MESSAGE value="Front end pages" />
     <MESSAGE value="temporarely remove forget password" />
     <MESSAGE value="some design edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="some design edit" />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="86" key="MergeDialog" timestamp="1632077160046">

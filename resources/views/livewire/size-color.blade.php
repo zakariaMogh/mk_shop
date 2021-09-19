@@ -15,7 +15,12 @@
                 @if($c->quantity > 0)
                     <li>
                         <span class="fa fa-square fa-3x {{$color == $c->id ? 'isChecked' : ''}}"
-                           style="color: #{{$c->color}}; cursor: pointer; border-width:  2px!important; border-radius: 10px;padding: 2px!important;"
+                           style="color: #{{$c->color}}; cursor: pointer; border-width:  2px!important; border-radius: 10px;padding: 2px!important;
+                               box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                               0 2px 2px rgba(0,0,0,0.12),
+                               0 4px 4px rgba(0,0,0,0.12),
+                               0 8px 8px rgba(0,0,0,0.12),
+                               0 16px 16px rgba(0,0,0,0.12);"
                            wire:click="chooseColor({{$c->id}})"></span>
                     </li>
                 @endif
