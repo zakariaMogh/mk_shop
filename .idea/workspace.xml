@@ -10,12 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some design edit">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/css/plugins/meanmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/plugins/meanmenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front-assets/css/style-customizer.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front-assets/css/style-customizer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +169,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/front-assets/images/bg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fish-tender" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -691,5 +687,15 @@
     <MESSAGE value="temporarely remove forget password" />
     <MESSAGE value="some design edit" />
     <option name="LAST_COMMIT_MESSAGE" value="some design edit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1632043099779">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1632043099779" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1631969876600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631969876600" />
   </component>
 </project>

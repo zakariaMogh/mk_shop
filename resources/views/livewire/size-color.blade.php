@@ -14,7 +14,7 @@
             @foreach($colors as $c)
                 @if($c->quantity > 0)
                     <li>
-                        <i class="fa fa-circle fa-2x {{$color == $color->id ? 'isChecked' : ''}}"
+                        <i class="fa fa-circle fa-2x {{$color == $c->id ? 'isChecked' : ''}}"
                            style="color: #{{$c->color}}; cursor: pointer; border: solid black 2px; border-radius: 50%; "
                            wire:click="chooseColor({{$c->id}})"></i>
                     </li>
