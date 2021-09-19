@@ -10,13 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="some design edit">
+    <list default="true" id="7dab2a0f-cabd-481f-8c2d-1431db7fc637" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/size-color.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SizeColor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SizeColor.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -691,5 +687,15 @@
     <MESSAGE value="temporarely remove forget password" />
     <MESSAGE value="some design edit" />
     <option name="LAST_COMMIT_MESSAGE" value="some design edit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="86" key="MergeDialog" timestamp="1632077160046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1632077160046" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1632077161791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1632077161791" />
   </component>
 </project>

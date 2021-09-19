@@ -33,7 +33,14 @@ class SizeColor extends Component
 
     public function mount()
     {
-        $this->colors = collect();
+        $size = $this->product->sizes->first();
+        if ($size)
+        {
+            $this->size_id = $size->id;
+            $this->colors = $size->colors;
+        }else{
+            $this->colors = collect();
+        }
     }
 
     public function render()
